@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 
 import Header from './components/otherComponents/Header';
 import Footer from './components/otherComponents/Footer';
@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div><Header/> </div>
-      <Router>
+
         <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route exact path='/about' element={<About />} />
@@ -28,7 +28,7 @@ function App() {
           <Route exact path='/metrodecker' element={<Metrodecker />} />
           <Route exact path='/solo' element={<Solo />} />
         </Routes>
-      </Router>
+
       <div><Footer/> </div>
     </>
   );
