@@ -101,7 +101,7 @@ const Footer = () => {
         </div>
         <div>
           <div className='font-semibold underline'>
-            Vehicles from SWITCH Mobility Ltd:
+          Helpful Links
           </div>
           <div className='pt-1 hover:text-yellow-300'>
             <Link to='e1'>SWITCH e1</Link>
