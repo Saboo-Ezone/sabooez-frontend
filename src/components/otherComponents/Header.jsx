@@ -28,7 +28,7 @@ const Header = () => {
   ];
 
   return (
-    // <div className='isolate   fixed z-10 w-full  '>
+    <div className='isolate   fixed z-10 w-full  '>
     <nav className='bg-white '>
       <div className='flex items-center font-medium justify-between'>
         <div className='z-50  md:w-auto w-full flex justify-between items-center   '>
@@ -47,14 +47,14 @@ const Header = () => {
           </div>
         </div>
         <ul className='md:flex hidden uppercase items-center gap-2 '>
-          <li>
+          {/* <li>
             <Link
               to='/'
               className='py-4 px-3 inline-block hover:text-indigo-500'
             >
               Home
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to='/about'
@@ -189,7 +189,7 @@ const Header = () => {
         duration-500 ${open ? 'left-0' : 'left-[-100%]'} 
         `}
         >
-          <li>
+          {/* <li>
             <Link
               to='/'
               className='py-5 px-3 inline-block hover:text-indigo-500'
@@ -197,7 +197,7 @@ const Header = () => {
             >
               Home
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to='/about'
@@ -327,7 +327,7 @@ const Header = () => {
         </ul>
       </div>
     </nav>
-    // </div>
+    </div>
   );
 };
 
