@@ -27,6 +27,7 @@ function App() {
           <Route exact path='/metrocity' element={<Metrocity />} />
           <Route exact path='/metrodecker' element={<Metrodecker />} />
           <Route exact path='/solo' element={<Solo />} />
+          <Route exact path='/*' element={<div>No page found </div>} />
         </Routes>
 
       <div><Footer/> </div>

@@ -28,7 +28,7 @@ const Header = () => {
   ];
 
   return (
-    <div className='isolate   fixed z-10 w-full  '>
+    // <div className='isolate   fixed z-10 w-full  '>
     <nav className='bg-white '>
       <div className='flex items-center font-medium justify-between'>
         <div className='z-50  md:w-auto w-full flex justify-between items-center   '>
@@ -327,7 +327,7 @@ const Header = () => {
         </ul>
       </div>
     </nav>
-    </div>
+    // </div>
   );
 };
 
