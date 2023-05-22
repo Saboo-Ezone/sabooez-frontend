@@ -289,7 +289,7 @@ const HomePage = () => {
                 </h2>
               </div>
               <h4
-                className='  md:pl-12 lg:text-3xl text-xl '
+                className='  md:pl-12  text-xl '
                 data-aos='fade-up'
                 data-aos-delay='100'
                 data-editor-processed='true'
