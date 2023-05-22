@@ -47,14 +47,14 @@ const Header = () => {
             </div>
           </div>
           <ul className='md:flex hidden uppercase items-center gap-2 '>
-            {/* <li>
+             <li>
             <Link
               to='/'
               className='py-4 px-3 inline-block hover:text-indigo-500'
             >
               Home
             </Link>
-          </li> */}
+          </li> 
             <li>
               <Link
                 to='/about'
@@ -166,20 +166,28 @@ const Header = () => {
                 Tech
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to='/news'
                 className='py-4 px-3 inline-block hover:text-indigo-500'
               >
                 News
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to='/contact'
                 className='py-4 px-3 inline-block whitespace-nowrap hover:text-indigo-500'
               >
                 Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/careers'
+                className='py-4 px-3 inline-block whitespace-nowrap hover:text-indigo-500'
+              >
+                Careers
               </Link>
             </li>
           </ul>
@@ -191,7 +199,7 @@ const Header = () => {
         duration-500 ${open ? 'left-0' : 'left-[-100%]'} 
         `}
           >
-            {/* <li>
+             <li>
             <Link
               to='/'
               className='py-5 px-3 inline-block hover:text-indigo-500'
@@ -199,7 +207,7 @@ const Header = () => {
             >
               Home
             </Link>
-          </li> */}
+          </li> 
             <li>
               <Link
                 to='/about'
@@ -308,7 +316,7 @@ const Header = () => {
                 Tech
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to='/news'
                 className='py-5 px-3 inline-block hover:text-indigo-500'
@@ -316,7 +324,7 @@ const Header = () => {
               >
                 News
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to='/contact'
@@ -324,6 +332,14 @@ const Header = () => {
                 onClick={() => setOpen(!open)}
               >
                 Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/careers'
+                className='py-4 px-3 inline-block whitespace-nowrap hover:text-indigo-500'
+              >
+                Careers
               </Link>
             </li>
           </ul>
