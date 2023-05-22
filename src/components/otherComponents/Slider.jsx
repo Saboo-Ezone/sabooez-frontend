@@ -41,7 +41,7 @@ function Slider() {
       >
         <SwiperSlide>
           <div className='relative'>
-            <img src={e1} className='w-full md:mt-10 mt-14' alt='SWITCH e1' />
+            <img src={e1} className='w-full  object-cover' alt='SWITCH e1' />
             <span className='absolute text-md md:text-3xl lg:text-5xl text-white bottom-6 md:bottom-20 left-1/4 -translate-x-1/2'>
               <Link to='/e1'>
                 <div className='flex justify-center items-center m-3 '>
@@ -58,7 +58,7 @@ function Slider() {
           <div className='relative'>
             <img
               src={metrocity}
-              className='w-full md:mt-10 mt-14'
+              className='w-full'
               alt='SWITCH Metrocity'
             />
 
@@ -78,7 +78,7 @@ function Slider() {
           <div className='relative'>
             <img
               src={metrodecker}
-              className='w-full md:mt-10 mt-14'
+              className='w-full'
               alt='The All New SWITCH Metrodecker'
             />
             <span className='absolute text-md md:text-3xl lg:text-5xl text-white bottom-6 md:bottom-20 left-1/4 -translate-x-1/4'>
@@ -98,7 +98,7 @@ function Slider() {
           <div className='relative'>
             <img
               src={solo}
-              className='w-full md:mt-10 mt-14'
+              className='w-full'
               alt='SWITCH Solo'
             />
             <span className='absolute text-md md:text-3xl lg:text-5xl text-white bottom-6 md:bottom-20 left-1/4 -translate-x-1/2'>
@@ -117,7 +117,7 @@ function Slider() {
           <div className='relative'>
             <img
               src={allvehicle}
-              className='w-full md:mt-10 mt-14'
+              className='w-full'
               alt='Sustainable vehicles of today'
             />
             <span className='absolute text-md md:text-3xl lg:text-5xl text-white bottom-6 md:bottom-20 left-1/4 -translate-x-1/2'>

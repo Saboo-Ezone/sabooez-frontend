@@ -1,4 +1,4 @@
-import {  Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/otherComponents/Header';
 import Footer from './components/otherComponents/Footer';
@@ -15,22 +15,20 @@ import Metrodecker from './components/vehicles/Metrodecker';
 function App() {
   return (
     <>
-      <div><Header/> </div>
-
-        <Routes>
-          <Route path='/' element={<HomePage/>} />
-          <Route exact path='/about' element={<About />} />
-          <Route exact path='/tech' element={<Tech />} />
-          <Route exact path='/news' element={<News />} />
-          <Route exact path='/contact' element={<Contact />} />
-          <Route exact path='/e1' element={<SwitchE1 />} />
-          <Route exact path='/metrocity' element={<Metrocity />} />
-          <Route exact path='/metrodecker' element={<Metrodecker />} />
-          <Route exact path='/solo' element={<Solo />} />
-          <Route exact path='/*' element={<div>No page found </div>} />
-        </Routes>
-
-      <div><Footer/> </div>
+      <div className='pb-16 md:pb-20'><Header /></div>
+      <Routes >
+        <Route path='/' element={<HomePage />} />
+        <Route exact path='/about' element={<About />} />
+        <Route exact path='/tech' element={<Tech />} />
+        <Route exact path='/news' element={<News />} />
+        <Route exact path='/contact' element={<Contact />} />
+        <Route exact path='/e1' element={<SwitchE1 />} />
+        <Route exact path='/metrocity' element={<Metrocity />} />
+        <Route exact path='/metrodecker' element={<Metrodecker />} />
+        <Route exact path='/solo' element={<Solo />} />
+        <Route exact path='/*' element={<div>No page found </div>} />
+      </Routes>
+      <Footer />
     </>
   );
 }

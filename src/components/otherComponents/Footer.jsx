@@ -4,11 +4,16 @@ import logoWhite from '../../assets/logo/white logo.png';
 
 const Footer = () => {
   return (
-    <div className='bg-[#505bfe] text-white text-sm bg-opacity-95 p-10'>
-      <div className='grid gap-4 text-sm sm:grid-cols-2 md:grid-cols-3  md:gap-2 '>
+    <div className='bg-[#505bfe]  text-white  bg-opacity-95 p-10'>
+      <div className='grid gap-4    w-full sm:grid-cols-2 md:grid-cols-3  md:gap-2 '>
         <div>
-          <img src={logoWhite} alt='' srcset='' className='h-16 md:h-20  -mt-6' />
-           <div className='flex gap-1 pl-2'>
+          <img
+            src={logoWhite}
+            alt=''
+            srcset=''
+            className='h-16 md:h-20  -mt-6'
+          />
+          <div className='flex gap-1 pl-2'>
             <a
               className='mr-2 mb-2 hover:text-blue-300'
               href='/'
@@ -97,11 +102,11 @@ const Footer = () => {
                 ></path>
               </svg>
             </a>
-          </div> 
+          </div>
         </div>
         <div>
-          <div className='font-semibold underline'>
-          Helpful Links
+          <div className='font-semibold uppercase underline underline-offset-2'>
+            Helpful Links
           </div>
           <div className='pt-1 hover:text-yellow-300'>
             <Link to='e1'>SWITCH e1</Link>
@@ -118,7 +123,9 @@ const Footer = () => {
         </div>
         <div>
           <p>
-            <span className='font-semibold underline'>Address:</span>
+            <span className='font-semibold underline underline-offset-2 uppercase'>
+              Address
+            </span>
             <br />
             RKS Motor - Saboo Towers, <br />
             6-3-905, Raj Bhavan Rd, Somajiguda,
