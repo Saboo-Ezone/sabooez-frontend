@@ -66,7 +66,7 @@ const Tech = () => {
 
       <section className=' bg-[#edede6]'>
         <div
-          className='sm:py-20 py-10 md:px-16 sm:px-10 px-5 grid grid-cols-1 md:grid-cols-6 font-roboto'
+          className='sm:py-20 py-10 md:px-16 sm:px-10  grid grid-cols-1 md:grid-cols-6 font-roboto'
           data-aos='fade-up'
         >
           <div
@@ -88,7 +88,7 @@ const Tech = () => {
 
       <section className=' mx-5'>
         <div className='flex flex-col'>
-          <div className='flex md:mx-12 lg:mx-20 md:gap-3 lg:gap-20 gap-2 md:flex-row flex-col mt-10 mb-12 '>
+          <div className='flex md:mx-12  md:gap-3 lg:gap-20 gap-2 md:flex-row flex-col mt-10 mb-12 '>
             <div className='md:w-1/3 w-full '>
               <div className='' data-aos='fade-up' data-aos-delay='100'>
                 <h3 className='flex py-4'>
@@ -99,7 +99,7 @@ const Tech = () => {
                     height='40'
                     alt='Icon'
                   />
-                  <span className='text-indigo-700 text-2xl px-2 whitespace-nowrap'>
+                  <span className='text-indigo-700 text-2xl px-2 '>
                     Lightweight Monocoque Material
                   </span>
                 </h3>
@@ -174,10 +174,10 @@ const Tech = () => {
           </div>
 
           <div
-            className=' w-[90%] divide-x-8 h-[5px] bg-repeat-x  mx-auto '
+            className=' w-[95%] divide-x-8 h-[5px] bg-repeat-x  mx-auto '
             style={{ backgroundImage: `url(${blackSvg})` }}
           ></div>
-          <div className='flex md:m-12 lg:mx-20 md:gap-3 lg:gap-20 gap-2 mt-6 md:flex-row flex-col mb-12 '>
+          <div className='flex md:m-12  md:gap-3 lg:gap-20 gap-2 mt-6 md:flex-row flex-col mb-12 '>
             <div className='md:w-1/3 w-full '>
               <div
                 className='icon-block'
@@ -263,10 +263,10 @@ const Tech = () => {
           </div>
 
           <div
-           className=' w-[90%] divide-x-8 h-[5px] bg-repeat-x  mx-auto '
+           className=' w-[95%] divide-x-8 h-[5px] bg-repeat-x  mx-auto '
             style={{ backgroundImage: `url(${blackSvg})` }}
           ></div>
-          <div className='flex md:m-12 lg:mx-20 md:gap-3 lg:gap-20 gap-2 mt-6 md:flex-row flex-col '>
+          <div className='flex md:m-12  md:gap-3 lg:gap-20 gap-2 mt-6 md:flex-row flex-col '>
             <div className='md:w-1/3 w-full  '>
               <div
                 className='icon-block'
