@@ -89,19 +89,19 @@ const Header = () => {
                       <div>
                         <div className='absolute top-12 hidden  group-hover:md:block hover:md:block'>
                           <div className='py-3'>
-                            <div className='w-4 h-4 mx-6 absolute mt-1 bg-indigo-800 rotate-45'></div>
+                            <div className='w-4 h-4 mx-6 absolute mt-1 bg-[#02c6b7] rotate-45'></div>
                           </div>
-                          <div className='bg-indigo-800 px-4 -ml-8 py-3 '>
+                          <div className='bg-[#02c6b7] px-4 -ml-8 py-3 '>
                             {link.sublinks.map((mysublinks) => (
                               <div>
                                 {/* <h1 className='text-lg font-semibold text-green-300'>
                                     {mysublinks.Head}
                                   </h1> */}
                                 {mysublinks.sublink.map((slink) => (
-                                  <li className='text-sm text-white my-2.5'>
+                                  <li className='text-sm text-black  my-2.5'>
                                     <Link
                                       to={slink.link}
-                                      className='hover:text-primary'
+                                      className='hover:text-white'
                                     >
                                       {slink.name}
                                     </Link>

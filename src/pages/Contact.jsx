@@ -51,8 +51,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className='bg-[#edede6]  ' style={{ backgroundImage: `url(${patternWhite})` }}>
-        <div className='flex  flex-col md:flex-row justify-between '>
+      <section className='bg-[#edede6] ' style={{ backgroundImage: `url(${patternWhite})` }}>
+        <div className='flex  flex-col md:flex-row justify-between xl:h-[70vh]'>
           <div className='py-10 font-roboto'>
             <div
               className='text-4xl lg:text-5xl pb-6 lg:pb-12 pt-12 text-left pr-2 pl-8 md:pl-16 lg:pl-20'
@@ -93,10 +93,10 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className='w-full  md:w-1/2 '>
-            
-            <img src={bannerCotact} alt="" srcset="" />
+          <div className='w-full bg-no-repeat bg-cover md:w-1/2 h-[40vh] md:h-auto bg-center' style={{ backgroundImage: `url(${bannerCotact})` }}>
           </div>
+          
+            
         </div>
       </section>
     </div>
