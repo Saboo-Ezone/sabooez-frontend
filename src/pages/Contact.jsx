@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <div>
       <section
-        className='flex bg-no-repeat my-4 md:my-8 lg:py-12'
+        className='flex bg-no-repeat py-3 md:py-6 '
         style={{ backgroundImage: `url(${patternBoxSvg})` }}
       >
         <div className='container  max-w-full mx-auto sm:px-2'>
