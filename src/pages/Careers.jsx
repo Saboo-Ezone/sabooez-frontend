@@ -98,7 +98,11 @@ const Careers = () => {
             <div className='mb-4'>
               <input
                 type='file'
-                className='mb-1 block w-full border-2 border-indigo-700 px-2 py-1 text-lg leading-relaxed focus:border-indigo-500 focus:ring-2  focus:ring-indigo-300  '
+                className='mb-1 block w-full border-2 border-indigo-700 px-2 py-1 text-lg leading-relaxed text-slate-500 file:mr-4 file:rounded-full  file:border-0  file:bg-violet-50 file:px-4 file:py-2
+                file:text-sm file:font-semibold
+                file:text-violet-700 hover:file:bg-violet-100
+                focus:border-indigo-500 focus:ring-2
+                focus:ring-indigo-300 '
                 name=''
                 accept='application/pdf'
                 id=''
