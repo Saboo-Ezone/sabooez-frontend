@@ -3,7 +3,7 @@ import React from 'react';
 const SubmitForm = () => {
   return (
     <div>
-      <h3 className='my-6 text-[#505bfe] text-3xl hidden md:block'>
+      <h3 className='my-6 hidden text-3xl text-[#505bfe] md:block'>
         Contact Us
       </h3>
 
@@ -11,7 +11,7 @@ const SubmitForm = () => {
         <div className='mb-4'>
           <input
             type='email'
-            className='block w-full px-2 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-300 py-2 mb-1 text-lg leading-relaxed border-2  border-indigo-700  '
+            className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed focus:border-indigo-500 focus:ring-2  focus:ring-indigo-300  '
             name='newsletteryouremail'
             id='emailAddress'
             placeholder='Enter your email address here'
@@ -20,7 +20,7 @@ const SubmitForm = () => {
         <div className='mb-4'>
           <input
             type='text'
-            className='block w-full px-2 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 mb-1 text-lg leading-relaxed border-2  border-indigo-700  '
+            className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed focus:border-indigo-500 focus:ring-2  focus:ring-indigo-200  '
             id='fullName'
             maxlength='150'
             name='newsletteryourname'
@@ -30,7 +30,7 @@ const SubmitForm = () => {
         <div className='mb-4'>
           <input
             type='text'
-            className='block w-full px-2 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 mb-1 text-lg leading-relaxed border-2  border-indigo-700  '
+            className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed focus:border-indigo-500 focus:ring-2  focus:ring-indigo-200  '
             id='jobtitle'
             maxlength='150'
             name='jobtitle'
@@ -40,7 +40,7 @@ const SubmitForm = () => {
         <div className='mb-4'>
           <input
             type='text'
-            className='block w-full px-2 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 mb-1 text-lg leading-relaxed border-2  border-indigo-700  '
+            className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed focus:border-indigo-500 focus:ring-2  focus:ring-indigo-200  '
             id='company'
             maxlength='150'
             name='newslettercompanyname'
@@ -49,7 +49,7 @@ const SubmitForm = () => {
         </div>
         <div className='mb-4'>
           <select
-            className='block w-full px-2 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 py-2 mb-1 text-lg leading-relaxed border-2  border-indigo-700  '
+            className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed focus:border-indigo-500 focus:ring-2  focus:ring-indigo-200  '
             id='interest'
             name='newsletterinterest'
           >
@@ -69,12 +69,12 @@ const SubmitForm = () => {
         </div>
         <div className='mb-4'>
           <div className='flex justify-between'>
-            <div className='relative block mb-2 '>
+            <div className='relative mb-2 block '>
               <input
                 type='checkbox'
                 name='subscribe_newsletter'
                 id='subscribeCheck'
-                className='mr-2 w-6 h-6'
+                className='mr-2 h-6 w-6'
               />
               <label className=' text-lg' htmlFor='subscribeCheck'>
                 Subscribe to news and updates from SWITCH
@@ -83,7 +83,7 @@ const SubmitForm = () => {
             <button
               type='submit'
               id='signupSubmit'
-              className='align-middle text-center  border-2 border-indigo-500  whitespace-no-wrap  py-1 px-1 font-medium no-underline rounded-full hover:shadow-lg hover:shadow-indigo-500 '
+              className='whitespace-no-wrap rounded-full  border-2 border-indigo-500  px-1  py-1 text-center align-middle font-medium no-underline hover:shadow-lg hover:shadow-indigo-500 '
             >
               Submit
             </button>
@@ -97,7 +97,7 @@ const SubmitForm = () => {
             We only use your personal information to provide the information you
             requested from us.
           </p>
-          <p className='text-sm mb-4'>
+          <p className='mb-4 text-sm'>
             For more information on how to unsubscribe, our privacy practices,
             and how we are committed to protecting and respecting your privacy,
             please review our Privacy Policy .

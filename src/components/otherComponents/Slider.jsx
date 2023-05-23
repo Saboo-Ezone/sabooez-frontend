@@ -42,9 +42,9 @@ function Slider() {
         <SwiperSlide>
           <div className='relative'>
             <img src={e1} className='w-full  object-cover' alt='SWITCH e1' />
-            <span className='absolute text-md md:text-3xl lg:text-5xl text-white bottom-6 md:bottom-20 left-1/4 -translate-x-1/2'>
+            <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/2 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/e1'>
-                <div className='flex justify-center items-center m-3 '>
+                <div className='m-3 flex items-center justify-center '>
                   <div className='mx-4'>SWITCH e1</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
@@ -56,15 +56,11 @@ function Slider() {
         </SwiperSlide>
         <SwiperSlide>
           <div className='relative'>
-            <img
-              src={metrocity}
-              className='w-full'
-              alt='SWITCH Metrocity'
-            />
+            <img src={metrocity} className='w-full' alt='SWITCH Metrocity' />
 
-            <span className='absolute text-md md:text-3xl lg:text-5xl text-white  bottom-6 md:bottom-20 left-1/4 -translate-x-1/2 '>
+            <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/2  text-white md:bottom-20 md:text-3xl lg:text-5xl '>
               <Link to='/metrocity'>
-                <div className='flex justify-center items-center m-3 '>
+                <div className='m-3 flex items-center justify-center '>
                   <div className='mx-4'>SWITCH Metrocity</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
@@ -81,9 +77,9 @@ function Slider() {
               className='w-full'
               alt='The All New SWITCH Metrodecker'
             />
-            <span className='absolute text-md md:text-3xl lg:text-5xl text-white bottom-6 md:bottom-20 left-1/4 -translate-x-1/4'>
+            <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/4 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/metrodecker'>
-                <div className='flex justify-center items-center m-3 '>
+                <div className='m-3 flex items-center justify-center '>
                   <div className='mx-4'>The All New SWITCH Metrodecker</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
@@ -96,14 +92,10 @@ function Slider() {
 
         <SwiperSlide>
           <div className='relative'>
-            <img
-              src={solo}
-              className='w-full'
-              alt='SWITCH Solo'
-            />
-            <span className='absolute text-md md:text-3xl lg:text-5xl text-white bottom-6 md:bottom-20 left-1/4 -translate-x-1/2'>
+            <img src={solo} className='w-full' alt='SWITCH Solo' />
+            <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/2 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/solo'>
-                <div className='flex justify-center items-center m-3 '>
+                <div className='m-3 flex items-center justify-center '>
                   <div className='mx-4'>SWITCH Solo</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
@@ -120,9 +112,9 @@ function Slider() {
               className='w-full'
               alt='Sustainable vehicles of today'
             />
-            <span className='absolute text-md md:text-3xl lg:text-5xl text-white bottom-6 md:bottom-20 left-1/4 -translate-x-1/2'>
+            <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/2 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/e1'>
-                <div className='flex justify-center items-center m-3 '>
+                <div className='m-3 flex items-center justify-center '>
                   <div className='mx-4'>Sustainable vehicles of today</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />

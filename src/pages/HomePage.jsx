@@ -29,10 +29,10 @@ const HomePage = () => {
         <Slider />
       </section>
 
-      <section className=' bg-[#edede6] bg-opacity-75 w-full'>
+      <section className=' w-full bg-[#edede6] bg-opacity-75'>
         <div className=' mx-16  '>
           <div
-            className='tracking-wide text-h2 lg:text-h1  pt-8  md:pt-16  pb-4  '
+            className='pb-4 pt-8 text-h2  tracking-wide  md:pt-16  lg:text-h1  '
             data-aos='fade-up'
           >
             Cleaner, smarter journeys
@@ -41,22 +41,22 @@ const HomePage = () => {
           </div>
 
           <div
-            className=' w-full  h-[5px] bg-no-repeat bg-cover  my-10'
+            className=' my-10  h-[5px] w-full bg-cover  bg-no-repeat'
             style={{ backgroundImage: `url(${blueSvg})` }}
           ></div>
 
           <div
-            className=' pb-8 grid lg:grid-cols-2 md:pb-16 '
+            className=' grid pb-8 md:pb-16 lg:grid-cols-2 '
             data-aos='fade-up'
             data-aos-delay='200'
             data-editor-processed='true'
           >
-            <div className='col-span-1 font-roboto lg:pr-16 pb-4'>
+            <div className='col-span-1 pb-4 font-roboto lg:pr-16'>
               At SWITCH, we're working with cities across the world to make
               everyday life better. Our carbon neutral transport solutions are
               built with your whole community in mind.
             </div>
-            <div className='lg:text-end col-span-1 text-[#505bfe] text-2xl md:text-2xl  font-mono'>
+            <div className='col-span-1 font-mono text-2xl text-[#505bfe] md:text-2xl  lg:text-end'>
               A carbon neutral certified company
             </div>
           </div>
@@ -76,45 +76,45 @@ const HomePage = () => {
           Your browser does not support the video tag.
         </video>
       </section>
-      <section className=' bg-[#edede6] bg-opacity-75 w-full'>
+      <section className=' w-full bg-[#edede6] bg-opacity-75'>
         <div className=' mx-16  '>
           <div
-            className='tracking-wide text-h2 lg:text-h1  pt-8  md:pt-16  pb-4  '
+            className='pb-4 pt-8 text-h2  tracking-wide  md:pt-16  lg:text-h1  '
             data-aos='fade-up'
           >
             Leading the charge
           </div>
 
           <div
-            className=' pb-8 grid lg:grid-cols-2  '
+            className=' grid pb-8 lg:grid-cols-2  '
             data-aos='fade-up'
             data-aos-delay='200'
             data-editor-processed='true'
           >
-            <div className='col-span-1 font-roboto lg:pr-16 pb-4'>
+            <div className='col-span-1 pb-4 font-roboto lg:pr-16'>
               In 2014, we introduced the first British built, pure electric
               buses to London’s roads. Since then, we’ve clocked over 30 million
               electric miles.
             </div>
-            <div className='lg:text-end col-span-1 text-[#505bfe] text-2xl md:text-2xl  font-mono'>
+            <div className='col-span-1 font-mono text-2xl text-[#505bfe] md:text-2xl  lg:text-end'>
               Explore our current range
             </div>
           </div>
-          <div className=' pb-8   grid md:grid-cols-2 lg:grid-cols-3 gap-6  sm:grid-cols-2'>
+          <div className=' grid   gap-6 pb-8 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3'>
             <div className='mb-5' data-aos='fade-in' data-aos-delay='300'>
-              <div className='lg:text-h3 xl:text-h2 text-h5 my-5'>
+              <div className='my-5 text-h5 lg:text-h3 xl:text-h2'>
                 <div>SWITCH e1</div>
               </div>
               <div className=' overflow-hidden  '>
                 <img
                   src={switch_e1}
                   alt='SWITCH e1'
-                  className='hover:scale-105 ease-in duration-300 h-60 lg:h-full w-full object-cover'
+                  className='h-60 w-full object-cover duration-300 ease-in hover:scale-105 lg:h-full'
                 />
               </div>
               <div className='bg-[#505bfe] '>
                 <Link
-                  className='flex justify-between items-center px-2  py-2 text-white'
+                  className='flex items-center justify-between px-2  py-2 text-white'
                   to='/e1'
                 >
                   <span>MORE INFORMATION</span>
@@ -124,19 +124,19 @@ const HomePage = () => {
             </div>
 
             <div className='mb-5' data-aos='fade-in' data-aos-delay='400'>
-              <div className='lg:text-h3 xl:text-h2 text-h5 my-5'>
+              <div className='my-5 text-h5 lg:text-h3 xl:text-h2'>
                 <div>SWITCH Metrodecker</div>
               </div>
               <div className=' overflow-hidden '>
                 <img
                   src={metrodecker}
                   alt='SWITCH Metrodecker'
-                  className='hover:scale-105 ease-in duration-300 h-60 lg:h-full w-full object-cover'
+                  className='h-60 w-full object-cover duration-300 ease-in hover:scale-105 lg:h-full'
                 />
               </div>
               <div className='bg-[#505bfe] '>
                 <Link
-                  className='flex justify-between items-center px-2  py-2 text-white'
+                  className='flex items-center justify-between px-2  py-2 text-white'
                   to='/metrodecker'
                 >
                   <span>MORE INFORMATION</span>
@@ -146,19 +146,19 @@ const HomePage = () => {
             </div>
 
             <div className='mb-5 ' data-aos='fade-in' data-aos-delay='500'>
-              <div className='lg:text-h3 xl:text-h2 text-h5 my-5'>
+              <div className='my-5 text-h5 lg:text-h3 xl:text-h2'>
                 <div>SWITCH Metrocity</div>
               </div>
               <div className=' overflow-hidden  '>
                 <img
                   src={metrocity}
                   alt='SWITCH EiV 22'
-                  className='hover:scale-105 ease-in duration-300 h-60 lg:h-full w-full object-cover'
+                  className='h-60 w-full object-cover duration-300 ease-in hover:scale-105 lg:h-full'
                 />
               </div>
               <div className='bg-[#505bfe] '>
                 <Link
-                  className='flex justify-between items-center px-2  py-2 text-white '
+                  className='flex items-center justify-between px-2  py-2 text-white '
                   to='/metrocity'
                 >
                   <span>MORE INFORMATION</span>
@@ -169,16 +169,16 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section class='flex flex-col md:flex-row bg-emerald-500 mb-1 '>
+      <section class='mb-1 flex flex-col bg-emerald-500 md:flex-row '>
         <div
-          class='w-full md:w-1/2 h-[45vh] md:h-[65vh] bg-cover bg-center bg-no-repeat'
+          class='h-[45vh] w-full bg-cover bg-center bg-no-repeat md:h-[65vh] md:w-1/2'
           style={{ backgroundImage: `url(${bannerTech})` }}
         ></div>
         <div
           style={{ backgroundImage: `url(${patternGreen})` }}
-          class='w-full md:w-1/2 h-[45vh] md:h-[65vh] flex flex-col justify-between p-6 sm:p-8 lg:p-12 text-white'
+          class='flex h-[45vh] w-full flex-col justify-between p-6 text-white sm:p-8 md:h-[65vh] md:w-1/2 lg:p-12'
         >
-          <div className='flex flex-wrap justify-between items-center'>
+          <div className='flex flex-wrap items-center justify-between'>
             <div className='text-h1' data-aos='fade-up' data-aos-delay='100'>
               A Connected World
             </div>
@@ -187,7 +187,7 @@ const HomePage = () => {
             </div>
           </div>
           <div
-            className='flex flex-col xl:flex-row justify-between '
+            className='flex flex-col justify-between xl:flex-row '
             data-aos='fade-up'
             data-aos-delay='100'
           >
@@ -196,20 +196,20 @@ const HomePage = () => {
               electromobility.
             </div>
             <div
-              className=' pb-10 mt-6 whitespace-nowrap'
+              className=' mt-6 whitespace-nowrap pb-10'
               data-aos='fade-up'
               data-aos-delay='200'
             >
               <Link
                 to='/tech'
-                className='relative px-6 py-2 text-xl  overflow-hidden font-medium text-white border-[2px] border-gray-100 shadow-inner group'
+                className='group relative overflow-hidden border-[2px]  border-gray-100 px-6 py-2 text-xl font-medium text-white shadow-inner'
               >
-                <span className='absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-1 border-indigo-400 group-hover:w-full ease'></span>
-                <span className='absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-1 border-indigo-400 group-hover:w-full ease'></span>
-                <span className='absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-indigo-400 group-hover:h-full ease'></span>
-                <span className='absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-indigo-400 group-hover:h-full ease'></span>
-                <span className='absolute inset-0 w-full h-full duration-300 delay-300 bg-white opacity-0 group-hover:opacity-100'></span>
-                <span className='relative transition-colors duration-300 delay-200 group-hover:text-indigo-500 ease'>
+                <span className='border-t-1 ease absolute left-0 top-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+                <span className='border-b-1 ease absolute bottom-0 right-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+                <span className='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
+                <span className='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
+                <span className='absolute inset-0 h-full w-full bg-white opacity-0 delay-300 duration-300 group-hover:opacity-100'></span>
+                <span className='ease relative transition-colors delay-200 duration-300 group-hover:text-indigo-500'>
                   DISCOVER
                 </span>
               </Link>
@@ -231,19 +231,19 @@ const HomePage = () => {
         />
       </section>
       <section
-        className='py-6 bg-[#505bfe] text-center text-white flex items-center min-h-[70vh]'
+        className='flex min-h-[70vh] items-center bg-[#505bfe] py-6 text-center text-white'
         style={{ backgroundImage: `url(${patternPng})` }}
       >
         <div className='container mx-auto'>
           <div className='section-heading' data-aos='fade-up'>
             <h2
-              className='text-3xl lg:text-5xl    pb-6'
+              className='pb-6 text-3xl    lg:text-5xl'
               data-editor-processed='true'
             >
               SWITCH Up
             </h2>
             <p
-              className='text-xl lg:text-2xl font-medium pb-10 font-mono  '
+              className='pb-10 font-mono text-xl font-medium lg:text-2xl  '
               data-aos='fade-up'
               data-aos-delay='100'
               data-editor-processed='true'
@@ -255,31 +255,31 @@ const HomePage = () => {
 
           <Link
             to='/about'
-            class='relative px-8 py-2 text-xl lg:text-2xl overflow-hidden font-medium text-white border-[2px] border-gray-100 shadow-inner group'
+            class='group relative overflow-hidden border-[2px] border-gray-100 px-8 py-2 text-xl font-medium text-white shadow-inner lg:text-2xl'
             data-editor-processed='true'
             data-aos='fade-up'
             data-aos-delay='300'
           >
-            <span class='absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-indigo-400 group-hover:w-full ease'></span>
-            <span class='absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-indigo-400 group-hover:w-full ease'></span>
-            <span class='absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-100 bg-indigo-400 group-hover:h-full ease'></span>
-            <span class='absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-100 bg-indigo-400 group-hover:h-full ease'></span>
-            <span class='absolute inset-0 w-full h-full duration-300 delay-200 bg-white opacity-0 group-hover:opacity-100'></span>
-            <span class='relative transition-colors duration-300 delay-200 group-hover:text-indigo-500 ease'>
+            <span class='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+            <span class='ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+            <span class='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-100 duration-300 group-hover:h-full'></span>
+            <span class='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-100 duration-300 group-hover:h-full'></span>
+            <span class='absolute inset-0 h-full w-full bg-white opacity-0 delay-200 duration-300 group-hover:opacity-100'></span>
+            <span class='ease relative transition-colors delay-200 duration-300 group-hover:text-indigo-500'>
               OUR STORY
             </span>
           </Link>
         </div>
       </section>
       <section
-        className='intro-newsletter generic-padding flex bg-no-repeat mt-4'
+        className='intro-newsletter generic-padding mt-4 flex bg-no-repeat'
         style={{ backgroundImage: `url(${patternBoxSvg})` }}
       >
-        <div className='container  max-w-full mx-auto sm:px-2'>
+        <div className='container  mx-auto max-w-full sm:px-2'>
           <div className='flex flex-wrap justify-around '>
-            <div className='w-4/5 md:w-2/5  xl:w-2/5 pr-2 md:pr-4 md:pl-4 mb-4 mt-8 offset-1 xl:mx-1/5 '>
+            <div className='offset-1 xl:mx-1/5  mb-4 mt-8 w-4/5 pr-2 md:w-2/5 md:pl-4 md:pr-4 xl:w-2/5 '>
               <div
-                className='text-3xl lg:text-5xl md:pt-12 pt-4 md:pl-12 pb-12'
+                className='pb-12 pt-4 text-3xl md:pl-12 md:pt-12 lg:text-5xl'
                 data-aos='fade-up'
               >
                 <h2 className='title' data-editor-processed='true'>
@@ -289,7 +289,7 @@ const HomePage = () => {
                 </h2>
               </div>
               <h4
-                className='  md:pl-12  text-xl '
+                className='  text-xl  md:pl-12 '
                 data-aos='fade-up'
                 data-aos-delay='100'
                 data-editor-processed='true'
@@ -301,9 +301,9 @@ const HomePage = () => {
             <div
               data-aos='fade-up'
               data-aos-delay='300'
-              className='md:w-1/2 md:px-4 px-5 xl:w-1/3 xl:mx-1/6 xl:pl-0'
+              className='xl:mx-1/6 px-5 md:w-1/2 md:px-4 xl:w-1/3 xl:pl-0'
             >
-             <SubmitForm/>
+              <SubmitForm />
             </div>
           </div>
         </div>

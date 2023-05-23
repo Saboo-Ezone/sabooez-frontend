@@ -16,12 +16,14 @@ import Careers from './pages/Careers';
 function App() {
   return (
     <>
-      <div className='pb-16 md:pb-20'><Header /></div>
-      <Routes >
+      <div className='pb-16 md:pb-20'>
+        <Header />
+      </div>
+      <Routes>
         <Route path='/' element={<HomePage />} />
         <Route exact path='/about' element={<About />} />
         <Route exact path='/tech' element={<Tech />} />
-        <Route exact path='/careers' element={<Careers/>} />
+        <Route exact path='/careers' element={<Careers />} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/e1' element={<SwitchE1 />} />
         <Route exact path='/metrocity' element={<Metrocity />} />

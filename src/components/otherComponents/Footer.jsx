@@ -1,21 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logoWhite from '../../assets/logo/white logo.png';
+import patternPng from '../../assets/other/pattern.png';
 
 const Footer = () => {
   return (
-    <div className='bg-[#505bfe]  text-white  bg-opacity-95 p-10'>
-      <div className='grid gap-4    w-full sm:grid-cols-2 md:grid-cols-3  md:gap-2 '>
+    <div className='bg-[#505bfe]  bg-opacity-95  p-10 text-white'>
+      <div
+        className='grid w-full gap-4 sm:grid-cols-2 md:grid-cols-3  md:gap-2 '
+        style={{ backgroundImage: `url(${patternPng})` }}
+      >
         <div>
           <img
             src={logoWhite}
             alt=''
             srcset=''
-            className='h-16 md:h-20  -mt-6'
+            className='-mt-6 h-16  md:h-20'
           />
           <div className='flex gap-1 pl-2'>
             <a
-              className='mr-2 mb-2 hover:text-blue-300'
+              className='mb-2 mr-2 hover:text-blue-300'
               href='/'
               rel='noopener'
               target='_blank'
@@ -31,7 +35,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className='mr-2 mb-2 hover:text-blue-800'
+              className='mb-2 mr-2 hover:text-blue-800'
               href='/'
               rel='noopener'
               target='_blank'
@@ -47,7 +51,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className='mr-1 mb-2 hover:text-blue-800'
+              className='mb-2 mr-1 hover:text-blue-800'
               href='/'
               rel='noopener'
               target='_blank'
@@ -67,7 +71,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className='mr-1 mb-2 hover:text-blue-800'
+              className='mb-2 mr-1 hover:text-blue-800'
               href='/'
               rel='noopener'
               target='_blank'
@@ -123,7 +127,7 @@ const Footer = () => {
         </div>
         <div>
           <p>
-            <span className='font-semibold underline underline-offset-2 uppercase'>
+            <span className='font-semibold uppercase underline underline-offset-2'>
               Address
             </span>
             <br />

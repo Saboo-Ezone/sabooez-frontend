@@ -17,11 +17,11 @@ const Contact = () => {
         className='flex bg-no-repeat py-3 md:py-6 '
         style={{ backgroundImage: `url(${patternBoxSvg})` }}
       >
-        <div className='container  max-w-full mx-auto sm:px-2'>
+        <div className='container  mx-auto max-w-full sm:px-2'>
           <div className='flex flex-wrap justify-around '>
-            <div className='w-4/5 md:w-2/5  xl:w-2/5 pr-2 md:pr-4 md:pl-4 mb-4 mt-8 offset-1 xl:mx-1/5 '>
+            <div className='offset-1 xl:mx-1/5  mb-4 mt-8 w-4/5 pr-2 md:w-2/5 md:pl-4 md:pr-4 xl:w-2/5 '>
               <div
-                className='text-3xl lg:text-5xl md:pt-12 pt-4 md:pl-12 pb-12'
+                className='pb-12 pt-4 text-3xl md:pl-12 md:pt-12 lg:text-5xl'
                 data-aos='fade-up'
               >
                 <h2 className='title' data-editor-processed='true'>
@@ -31,7 +31,7 @@ const Contact = () => {
                 </h2>
               </div>
               <h4
-                className='  md:pl-12  text-xl '
+                className='  text-xl  md:pl-12 '
                 data-aos='fade-up'
                 data-aos-delay='100'
                 data-editor-processed='true'
@@ -43,7 +43,7 @@ const Contact = () => {
             <div
               data-aos='fade-up'
               data-aos-delay='300'
-              className='md:w-1/2 md:px-4 px-5 xl:w-1/3 xl:mx-1/6 xl:pl-0'
+              className='xl:mx-1/6 px-5 md:w-1/2 md:px-4 xl:w-1/3 xl:pl-0'
             >
               <SubmitForm />
             </div>
@@ -54,10 +54,10 @@ const Contact = () => {
         className='bg-[#edede6] '
         style={{ backgroundImage: `url(${patternWhite})` }}
       >
-        <div className='flex  flex-col md:flex-row justify-between xl:h-[70%]'>
+        <div className='flex  flex-col justify-between md:flex-row xl:h-[70%]'>
           <div className='py-10 font-roboto'>
             <div
-              className='text-4xl  pb-4 lg:pb-8 pt-12 text-left pr-2 pl-8 md:pl-16 lg:pl-20'
+              className='pb-4  pl-8 pr-2 pt-12 text-left text-4xl md:pl-16 lg:pb-8 lg:pl-20'
               data-aos='fade-up'
               data-aos-delay='500'
             >
@@ -66,7 +66,7 @@ const Contact = () => {
             <div className='type-of-block'>
               <div className=' pl-8 md:pl-16 lg:pl-20'>
                 <p
-                  className='text-[#505bfe] pb-8 text-xl'
+                  className='pb-8 text-xl text-[#505bfe]'
                   data-aos='fade-up'
                   data-aos-delay='200'
                 >
@@ -79,7 +79,7 @@ const Contact = () => {
                   className='text-lg'
                 >
                   <p>
-                    <div className=' text-lg  lg:text-xl pb-2 '>
+                    <div className=' pb-2  text-lg lg:text-xl '>
                       Saboo RKS Motor - Maruti Suzuki Arena
                     </div>
                     Saboo Towers, 6-3-905,
@@ -102,12 +102,11 @@ const Contact = () => {
           <div
             data-aos='fade-up'
             data-aos-delay='700'
-            className='w-full bg-no-repeat bg-cover md:w-1/2 h-[40vh] md:h-auto bg-center'
+            className='h-[40vh] w-full bg-cover bg-center bg-no-repeat md:h-auto md:w-1/2'
             style={{ backgroundImage: `url(${bannerCotact})` }}
           ></div>
         </div>
       </section>
-      
     </>
   );
 };

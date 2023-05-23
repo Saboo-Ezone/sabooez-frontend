@@ -28,37 +28,34 @@ const Header = () => {
   ];
 
   return (
-    <div className='isolate bg-white  fixed z-10 w-full  '>
+    <div className='fixed isolate  z-10 w-full bg-white  '>
       <nav className='   w-full '>
-        <div className='flex items-center font-medium justify-between'>
-          <div className='z-50  md:w-auto w-full flex justify-between items-center   '>
+        <div className='flex items-center justify-between font-medium'>
+          <div className='z-50  flex w-full items-center justify-between md:w-auto   '>
             <Link to='/'>
               <img
                 src={Logo}
                 alt='logo'
-                className='md:cursor-pointer h-16  md:h-20 '
+                className='h-16 md:h-20  md:cursor-pointer '
               />
             </Link>
             <div
-              className='text-3xl md:hidden p-3 md:p-5'
+              className='p-3 text-3xl md:hidden md:p-5'
               onClick={() => setOpen(!open)}
             >
               {open ? <AiOutlineClose /> : <AiOutlineMenu />}
             </div>
           </div>
-          <ul className='md:flex hidden uppercase items-center gap-2 '>
-             <li>
-            <Link
-              to='/'
-              className=' px-3 inline-block hover:text-indigo-500'
-            >
-              Home
-            </Link>
-          </li> 
+          <ul className='hidden items-center gap-2 uppercase md:flex '>
+            <li>
+              <Link to='/' className=' inline-block px-3 hover:text-indigo-500'>
+                Home
+              </Link>
+            </li>
             <li>
               <Link
                 to='/about'
-                className=' px-3 inline-block whitespace-nowrap hover:text-indigo-500'
+                className=' inline-block whitespace-nowrap px-3 hover:text-indigo-500'
               >
                 About Us
               </Link>
@@ -66,9 +63,9 @@ const Header = () => {
             <div>
               {links.map((link) => (
                 <div>
-                  <div className='px-3 text-left md:cursor-pointer group '>
+                  <div className='group px-3 text-left md:cursor-pointer '>
                     <h1
-                      className=' flex justify-between items-center md:pr-0 pr-2 group'
+                      className=' group flex items-center justify-between pr-2 md:pr-0'
                       onClick={() => {
                         heading !== link.name
                           ? setHeading(link.name)
@@ -87,18 +84,18 @@ const Header = () => {
                     </h1>
                     {link.submenu && (
                       <div>
-                        <div className='absolute top-12 hidden  group-hover:md:block hover:md:block'>
+                        <div className='absolute top-12 hidden  hover:md:block group-hover:md:block'>
                           <div className='py-3'>
-                            <div className='w-4 h-4 mx-6 absolute mt-1 bg-[#02c6b7] rotate-45'></div>
+                            <div className='absolute mx-6 mt-1 h-4 w-4 rotate-45 bg-[#02c6b7]'></div>
                           </div>
-                          <div className='bg-[#02c6b7] px-4 -ml-8 py-3 '>
+                          <div className='-ml-8 bg-[#02c6b7] px-4 py-3 '>
                             {link.sublinks.map((mysublinks) => (
                               <div>
                                 {/* <h1 className='text-lg font-semibold text-green-300'>
                                     {mysublinks.Head}
                                   </h1> */}
                                 {mysublinks.sublink.map((slink) => (
-                                  <li className='text-sm text-black  my-2.5'>
+                                  <li className='my-2.5 text-sm  text-black'>
                                     <Link
                                       to={slink.link}
                                       className='hover:text-white'
@@ -130,11 +127,11 @@ const Header = () => {
                                 ? setSubHeading(slinks.Head)
                                 : setSubHeading('')
                             }
-                            className='py-4 pl-7 font-semibold  flex justify-between items-center md:pr-0 pr-5'
+                            className='flex items-center justify-between  py-4 pl-7 pr-5 font-semibold md:pr-0'
                           >
                             {slinks.Head}
 
-                            <span className='text-xl md:mt-1 md:ml-2 inline'>
+                            <span className='inline text-xl md:ml-2 md:mt-1'>
                               {subHeading === slinks.Head && <BiChevronDown />}
                             </span>
                           </h1>
@@ -161,7 +158,7 @@ const Header = () => {
             <li>
               <Link
                 to='/tech'
-                className=' px-3 inline-block hover:text-indigo-500'
+                className=' inline-block px-3 hover:text-indigo-500'
               >
                 Tech
               </Link>
@@ -177,7 +174,7 @@ const Header = () => {
             <li>
               <Link
                 to='/contact'
-                className=' px-3 inline-block whitespace-nowrap hover:text-indigo-500'
+                className=' inline-block whitespace-nowrap px-3 hover:text-indigo-500'
               >
                 Contact Us
               </Link>
@@ -185,7 +182,7 @@ const Header = () => {
             <li>
               <Link
                 to='/careers'
-                className=' px-3 inline-block whitespace-nowrap hover:text-indigo-500'
+                className=' inline-block whitespace-nowrap px-3 hover:text-indigo-500'
               >
                 Careers
               </Link>
@@ -195,23 +192,23 @@ const Header = () => {
           {/* Mobile nav */}
           <ul
             className={`
-        md:hidden bg-indigo-100 fixed w-full text-lg text-indigo-600  top-0 overflow-y-auto bottom-0 py-24 pl-4
-        duration-500 ${open ? 'left-0' : 'left-[-100%]'} 
+        fixed bottom-0 top-0 w-full overflow-y-auto bg-indigo-100  py-24 pl-4 text-lg text-indigo-600 duration-500
+        md:hidden ${open ? 'left-0' : 'left-[-100%]'} 
         `}
           >
-             <li>
-            <Link
-              to='/'
-              className='py-5 px-3 inline-block hover:text-indigo-500'
-              onClick={() => setOpen(!open)}
-            >
-              Home
-            </Link>
-          </li> 
+            <li>
+              <Link
+                to='/'
+                className='inline-block px-3 py-5 hover:text-indigo-500'
+                onClick={() => setOpen(!open)}
+              >
+                Home
+              </Link>
+            </li>
             <li>
               <Link
                 to='/about'
-                className='py-5 px-3 inline-block whitespace-nowrap hover:text-indigo-500'
+                className='inline-block whitespace-nowrap px-3 py-5 hover:text-indigo-500'
                 onClick={() => setOpen(!open)}
               >
                 About Us
@@ -221,9 +218,9 @@ const Header = () => {
             <div>
               {links.map((link) => (
                 <div>
-                  <div className='px-3 text-left md:cursor-pointer group '>
+                  <div className='group px-3 text-left md:cursor-pointer '>
                     <h1
-                      className='py-4 flex justify-between items-center md:pr-0 pr-2 group'
+                      className='group flex items-center justify-between py-4 pr-2 md:pr-0'
                       onClick={() => {
                         heading !== link.name
                           ? setHeading(link.name)
@@ -232,22 +229,22 @@ const Header = () => {
                       }}
                     >
                       {link.name}
-                      <span className='text-xl md:hidden inline'>
+                      <span className='inline text-xl md:hidden'>
                         {heading === link.name ? (
                           <BiChevronUp />
                         ) : (
                           <BiChevronDown />
                         )}
                       </span>
-                      <span className='text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2'>
+                      <span className='hidden text-xl group-hover:-mt-2  group-hover:rotate-180 md:ml-2 md:mt-1 md:block'>
                         <BiChevronDown />
                       </span>
                     </h1>
                     {link.submenu && (
                       <div>
-                        <div className='absolute top-12 hidden group-hover:md:block hover:md:block'>
+                        <div className='absolute top-12 hidden hover:md:block group-hover:md:block'>
                           <div className='py-3'>
-                            <div className='w-4 h-4 left-3 absolute   mt-1 bg-indigo-800 rotate-45'></div>
+                            <div className='absolute left-3 mt-1 h-4   w-4 rotate-45 bg-indigo-800'></div>
                           </div>
                           <div
                             className='bg-indigo-800 p-5  '
@@ -259,7 +256,7 @@ const Header = () => {
                                   {mysublinks.Head}
                                 </h1>
                                 {mysublinks.sublink.map((slink) => (
-                                  <li className='text-sm text-white my-2.5'>
+                                  <li className='my-2.5 text-sm text-white'>
                                     <Link
                                       to={slink.link}
                                       className='hover:text-primary'
@@ -293,7 +290,7 @@ const Header = () => {
                                   to={slink.link}
                                   onClick={() => setOpen(!open)}
                                 >
-                                  <div className='h-2 w-2 my-auto mr-2 bg-green-400 rotate-45'></div>
+                                  <div className='my-auto mr-2 h-2 w-2 rotate-45 bg-green-400'></div>
                                   <div>{slink.name}</div>{' '}
                                 </Link>
                               </li>
@@ -310,7 +307,7 @@ const Header = () => {
             <li>
               <Link
                 to='/tech'
-                className='py-5 px-3 inline-block hover:text-indigo-500'
+                className='inline-block px-3 py-5 hover:text-indigo-500'
                 onClick={() => setOpen(!open)}
               >
                 Tech
@@ -328,7 +325,7 @@ const Header = () => {
             <li>
               <Link
                 to='/contact'
-                className='py-5 px-3 inline-block hover:text-indigo-500'
+                className='inline-block px-3 py-5 hover:text-indigo-500'
                 onClick={() => setOpen(!open)}
               >
                 Contact Us
@@ -337,7 +334,7 @@ const Header = () => {
             <li>
               <Link
                 to='/careers'
-                className='py-4 px-3 inline-block whitespace-nowrap hover:text-indigo-500'
+                className='inline-block whitespace-nowrap px-3 py-4 hover:text-indigo-500'
               >
                 Careers
               </Link>
