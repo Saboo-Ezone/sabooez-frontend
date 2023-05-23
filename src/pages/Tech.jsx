@@ -21,7 +21,7 @@ const Tech = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <section
         className='bg-[#edede6] grid min-h-[60vh] lg:min-h-[80vh] place-items-center  text-white '
         style={{ backgroundImage: `url(${patternWhite})` }}
@@ -326,7 +326,7 @@ const Tech = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

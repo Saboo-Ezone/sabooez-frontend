@@ -12,7 +12,7 @@ const Contact = () => {
     AOS.init();
   }, []);
   return (
-    <div>
+    <>
       <section
         className='flex bg-no-repeat py-3 md:py-6 '
         style={{ backgroundImage: `url(${patternBoxSvg})` }}
@@ -54,35 +54,34 @@ const Contact = () => {
         className='bg-[#edede6] '
         style={{ backgroundImage: `url(${patternWhite})` }}
       >
-        <div className='flex  flex-col md:flex-row justify-between xl:h-[70vh]'>
+        <div className='flex  flex-col md:flex-row justify-between xl:h-[70%]'>
           <div className='py-10 font-roboto'>
             <div
-              className='text-4xl lg:text-5xl pb-6 lg:pb-12 pt-12 text-left pr-2 pl-8 md:pl-16 lg:pl-20'
+              className='text-4xl  pb-4 lg:pb-8 pt-12 text-left pr-2 pl-8 md:pl-16 lg:pl-20'
               data-aos='fade-up'
               data-aos-delay='500'
             >
-              Here to help You
+              Here to help
             </div>
             <div className='type-of-block'>
               <div className=' pl-8 md:pl-16 lg:pl-20'>
                 <p
-                  className='text-indigo-500 pb-8 text-xl'
+                  className='text-[#505bfe] pb-8 text-xl'
                   data-aos='fade-up'
-                  data-aos-delay='500'
+                  data-aos-delay='200'
                 >
                   If you've got a question, drop us a line or give us a call.
                 </p>
 
                 <div
                   data-aos='fade-up'
-                  data-aos-delay='500'
-                  className='text-xl'
+                  data-aos-delay='200'
+                  className='text-lg'
                 >
                   <p>
-                    <div className=' text-lg  lg:text-2xl underline-offset-4 underline'>
+                    <div className=' text-lg  lg:text-xl pb-2 '>
                       Saboo RKS Motor - Maruti Suzuki Arena
                     </div>
-                    <br />
                     Saboo Towers, 6-3-905,
                     <br />
                     Raj Bhavan Rd, Matha Nagar,
@@ -108,7 +107,8 @@ const Contact = () => {
           ></div>
         </div>
       </section>
-    </div>
+      
+    </>
   );
 };
 

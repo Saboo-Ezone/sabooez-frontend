@@ -24,7 +24,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <section className=''>
         <Slider />
       </section>
@@ -308,7 +308,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

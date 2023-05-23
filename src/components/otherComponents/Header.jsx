@@ -36,7 +36,7 @@ const Header = () => {
               <img
                 src={Logo}
                 alt='logo'
-                className='md:cursor-pointer h-16  md:h-20 px-3 '
+                className='md:cursor-pointer h-16  md:h-20 '
               />
             </Link>
             <div
@@ -50,7 +50,7 @@ const Header = () => {
              <li>
             <Link
               to='/'
-              className='py-4 px-3 inline-block hover:text-indigo-500'
+              className=' px-3 inline-block hover:text-indigo-500'
             >
               Home
             </Link>
@@ -58,7 +58,7 @@ const Header = () => {
             <li>
               <Link
                 to='/about'
-                className='py-4 px-3 inline-block whitespace-nowrap hover:text-indigo-500'
+                className=' px-3 inline-block whitespace-nowrap hover:text-indigo-500'
               >
                 About Us
               </Link>
@@ -68,7 +68,7 @@ const Header = () => {
                 <div>
                   <div className='px-3 text-left md:cursor-pointer group '>
                     <h1
-                      className='py-4 flex justify-between items-center md:pr-0 pr-2 group'
+                      className=' flex justify-between items-center md:pr-0 pr-2 group'
                       onClick={() => {
                         heading !== link.name
                           ? setHeading(link.name)
@@ -161,7 +161,7 @@ const Header = () => {
             <li>
               <Link
                 to='/tech'
-                className='py-4 px-3 inline-block hover:text-indigo-500'
+                className=' px-3 inline-block hover:text-indigo-500'
               >
                 Tech
               </Link>
@@ -177,7 +177,7 @@ const Header = () => {
             <li>
               <Link
                 to='/contact'
-                className='py-4 px-3 inline-block whitespace-nowrap hover:text-indigo-500'
+                className=' px-3 inline-block whitespace-nowrap hover:text-indigo-500'
               >
                 Contact Us
               </Link>
@@ -185,7 +185,7 @@ const Header = () => {
             <li>
               <Link
                 to='/careers'
-                className='py-4 px-3 inline-block whitespace-nowrap hover:text-indigo-500'
+                className=' px-3 inline-block whitespace-nowrap hover:text-indigo-500'
               >
                 Careers
               </Link>
