@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import homeBanner from '../../assets/vehicle/e1/ODIN-banner-img.jpg';
-import logo from '../../assets/vehicle/e1/e1-logo.png';
+import logoE1 from '../../assets/vehicle/e1/e1-logo.png';
 // import video from "../../assets/video/odin_phase_one_film_online.mp4"
 import homeMobileBanner from '../../assets/vehicle/e1/main-mobile-banner.jpg';
 import subBanner from '../../assets/vehicle/e1/sub-banner1.jpg';
@@ -27,7 +27,7 @@ const SwitchE1 = () => {
 
   return (
     <>
-      <div>
+      <section>
         <div
           className='hidden h-[95vh] w-full bg-cover bg-center bg-no-repeat md:block'
           style={{ backgroundImage: `url(${homeBanner})` }}
@@ -46,12 +46,12 @@ const SwitchE1 = () => {
           </div>
         </div>
         <img
-          src={logo}
+          src={logoE1}
           alt=''
           srcset=''
           className='absolute bottom-10 left-4 h-12 lg:left-6 lg:h-16 xl:left-10'
         />
-      </div>
+      </section>
       <section className='flex overflow-hidden'>
         <div className='flex  h-[60vh] lg:w-3/6  2xl:h-screen '>
           <div className='bg-gradient-to-b from-[#16b895] to-white lg:w-1/3'></div>
