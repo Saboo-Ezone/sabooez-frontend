@@ -52,7 +52,7 @@ const SwitchE1 = () => {
           className='absolute bottom-10 left-4 h-12 lg:left-6 lg:h-16 xl:left-10'
         />
       </section>
-      <section className='flex overflow-hidden'>
+      <section className='flex overflow-hidden mt-2'>
         <div className='flex  h-[60vh] lg:w-3/6  2xl:h-screen '>
           <div className='bg-gradient-to-b from-[#16b895] to-white lg:w-1/3'></div>
           <div
@@ -91,7 +91,7 @@ const SwitchE1 = () => {
           </div>
         </div>
       </section>
-      <section className='flex flex-col-reverse md:flex-row '>
+      <section className='flex flex-col-reverse md:flex-row mt-2'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
           <div className='mb-6 text-4xl  font-semibold p-4 xl:text-5xl'>
@@ -132,7 +132,7 @@ const SwitchE1 = () => {
           style={{ backgroundImage: `url(${perfectEngine})` }}
         ></div>
       </section>
-      <section className='video-container'>
+      <section className='video-container mt-2'>
         <video
           width='100%'
           preload='metadata'
