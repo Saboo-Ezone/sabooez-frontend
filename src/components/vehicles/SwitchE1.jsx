@@ -93,12 +93,17 @@ const SwitchE1 = () => {
       </section>
       <section className='flex flex-col-reverse md:flex-row '>
         {/* <span>The bus you've been waiting for.</span> */}
-        <div className='flex w-full flex-col justify-center md:p-14 md:w-1/2 lg:p-20 xl:p-28 2xl:h-[70vh] p-4 '>
-          <div className='mb-6 text-4xl  font-semibold xl:text-5xl'>
+        <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
+          <div className='mb-6 text-4xl  font-semibold p-4 xl:text-5xl'>
             The bus you've been waiting for.
           </div>
-          <img src={perfectEngine} alt='' srcset='' className='md:hidden' />
-          <div className='text-justify font-roboto xl:text-xl'>
+          <img
+            src={perfectEngine}
+            alt='Perfect Engine'
+            srcset=''
+            className='pb-4 md:hidden'
+          />
+          <div className='px-4 text-justify font-roboto 2xl:text-xl'>
             Putting our customers first, SWITCH e1 is the next generation bus
             built for a sustainable future. Designed, engineered and built by
             SWITCH, a certified carbon-neutral manufacturer, in a brand-new
@@ -118,7 +123,7 @@ const SwitchE1 = () => {
             <br />
             <br />
           </div>
-          <button className='w-min whitespace-nowrap bg-[#515ef5] px-4 py-2 text-left text-white hover:bg-[#20c997] '>
+          <button className='m-4 w-min whitespace-nowrap bg-[#515ef5] px-4 py-2 text-left text-white hover:bg-[#20c997] '>
             ENQUIRE NOW
           </button>
         </div>
@@ -209,26 +214,26 @@ const SwitchE1 = () => {
           ></div>
           <div className='flex h-[30vh] md:h-[40vh] '>
             <div
-              className='h-[30vh] md:h-[40vh] w-1/3 border-4 bg-cover bg-center'
+              className='h-[30vh] w-1/3 border-4 bg-cover bg-center md:h-[40vh]'
               style={{ backgroundImage: `url(${odinGalleryImg3})` }}
             ></div>
-            <div className='h-[30vh] md:h-[40vh] w-1/3'>
+            <div className='h-[30vh] w-1/3 md:h-[40vh]'>
               <div
-                className='h-[15vh] md:h-[20vh] w-full border-2 bg-cover bg-center'
+                className='h-[15vh] w-full border-2 bg-cover bg-center md:h-[20vh]'
                 style={{ backgroundImage: `url(${odinGalleryImg4})` }}
               ></div>
               <div
-                className='h-[15vh] md:h-[20vh] w-full border-2 bg-cover bg-center border-b-4'
+                className='h-[15vh] w-full border-2 border-b-4 bg-cover bg-center md:h-[20vh]'
                 style={{ backgroundImage: `url(${odinGalleryImg5})` }}
               ></div>
             </div>
-            <div className='h-[30vh] md:h-[40vh] w-1/3'>
+            <div className='h-[30vh] w-1/3 md:h-[40vh]'>
               <div
-                className='h-[15vh] md:h-[20vh] w-full border-2 bg-cover bg-center'
+                className='h-[15vh] w-full border-2 bg-cover bg-center md:h-[20vh]'
                 style={{ backgroundImage: `url(${odinGalleryImg6})` }}
               ></div>
               <div
-                className='h-[15vh] md:h-[20vh] w-full border-2 border-b-4 bg-cover bg-center'
+                className='h-[15vh] w-full border-2 border-b-4 bg-cover bg-center md:h-[20vh]'
                 style={{ backgroundImage: `url(${odinGalleryImg7})` }}
               ></div>
             </div>

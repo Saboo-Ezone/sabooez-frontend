@@ -16,7 +16,7 @@ const Metrodecker = () => {
           style={{ backgroundImage: `url(${homeBanner})` }}
         ></div>
         <div
-          className='block h-[95vh] w-full bg-cover bg-center bg-no-repeat md:contrast-125  md:hidden  '
+          className='block h-[95vh] w-full bg-cover bg-center bg-no-repeat md:hidden  md:contrast-125  '
           style={{ backgroundImage: `url(${homeMobileBanner})` }}
         ></div>
         <div className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '>
@@ -70,17 +70,17 @@ const Metrodecker = () => {
       </section>
       <section className='flex flex-col-reverse md:flex-row '>
         {/* <span>The bus you've been waiting for.</span> */}
-        <div className='flex w-full flex-col justify-center p-4 md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
-          <div className='mb-6 text-4xl  font-semibold xl:text-5xl'>
+        <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
+          <div className='mb-6 p-4 text-4xl font-semibold xl:text-5xl'>
             The lightest bus in its class
           </div>
           <img
             src={metrodeckerLightest}
-            alt=''
+            alt='Metrodecker Lightest'
             srcset=''
-            className='md:hidden'
+            className='pb-4 md:hidden '
           />
-          <div className='text-justify font-roboto 2xl:text-xl'>
+          <div className='px-4 text-justify font-roboto 2xl:text-xl'>
             This award-winning, British-built electric bus has been designed to
             be the lightest in its class, with the highest passenger capacity
             and the latest battery technology.
@@ -92,7 +92,7 @@ const Metrodecker = () => {
             <br />
             <br />
           </div>
-          <button className='w-min whitespace-nowrap bg-[#515ef5] px-4 py-2 text-left text-white hover:bg-[#20c997] '>
+          <button className='m-4 w-min whitespace-nowrap bg-[#515ef5] px-4 py-2 text-left text-white hover:bg-[#20c997] '>
             ENQUIRE NOW
           </button>
         </div>
@@ -124,7 +124,7 @@ const Metrodecker = () => {
           <div class='p-3 pt-10 text-center  text-4xl  font-medium  md:pb-4 md:pt-16'>
             Technical Specifications
           </div>
-          <div className=' mb-5  py-3 px-4 sm:px-14 text-justify lg:px-28 md:px-16 md:pb-10'>
+          <div className=' mb-5  px-4 py-3 text-justify sm:px-14 md:px-16 md:pb-10 lg:px-28'>
             The lightest double-decker in its class. Our largest zero emission
             bus is the battery electric SWITCH metrodecker. Like the other
             vehicles in the SWITCH family, the SWITCH metrodecker has a fully
@@ -230,108 +230,92 @@ const Metrodecker = () => {
                   <td className='border-b-2  p-1 lg:p-2'>94+</td>
                 </tr>
               </table> */}
-              <table class='table m-auto '>
+              <table class='m-auto table '>
                 <tr>
-                  <td className='border-b-2   md:pr-60 md:py-2 md:pl-2 p-1 xl:pr-96  bg-indigo-500'>
+                  <td className='border-b-2   bg-indigo-500 p-1 md:py-2 md:pl-2 md:pr-60  xl:pr-96'>
                     Body Length Options
                   </td>
-                  <td className='border-b-2 md:pr-24 py-1 lg:pr-48 bg-indigo-500'>
+                  <td className='border-b-2 bg-indigo-500 py-1 md:pr-24 lg:pr-48'>
                     10.5 m
                   </td>
-                  <td className='border-b-2 md:pr-24 py-1 lg:pr-48 bg-indigo-500'>
+                  <td className='border-b-2 bg-indigo-500 py-1 md:pr-24 lg:pr-48'>
                     11.1 m
                   </td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
-                    Overall length (mm)
-                  </td>
-                  <td className='border-b-2 md:p-2 p-1'>10,500</td>
-                  <td className='border-b-2 md:p-2 p-1'>11,140</td>
+                  <td className='border-b-2 p-1 md:p-2'>Overall length (mm)</td>
+                  <td className='border-b-2 p-1 md:p-2'>10,500</td>
+                  <td className='border-b-2 p-1 md:p-2'>11,140</td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
-                    Overall width (mm)
-                  </td>
-                  <td className='border-b-2 md:p-2 p-1'>2,500</td>
-                  <td className='border-b-2 md:p-2 p-1'>2,500</td>
+                  <td className='border-b-2 p-1 md:p-2'>Overall width (mm)</td>
+                  <td className='border-b-2 p-1 md:p-2'>2,500</td>
+                  <td className='border-b-2 p-1 md:p-2'>2,500</td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
-                    Overall height (mm)
-                  </td>
-                  <td className='border-b-2 md:p-2 p-1'>4,310</td>
-                  <td className='border-b-2 md:p-2 p-1'>4,310</td>
+                  <td className='border-b-2 p-1 md:p-2'>Overall height (mm)</td>
+                  <td className='border-b-2 p-1 md:p-2'>4,310</td>
+                  <td className='border-b-2 p-1 md:p-2'>4,310</td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
-                    Wheelbase (mm)
-                  </td>
-                  <td className='border-b-2 md:p-2 p-1'>5,350</td>
-                  <td className='border-b-2 md:p-2 p-1'>6,000</td>
+                  <td className='border-b-2 p-1 md:p-2'>Wheelbase (mm)</td>
+                  <td className='border-b-2 p-1 md:p-2'>5,350</td>
+                  <td className='border-b-2 p-1 md:p-2'>6,000</td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
-                    Front overhang (mm)
-                  </td>
-                  <td className='border-b-2 md:p-2 p-1'>2,760</td>
-                  <td className='border-b-2 md:p-2 p-1'>2,760</td>
+                  <td className='border-b-2 p-1 md:p-2'>Front overhang (mm)</td>
+                  <td className='border-b-2 p-1 md:p-2'>2,760</td>
+                  <td className='border-b-2 p-1 md:p-2'>2,760</td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
-                    Rear overhang (mm)
-                  </td>
-                  <td className='border-b-2 md:p-2 p-1'>2,386</td>
-                  <td className='border-b-2 md:p-2 p-1'>2,386</td>
+                  <td className='border-b-2 p-1 md:p-2'>Rear overhang (mm)</td>
+                  <td className='border-b-2 p-1 md:p-2'>2,386</td>
+                  <td className='border-b-2 p-1 md:p-2'>2,386</td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
+                  <td className='border-b-2 p-1 md:p-2'>
                     Gross vehicle weight design/plated (kg)
                   </td>
-                  <td className='border-b-2 md:p-2 p-1'>18,000</td>
-                  <td className='border-b-2 md:p-2 p-1'>18,000</td>
+                  <td className='border-b-2 p-1 md:p-2'>18,000</td>
+                  <td className='border-b-2 p-1 md:p-2'>18,000</td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
+                  <td className='border-b-2 p-1 md:p-2'>
                     Front axle weight design/plated (kg)
                   </td>
-                  <td className='border-b-2 md:p-2 p-1'>6,300</td>
-                  <td className='border-b-2 md:p-2 p-1'>6,300</td>
+                  <td className='border-b-2 p-1 md:p-2'>6,300</td>
+                  <td className='border-b-2 p-1 md:p-2'>6,300</td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
+                  <td className='border-b-2 p-1 md:p-2'>
                     Rear axle weight design/plated (kg)
                   </td>
-                  <td className='border-b-2 md:p-2 p-1'>11,600</td>
-                  <td className='border-b-2 md:p-2 p-1'>11,600</td>
+                  <td className='border-b-2 p-1 md:p-2'>11,600</td>
+                  <td className='border-b-2 p-1 md:p-2'>11,600</td>
                 </tr>
 
                 <br />
 
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1 bg-indigo-500'>
+                  <td className='border-b-2 bg-indigo-500 p-1 md:p-2'>
                     Seating Capacity
                   </td>
-                  <td className='border-b-2 md:p-2 py-1 bg-indigo-500'>
+                  <td className='border-b-2 bg-indigo-500 py-1 md:p-2'>
                     10.5 m
                   </td>
-                  <td className='border-b-2 md:p-2 py-1 bg-indigo-500'>
+                  <td className='border-b-2 bg-indigo-500 py-1 md:p-2'>
                     11.1 m
                   </td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
-                    Seats (maximum)
-                  </td>
-                  <td className='border-b-2 md:p-2 p-1'>63</td>
-                  <td className='border-b-2 md:p-2 p-1'>84</td>
+                  <td className='border-b-2 p-1 md:p-2'>Seats (maximum)</td>
+                  <td className='border-b-2 p-1 md:p-2'>63</td>
+                  <td className='border-b-2 p-1 md:p-2'>84</td>
                 </tr>
                 <tr>
-                  <td className='border-b-2 md:p-2 p-1'>
-                    Total (maximum)
-                  </td>
-                  <td className='border-b-2 md:p-2 p-1'>94+</td>
-                  <td className='border-b-2 md:p-2 p-1'>94+</td>
+                  <td className='border-b-2 p-1 md:p-2'>Total (maximum)</td>
+                  <td className='border-b-2 p-1 md:p-2'>94+</td>
+                  <td className='border-b-2 p-1 md:p-2'>94+</td>
                 </tr>
               </table>
             </div>
