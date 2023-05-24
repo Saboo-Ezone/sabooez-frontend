@@ -16,7 +16,7 @@ const Metrodecker = () => {
           style={{ backgroundImage: `url(${homeBanner})` }}
         ></div>
         <div
-          className='block h-[95vh] w-full bg-cover bg-center bg-no-repeat md:hidden  md:contrast-125  '
+          className='block h-[92vh] w-full bg-cover bg-center bg-no-repeat md:hidden  md:contrast-125  '
           style={{ backgroundImage: `url(${homeMobileBanner})` }}
         ></div>
         <div className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '>
@@ -72,7 +72,7 @@ const Metrodecker = () => {
       <section className='mt-2 flex flex-col-reverse md:flex-row'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
-          <div className='mb-6 p-4 text-4xl font-semibold xl:text-5xl'>
+          <div className='mb-6 p-4 text-4xl lg:font-semibold xl:text-5xl'>
             The lightest bus in its class
           </div>
           <img
@@ -238,7 +238,7 @@ const Metrodecker = () => {
           </div>
         </div>
       </section>
-      <div className='fixed -right-44 top-1/2 -rotate-90 hover:-right-36 md:-right-36  '>
+      <div className='fixed -right-44 top-1/2 -rotate-90 duration-300 hover:-right-36 md:-right-36  '>
         <button className='m-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white lg:hover:bg-[#515ef5] '>
           Download Brochure
         </button>

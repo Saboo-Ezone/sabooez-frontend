@@ -26,14 +26,14 @@ const SwitchE1 = () => {
   }, []);
 
   return (
-    < >
+    <>
       <section className='relative'>
         <div
           className='hidden h-[95vh] w-full bg-cover bg-center bg-no-repeat md:block'
           style={{ backgroundImage: `url(${homeBanner})` }}
         ></div>
         <div
-          className='block h-[95vh] w-full bg-cover bg-center bg-no-repeat md:hidden '
+          className='block h-[92vh] w-full bg-cover bg-center bg-no-repeat md:hidden '
           style={{ backgroundImage: `url(${homeMobileBanner})` }}
         ></div>
         <div className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '>
@@ -53,8 +53,8 @@ const SwitchE1 = () => {
         />
       </section>
       <section className='mt-2 flex overflow-hidden'>
-        <div className='flex h-[30vh] md:h-[40vh]  lg:h-[60vh] w-3/6  2xl:h-[80vh] '>
-          <div className='bg-gradient-to-b from-[#16b895] to-white w-1/3'></div>
+        <div className='flex h-[30vh] w-3/6  md:h-[40vh] lg:h-[60vh]  2xl:h-[80vh] '>
+          <div className='w-1/3 bg-gradient-to-b from-[#16b895] to-white'></div>
           <div
             className=' w-2/3  '
             style={{
@@ -69,7 +69,7 @@ const SwitchE1 = () => {
           ></div>
         </div>
         <div
-          className='h-[30vh] md:h-[40vh] lg:h-[60vh]  w-3/6  2xl:h-[80vh] '
+          className='h-[30vh] w-3/6 md:h-[40vh]  lg:h-[60vh]  2xl:h-[80vh] '
           style={{
             backgroundImage: `url(${largeImage})`,
             // height: '600px',
@@ -81,7 +81,7 @@ const SwitchE1 = () => {
           data-aos='fade-left'
           data-aos-duration='2000'
         >
-          <div className='flex flex-col items-end pt-4 lg:pt-12 md:pr-12'>
+          <div className='flex flex-col items-end pt-4 md:pr-12 lg:pt-12'>
             <div className='text-2xl  text-white md:text-3xl lg:text-5xl '>
               Next generation.
             </div>
@@ -94,7 +94,7 @@ const SwitchE1 = () => {
       <section className='mt-2 flex flex-col-reverse md:flex-row'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
-          <div className='mb-6 p-4  text-4xl font-semibold xl:text-5xl'>
+          <div className='mb-6 p-4  text-4xl lg:font-semibold xl:text-5xl'>
             The bus you've been waiting for.
           </div>
           <img
@@ -188,7 +188,7 @@ const SwitchE1 = () => {
           </div>
         </div>
       </section>
-      <div className='fixed -right-44 top-1/2 -rotate-90 hover:-right-36 md:-right-36  '>
+      <div className='fixed -right-44 top-1/2 -rotate-90 duration-300 hover:-right-36 md:-right-36  '>
         <button className='m-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white lg:hover:bg-[#515ef5] '>
           Download Brochure
         </button>
