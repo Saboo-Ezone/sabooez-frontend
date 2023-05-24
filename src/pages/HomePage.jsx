@@ -30,9 +30,9 @@ const HomePage = () => {
       </section>
 
       <section className=' w-full bg-[#edede6] bg-opacity-75'>
-        <div className=' mx-16  '>
+        <div className='mx-4 md:mx-8 lg:mx-16  '>
           <div
-            className='pb-4 pt-8 text-h2  tracking-wide  md:pt-16  lg:text-h1  '
+            className='pt-8 text-h3 tracking-wide md:pt-16  md:text-h2  lg:pb-4  lg:text-h1  '
             data-aos='fade-up'
           >
             Cleaner, smarter journeys
@@ -41,7 +41,7 @@ const HomePage = () => {
           </div>
 
           <div
-            className=' my-10  h-[5px] w-full bg-cover  bg-no-repeat'
+            className='my-8 h-[5px]  w-full bg-cover bg-no-repeat  lg:my-10'
             style={{ backgroundImage: `url(${blueSvg})` }}
           ></div>
 
@@ -56,7 +56,7 @@ const HomePage = () => {
               everyday life better. Our carbon neutral transport solutions are
               built with your whole community in mind.
             </div>
-            <div className='col-span-1 font-mono text-2xl text-[#505bfe] md:text-2xl  lg:text-end'>
+            <div className='col-span-1 font-mono text-xl text-[#505bfe] lg:text-end  lg:text-2xl'>
               A carbon neutral certified company
             </div>
           </div>
@@ -77,16 +77,16 @@ const HomePage = () => {
         </video>
       </section>
       <section className=' w-full bg-[#edede6] bg-opacity-75'>
-        <div className=' mx-16  '>
-          <div
-            className='pb-4 pt-8 text-h2  tracking-wide  md:pt-16  lg:text-h1  '
+        <div className=' mx-4 md:mx-8 lg:mx-16  '>
+        <div
+            className='pt-8 pb-4 text-h3 tracking-wide md:pt-16  md:text-h2  lg:pb-4  lg:text-h1  '
             data-aos='fade-up'
           >
             Leading the charge
           </div>
 
           <div
-            className=' grid pb-8 lg:grid-cols-2  '
+            className=' grid pb-4 lg:grid-cols-2 lg:pb-8  '
             data-aos='fade-up'
             data-aos-delay='200'
             data-editor-processed='true'
@@ -96,13 +96,13 @@ const HomePage = () => {
               buses to London’s roads. Since then, we’ve clocked over 30 million
               electric miles.
             </div>
-            <div className='col-span-1 font-mono text-2xl text-[#505bfe] md:text-2xl  lg:text-end'>
+            <div className='col-span-1 font-mono text-xl text-[#505bfe] lg:text-end  lg:text-2xl'>
               Explore our current range
             </div>
           </div>
-          <div className=' grid   gap-6 pb-8 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3'>
+          <div className=' grid   gap-6  sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3'>
             <div className='mb-5' data-aos='fade-in' data-aos-delay='300'>
-              <div className='my-5 text-h5 lg:text-h3 xl:text-h2'>
+              <div className='mb-5 text-h5 lg:text-h3 xl:text-h2'>
                 <div>SWITCH e1</div>
               </div>
               <div className=' overflow-hidden  '>
@@ -124,7 +124,7 @@ const HomePage = () => {
             </div>
 
             <div className='mb-5' data-aos='fade-in' data-aos-delay='400'>
-              <div className='my-5 text-h5 lg:text-h3 xl:text-h2'>
+              <div className='mb-5 text-h5 lg:text-h3 xl:text-h2'>
                 <div>SWITCH Metrodecker</div>
               </div>
               <div className=' overflow-hidden '>
@@ -146,7 +146,7 @@ const HomePage = () => {
             </div>
 
             <div className='mb-5 ' data-aos='fade-in' data-aos-delay='500'>
-              <div className='my-5 text-h5 lg:text-h3 xl:text-h2'>
+              <div className='mb-5 text-h5 lg:text-h3 xl:text-h2'>
                 <div>SWITCH Metrocity</div>
               </div>
               <div className=' overflow-hidden  '>

@@ -53,10 +53,10 @@ const SwitchE1 = () => {
         />
       </section>
       <section className='mt-2 flex overflow-hidden'>
-        <div className='flex  h-[60vh] lg:w-3/6  2xl:h-screen '>
-          <div className='bg-gradient-to-b from-[#16b895] to-white lg:w-1/3'></div>
+        <div className='flex h-[30vh] md:h-[40vh]  lg:h-[60vh] w-3/6  2xl:h-[80vh] '>
+          <div className='bg-gradient-to-b from-[#16b895] to-white w-1/3'></div>
           <div
-            className='hidden w-full lg:block lg:w-2/3  '
+            className=' w-2/3  '
             style={{
               backgroundImage: `url(${subBanner})`,
               // height: '600px',
@@ -69,7 +69,7 @@ const SwitchE1 = () => {
           ></div>
         </div>
         <div
-          className='h-[60vh] w-full lg:w-3/6  2xl:h-screen '
+          className='h-[30vh] md:h-[40vh] lg:h-[60vh]  w-3/6  2xl:h-[80vh] '
           style={{
             backgroundImage: `url(${largeImage})`,
             // height: '600px',
@@ -81,11 +81,11 @@ const SwitchE1 = () => {
           data-aos='fade-left'
           data-aos-duration='2000'
         >
-          <div className='flex flex-col items-end pt-12 md:pr-12'>
-            <div className='text-xl text-white md:text-3xl lg:text-5xl '>
+          <div className='flex flex-col items-end pt-4 lg:pt-12 md:pr-12'>
+            <div className='text-2xl  text-white md:text-3xl lg:text-5xl '>
               Next generation.
             </div>
-            <div className='text-xl text-white md:text-3xl lg:text-5xl '>
+            <div className='text-2xl text-white md:text-3xl lg:text-5xl '>
               For the now generation.
             </div>
           </div>
@@ -152,36 +152,36 @@ const SwitchE1 = () => {
       </section>
       <section className='  flex flex-col md:flex-row '>
         <div
-          className=' h-[40vh] w-full border-4 bg-cover bg-center bg-no-repeat md:h-[80vh] md:w-1/2'
+          className=' h-[40vh] w-full border-4 bg-cover bg-center bg-no-repeat md:h-[60vh] md:w-1/2'
           style={{ backgroundImage: `url(${odinGalleryImg1})` }}
         ></div>
-        <div className='h-[70vh] w-full md:h-[80vh] md:w-1/2 '>
+        <div className='h-[70vh] w-full md:h-[60vh] md:w-1/2 '>
           <div
-            className='h-[40vh] w-full border-4 bg-cover bg-center bg-no-repeat md:h-[40vh]'
+            className='h-[40vh] w-full border-4 bg-cover bg-center bg-no-repeat md:h-[30vh]'
             style={{ backgroundImage: `url(${odinGalleryImg2})` }}
           ></div>
           <div className='flex h-[30vh] md:h-[40vh] '>
             <div
-              className='h-[30vh] w-1/3 border-4 bg-cover bg-center md:h-[40vh]'
+              className='h-[30vh] w-1/3 border-4 bg-cover bg-center md:h-[30vh]'
               style={{ backgroundImage: `url(${odinGalleryImg3})` }}
             ></div>
             <div className='h-[30vh] w-1/3 md:h-[40vh]'>
               <div
-                className='h-[15vh] w-full border-2 bg-cover bg-center md:h-[20vh]'
+                className='h-[15vh] w-full border-2 bg-cover bg-center md:h-[15vh]'
                 style={{ backgroundImage: `url(${odinGalleryImg4})` }}
               ></div>
               <div
-                className='h-[15vh] w-full border-2 border-b-4 bg-cover bg-center md:h-[20vh]'
+                className='h-[15vh] w-full border-2 border-b-4 bg-cover bg-center md:h-[15vh]'
                 style={{ backgroundImage: `url(${odinGalleryImg5})` }}
               ></div>
             </div>
             <div className='h-[30vh] w-1/3 md:h-[40vh]'>
               <div
-                className='h-[15vh] w-full border-2 bg-cover bg-center md:h-[20vh]'
+                className='h-[15vh] w-full border-2 bg-cover bg-center md:h-[15vh]'
                 style={{ backgroundImage: `url(${odinGalleryImg6})` }}
               ></div>
               <div
-                className='h-[15vh] w-full border-2 border-b-4 bg-cover bg-center md:h-[20vh]'
+                className='h-[15vh] w-full border-2 border-b-4 bg-cover bg-center md:h-[15vh]'
                 style={{ backgroundImage: `url(${odinGalleryImg7})` }}
               ></div>
             </div>

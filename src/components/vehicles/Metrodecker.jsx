@@ -9,7 +9,7 @@ import largeImage from '../../assets/vehicle/metrodecker/metrodecker-3rd-fold.jp
 
 const Metrodecker = () => {
   return (
-    < >
+    <>
       <section>
         <div
           className='hidden h-[95vh] w-full bg-cover bg-center bg-no-repeat contrast-125 saturate-200 md:block'
@@ -31,7 +31,7 @@ const Metrodecker = () => {
           src={logoMetrodecker}
           alt=''
           srcset=''
-          className='absolute bottom-10 left-4 h-12 brightness-200 contrast-200 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
+          className='absolute bottom-10 left-4 h-10 md:h-12 brightness-200 contrast-200 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
       <section className='mt-2 flex overflow-hidden'>
@@ -68,6 +68,7 @@ const Metrodecker = () => {
           </div>
         </div>
       </section>
+
       <section className='mt-2 flex flex-col-reverse md:flex-row'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
@@ -136,100 +137,6 @@ const Metrodecker = () => {
           </div>
           <div class='col-sm-12 customTable ' style={{ position: 'relative' }}>
             <div class=' p-3 md:pb-3  lg:px-28'>
-              {/* <table class='m-auto table '>
-                <tr className=''>
-                  <td className='border-b-2 bg-indigo-500  p-1 pr-60 md:py-2 md:pl-2 md:text-lg  xl:pr-96'>
-                    Body Length Options
-                  </td>
-                  <td className='border-b-2 bg-indigo-500 py-1 pr-24 md:text-lg lg:pr-48'>
-                    10.5 m
-                  </td>
-                  <td className='border-b-2 bg-indigo-500 py-1 pr-24 md:text-lg lg:pr-48'>
-                    11.1 m
-                  </td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>
-                    Overall length (mm)
-                  </td>
-                  <td className='border-b-2  p-1 lg:p-2'>10,500</td>
-                  <td className='border-b-2  p-1 lg:p-2'>11,140</td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>Overall width (mm)</td>
-                  <td className='border-b-2  p-1 lg:p-2'>2,500</td>
-                  <td className='border-b-2  p-1 lg:p-2'>2,500</td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>
-                    Overall height (mm)
-                  </td>
-                  <td className='border-b-2  p-1 lg:p-2'>4,310</td>
-                  <td className='border-b-2  p-1 lg:p-2'>4,310</td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>Wheelbase (mm)</td>
-                  <td className='border-b-2  p-1 lg:p-2'>5,350</td>
-                  <td className='border-b-2  p-1 lg:p-2'>6,000</td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>
-                    Front overhang (mm)
-                  </td>
-                  <td className='border-b-2  p-1 lg:p-2'>2,760</td>
-                  <td className='border-b-2  p-1 lg:p-2'>2,760</td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>Rear overhang (mm)</td>
-                  <td className='border-b-2  p-1 lg:p-2'>2,386</td>
-                  <td className='border-b-2  p-1 lg:p-2'>2,386</td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>
-                    Gross vehicle weight design/plated (kg)
-                  </td>
-                  <td className='border-b-2  p-1 lg:p-2'>18,000</td>
-                  <td className='border-b-2  p-1 lg:p-2'>18,000</td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>
-                    Front axle weight design/plated (kg)
-                  </td>
-                  <td className='border-b-2  p-1 lg:p-2'>6,300</td>
-                  <td className='border-b-2  p-1 lg:p-2'>6,300</td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>
-                    Rear axle weight design/plated (kg)
-                  </td>
-                  <td className='border-b-2  p-1 lg:p-2'>11,600</td>
-                  <td className='border-b-2  p-1 lg:p-2'>11,600</td>
-                </tr>
-
-                <br />
-
-                <tr>
-                  <td className='border-b-2 bg-indigo-500 p-1 md:text-lg lg:p-2'>
-                    Seating Capacity
-                  </td>
-                  <td className='border-b-2 bg-indigo-500 py-1 md:text-lg lg:p-2'>
-                    10.5 m
-                  </td>
-                  <td className='border-b-2 bg-indigo-500 py-1 md:text-lg lg:p-2'>
-                    11.1 m
-                  </td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>Seats (maximum)</td>
-                  <td className='border-b-2  p-1 lg:p-2'>63</td>
-                  <td className='border-b-2  p-1 lg:p-2'>84</td>
-                </tr>
-                <tr>
-                  <td className='border-b-2  p-1 lg:p-2'>Total (maximum)</td>
-                  <td className='border-b-2  p-1 lg:p-2'>94+</td>
-                  <td className='border-b-2  p-1 lg:p-2'>94+</td>
-                </tr>
-              </table> */}
               <table class='m-auto table '>
                 <tr>
                   <td className='border-b-2   bg-indigo-500 p-1 md:py-2 md:pl-2 md:pr-60  xl:pr-96'>
@@ -331,7 +238,7 @@ const Metrodecker = () => {
           </div>
         </div>
       </section>
-      <div className='fixed -right-44 hover:-right-36 md:-right-36 top-1/2 -rotate-90  '>
+      <div className='fixed -right-44 top-1/2 -rotate-90 hover:-right-36 md:-right-36  '>
         <button className='m-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white lg:hover:bg-[#515ef5] '>
           Download Brochure
         </button>

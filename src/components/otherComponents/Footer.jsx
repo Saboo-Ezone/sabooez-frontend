@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <div className='bg-[#505bfe]  bg-opacity-95  p-10 text-white'>
       <div
-        className='grid w-full gap-4 sm:grid-cols-2 md:grid-cols-3  md:gap-2 '
+        className='grid w-full gap-4  sm:grid-cols-3 justify-center text-center md:text-left md:gap-2 '
         style={{ backgroundImage: `url(${patternPng})` }}
       >
-        <div>
+        <div className='flex flex-col items-center md:items-start'>
           <img
             src={logoWhite}
             alt=''
