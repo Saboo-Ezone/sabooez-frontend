@@ -9,7 +9,7 @@ import largeImage from '../../assets/vehicle/metrodecker/metrodecker-3rd-fold.jp
 
 const Metrodecker = () => {
   return (
-    <>
+    < >
       <section>
         <div
           className='hidden h-[95vh] w-full bg-cover bg-center bg-no-repeat contrast-125 saturate-200 md:block'
@@ -34,7 +34,7 @@ const Metrodecker = () => {
           className='absolute bottom-10 left-4 h-12 brightness-200 contrast-200 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
-      <section className='flex overflow-hidden mt-2'>
+      <section className='mt-2 flex overflow-hidden'>
         <div className='flex  h-[60vh] lg:w-3/6  2xl:h-screen '>
           <div className='bg-gradient-to-b from-[#16b895] to-white lg:w-1/3'></div>
           <div
@@ -68,7 +68,7 @@ const Metrodecker = () => {
           </div>
         </div>
       </section>
-      <section className='flex flex-col-reverse md:flex-row mt-2'>
+      <section className='mt-2 flex flex-col-reverse md:flex-row'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
           <div className='mb-6 p-4 text-4xl font-semibold xl:text-5xl'>
@@ -331,6 +331,14 @@ const Metrodecker = () => {
           </div>
         </div>
       </section>
+      <div className='fixed -right-44 hover:-right-36 md:-right-36 top-1/2 -rotate-90  '>
+        <button className='m-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white lg:hover:bg-[#515ef5] '>
+          Download Brochure
+        </button>
+        <button className='m-2 w-min whitespace-nowrap  bg-[#515ef5] px-4 py-2  text-white lg:hover:bg-[#20c997] '>
+          ENQUIRE NOW
+        </button>
+      </div>
     </>
   );
 };

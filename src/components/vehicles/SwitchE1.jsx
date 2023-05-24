@@ -26,8 +26,8 @@ const SwitchE1 = () => {
   }, []);
 
   return (
-    <>
-      <section>
+    < >
+      <section className='relative'>
         <div
           className='hidden h-[95vh] w-full bg-cover bg-center bg-no-repeat md:block'
           style={{ backgroundImage: `url(${homeBanner})` }}
@@ -52,7 +52,7 @@ const SwitchE1 = () => {
           className='absolute bottom-10 left-4 h-12 lg:left-6 lg:h-16 xl:left-10'
         />
       </section>
-      <section className='flex overflow-hidden mt-2'>
+      <section className='mt-2 flex overflow-hidden'>
         <div className='flex  h-[60vh] lg:w-3/6  2xl:h-screen '>
           <div className='bg-gradient-to-b from-[#16b895] to-white lg:w-1/3'></div>
           <div
@@ -91,10 +91,10 @@ const SwitchE1 = () => {
           </div>
         </div>
       </section>
-      <section className='flex flex-col-reverse md:flex-row mt-2'>
+      <section className='mt-2 flex flex-col-reverse md:flex-row'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
-          <div className='mb-6 text-4xl  font-semibold p-4 xl:text-5xl'>
+          <div className='mb-6 p-4  text-4xl font-semibold xl:text-5xl'>
             The bus you've been waiting for.
           </div>
           <img
@@ -150,58 +150,6 @@ const SwitchE1 = () => {
           Your browser does not support the video tag.
         </video>
       </section>
-      {/* <section>
-        <div className='grid md:grid-cols-2 gap-2'>
-          <div className='grid-cols-1'><img src={odinGalleryImg1} alt="" srcset="" /></div>
-          <div className='grid-cols-1'>
-            <div><img src={odinGalleryImg2} alt="" srcset="" /></div>
-            <div className='col-span-3 grid gap-2'>
-              <div className='grid-cols-1'><img src={odinGalleryImg3} alt="" srcset="" /></div>
-              <div className='grid-cols-1 gap-2'>
-                <div><img src={odinGalleryImg4} alt="" srcset="" /></div>
-                <div><img src={odinGalleryImg5} alt="" srcset="" /></div>
-              </div>
-              <div className='grid-cols-1 gap-2'>
-                <div ><img src={odinGalleryImg6} alt="" srcset="" /></div>
-                <div><img src={odinGalleryImg7} alt="" srcset="" /></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* <section>
-        <div className='flex flex-col gap-2 md:flex-row h-[60vh]'>
-          <div className='w-full md:w-1/2 h-full md:h-[60vh] '>
-            <img src={odinGalleryImg1} alt='' srcset='' />
-          </div>
-          <div className='flex w-full flex-col md:w-1/2 md:h-[60vh]'>
-            <div className='h-[30vh]'>
-              <img src={odinGalleryImg2} alt='' srcset='' />
-            </div>
-            <div className='flex'>
-              <div className='grid-cols-1'>
-                <img src={odinGalleryImg3} alt='' srcset='' />
-              </div>
-              <div className='grid-cols-1 gap-2'>
-                <div>
-                  <img src={odinGalleryImg4} alt='' srcset='' />
-                </div>
-                <div>
-                  <img src={odinGalleryImg5} alt='' srcset='' />
-                </div>
-              </div>
-              <div className='grid-cols-1 gap-2'>
-                <div>
-                  <img src={odinGalleryImg6} alt='' srcset='' />
-                </div>
-                <div>
-                  <img src={odinGalleryImg7} alt='' srcset='' />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className='  flex flex-col md:flex-row '>
         <div
           className=' h-[40vh] w-full border-4 bg-cover bg-center bg-no-repeat md:h-[80vh] md:w-1/2'
@@ -240,6 +188,14 @@ const SwitchE1 = () => {
           </div>
         </div>
       </section>
+      <div className='fixed -right-44 top-1/2 -rotate-90 hover:-right-36 md:-right-36  '>
+        <button className='m-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white lg:hover:bg-[#515ef5] '>
+          Download Brochure
+        </button>
+        <button className='m-2 w-min whitespace-nowrap  bg-[#515ef5] px-4 py-2  text-white lg:hover:bg-[#20c997] '>
+          ENQUIRE NOW
+        </button>
+      </div>
     </>
   );
 };
