@@ -51,7 +51,7 @@ const Metrodecker = ({ setShowMyModal }) => {
               backgroundPosition: 'center',
             }}
             data-aos='fade-right'
-            data-aos-duration='200'
+            data-aos-duration='1000'
           ></div>
         </div>
         <div
@@ -65,7 +65,7 @@ const Metrodecker = ({ setShowMyModal }) => {
             width: '100%',
           }}
           data-aos='fade-left'
-          data-aos-duration='200'
+          data-aos-duration='1000'
         >
           <div className='absolute bottom-0 h-[30%] w-full bg-gradient-to-t from-black  md:-bottom-9 md:h-[50%]'></div>
           <div className='absolute bottom-6 left-2 bg-slate-600 bg-opacity-25 text-4xl text-white lg:text-5xl '>
@@ -86,6 +86,7 @@ const Metrodecker = ({ setShowMyModal }) => {
             srcset=''
             className='pb-4 md:hidden '
             data-aos='fade-left'
+            data-aos-duration='1000'
           />
           <div className='px-4 text-justify font-roboto 2xl:text-xl'>
             This award-winning, British-built electric bus has been designed to
@@ -107,6 +108,7 @@ const Metrodecker = ({ setShowMyModal }) => {
           className=' hidden w-full bg-cover bg-center md:block md:w-1/2'
           style={{ backgroundImage: `url(${metrodeckerLightest})` }}
           data-aos='fade-left'
+          data-aos-duration='1000'
         ></div>
       </section>
       <section className='video-container mt-2'>

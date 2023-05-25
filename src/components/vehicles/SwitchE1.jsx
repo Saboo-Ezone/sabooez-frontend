@@ -108,6 +108,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
             srcset=''
             className='pb-4 md:hidden'
             data-aos='fade-left'
+            data-aos-duration='1000'
           />
           <div className='px-4 text-justify font-roboto 2xl:text-xl'>
             Putting our customers first, SWITCH e1 is the next generation bus
@@ -136,7 +137,9 @@ const SwitchE1 = ({ setShowMyModal }) => {
         <div
           className=' hidden w-full bg-cover bg-center md:block md:w-1/2'
           data-aos='fade-left'
+          data-aos-duration='1000'
           style={{ backgroundImage: `url(${perfectEngine})` }}
+
         ></div>
       </section>
       <section className='video-container mt-2'>
