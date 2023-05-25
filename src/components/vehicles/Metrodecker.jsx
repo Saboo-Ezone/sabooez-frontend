@@ -7,8 +7,9 @@ import subBanner from '../../assets/vehicle/metrodecker/sub-banner1.jpg';
 import metrodeckerLightest from '../../assets/vehicle/metrodecker/metrodecker-lightest-bus.jpg';
 import largeImage from '../../assets/vehicle/metrodecker/metrodecker-3rd-fold.jpg';
 import EnquirForm from '../otherComponents/EnquirForm';
+import SideButton from '../otherComponents/SideButton';
 
-const Metrodecker = () => {
+const Metrodecker = ({ setShowMyModal }) => {
   return (
     <>
       <section>
@@ -36,7 +37,7 @@ const Metrodecker = () => {
           className='absolute bottom-10 left-4 h-8 brightness-200 contrast-200 sm:h-10 md:h-12 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
-      <EnquirForm/>
+      <EnquirForm />
       <section className='mt-2 flex overflow-hidden'>
         <div className='flex  h-[60vh] lg:w-3/6  2xl:h-screen '>
           <div className='bg-gradient-to-b from-[#16b895] to-white lg:w-1/3'></div>
@@ -50,7 +51,7 @@ const Metrodecker = () => {
               backgroundPosition: 'center',
             }}
             data-aos='fade-right'
-            data-aos-duration='2000'
+            data-aos-duration='200'
           ></div>
         </div>
         <div
@@ -63,8 +64,8 @@ const Metrodecker = () => {
             backgroundPosition: 'bottom',
             width: '100%',
           }}
-          // data-aos='fade-left'
-          // data-aos-duration='2000'
+          data-aos='fade-left'
+          data-aos-duration='200'
         >
           <div className='absolute bottom-0 h-[30%] w-full bg-gradient-to-t from-black  md:-bottom-9 md:h-[50%]'></div>
           <div className='absolute bottom-6 left-2 bg-slate-600 bg-opacity-25 text-4xl text-white lg:text-5xl '>
@@ -73,7 +74,7 @@ const Metrodecker = () => {
         </div>
       </section>
 
-      <section className='mt-2 flex flex-col-reverse md:flex-row'>
+      <section className='mt-2 flex flex-col-reverse md:flex-row overflow-hidden'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
           <div className='mb-6 p-4 text-4xl lg:font-semibold xl:text-5xl'>
@@ -84,6 +85,7 @@ const Metrodecker = () => {
             alt='Metrodecker Lightest'
             srcset=''
             className='pb-4 md:hidden '
+            data-aos='fade-left'
           />
           <div className='px-4 text-justify font-roboto 2xl:text-xl'>
             This award-winning, British-built electric bus has been designed to
@@ -104,6 +106,7 @@ const Metrodecker = () => {
         <div
           className=' hidden w-full bg-cover bg-center md:block md:w-1/2'
           style={{ backgroundImage: `url(${metrodeckerLightest})` }}
+          data-aos='fade-left'
         ></div>
       </section>
       <section className='video-container mt-2'>
@@ -242,14 +245,7 @@ const Metrodecker = () => {
           </div>
         </div>
       </section>
-      <div className='fixed -right-44 top-1/2 -rotate-90 duration-300 hover:-right-36 md:-right-36  '>
-        <button className='m-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white lg:hover:bg-[#515ef5] '>
-          Download Brochure
-        </button>
-        <button className='m-2 w-min whitespace-nowrap  bg-[#515ef5] px-4 py-2  text-white lg:hover:bg-[#20c997] '>
-          ENQUIRE NOW
-        </button>
-      </div>
+      <SideButton setShowMyModal={setShowMyModal} />
     </>
   );
 };

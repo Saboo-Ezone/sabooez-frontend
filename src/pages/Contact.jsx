@@ -59,7 +59,7 @@ const Contact = () => {
             <div
               className='pb-4  pl-8 pr-2 pt-12 text-left text-4xl md:pl-16 lg:pb-8 lg:pl-20'
               data-aos='fade-up'
-              data-aos-delay='500'
+              data-aos-delay='300'
             >
               Here to help
             </div>
@@ -68,14 +68,14 @@ const Contact = () => {
                 <p
                   className='pb-8 text-xl text-[#505bfe]'
                   data-aos='fade-up'
-                  data-aos-delay='200'
+                  data-aos-delay='400'
                 >
                   If you've got a question, drop us a line or give us a call.
                 </p>
 
                 <div
                   data-aos='fade-up'
-                  data-aos-delay='200'
+                  data-aos-delay='500'
                   className='text-lg'
                 >
                   <p>
@@ -100,7 +100,7 @@ const Contact = () => {
           </div>
 
           <div
-            data-aos='fade-up'
+            data-aos='zoom-in'
             data-aos-delay='700'
             className='h-[40vh] w-full bg-cover bg-center bg-no-repeat md:h-auto md:w-1/2'
             style={{ backgroundImage: `url(${bannerCotact})` }}

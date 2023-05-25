@@ -2,7 +2,11 @@ import React from 'react';
 import patternWhite from '../assets/other/pattern-grid-white.png';
 import bannerCotact from '../assets/other/banner-careers.jpg';
 
+
+
 const Careers = () => {
+ 
+
   return (
     <>
       <section

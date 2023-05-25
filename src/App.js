@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/otherComponents/Header';
@@ -13,12 +14,28 @@ import Metrocity from './components/vehicles/Metrocity';
 import Metrodecker from './components/vehicles/Metrodecker';
 import Careers from './pages/Careers';
 import ModalEnquire from './components/otherComponents/ModalEnquire';
-import { useState } from 'react';
+
 
 function App() {
+ 
   const [showMyModal, setShowMyModal] = useState(false);
 
   const handleOnClose = () => setShowMyModal(false);
+
+  useEffect(() => {
+    // Disable scrolling when the modal is open
+    if (showMyModal) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    // Re-enable scrolling when the component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [showMyModal]);
+
 
   return (
     <>
@@ -32,8 +49,8 @@ function App() {
         <Route exact path='/careers' element={<Careers />} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/e1' element={<SwitchE1 setShowMyModal={setShowMyModal} />} />
-        <Route exact path='/metrocity' element={<Metrocity />} />
-        <Route exact path='/metrodecker' element={<Metrodecker />} />
+        <Route exact path='/metrocity' element={<Metrocity setShowMyModal={setShowMyModal} />}  />
+        <Route exact path='/metrodecker' element={<Metrodecker setShowMyModal={setShowMyModal} />}  />
         <Route exact path='/solo' element={<Solo />} />
         <Route exact path='/*' element={<div>No page found </div>} />
       </Routes>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import homeBanner from '../../assets/vehicle/metrocity/metrocity-home-banner.jpg';
 import logoMetrocity from '../../assets/vehicle/metrocity/metrocity-logo-white.png';
 // import video from "../../assets/video/FIRST_YORK _B-ROLL.mp4"
@@ -6,8 +6,16 @@ import homeMobileBanner from '../../assets/vehicle/metrocity/metrocity-banner-mo
 import metrocityFirstBritish from '../../assets/vehicle/metrocity/metrocity-first-british.jpg';
 import metrocityEfficient from '../../assets/vehicle/metrocity/metrocity-efficient-class.jpg';
 import EnquirForm from '../otherComponents/EnquirForm';
+import SideButton from '../otherComponents/SideButton';
 
-const Metrocity = () => {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+const Metrocity = ({ setShowMyModal }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <section>
@@ -36,12 +44,14 @@ const Metrocity = () => {
           className='absolute bottom-10 left-4  h-8 brightness-200 contrast-200 sm:h-10 md:h-12 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
-      <EnquirForm/>
-      <section className='mt-2 flex flex-col-reverse bg-[#16b895] text-white lg:flex-row'>
+      <EnquirForm />
+      <section className='mt-2 flex flex-col-reverse overflow-hidden bg-[#16b895] text-white lg:flex-row'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div
           className=' hidden w-full bg-cover bg-center pb-2 lg:block lg:w-2/3'
           style={{ backgroundImage: `url(${metrocityFirstBritish})` }}
+          data-aos='fade-right'
+          data-aos-duration='1000'
         ></div>
         <div className='flex w-full flex-col   justify-center p-4 lg:h-[75vh]  lg:w-1/3 2xl:h-[80vh]  '>
           <div className='mb-6 p-4 text-4xl  '>
@@ -52,6 +62,8 @@ const Metrocity = () => {
             alt='Metrodecker Lightest'
             srcset=''
             className='p-4 lg:hidden '
+            data-aos='fade-right'
+            data-aos-duration='1000'
           />
           <div className='px-4 pb-4 text-justify font-roboto lg:pb-0 2xl:text-lg'>
             The SWITCH metrocity was the first British-built, pure electric bus
@@ -68,7 +80,7 @@ const Metrocity = () => {
           </div>
         </div>
       </section>
-      <section className='mt-2 flex flex-col-reverse md:flex-row  '>
+      <section className='mt-2 flex flex-col-reverse md:flex-row overflow-hidden '>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col   justify-center  md:w-1/2 md:p-14 lg:p-20 xl:py-28 xl:pl-28 2xl:h-[70vh] '>
           <div className='mb-6 px-4 pt-4  text-4xl font-medium md:p-4 lg:text-5xl '>
@@ -79,6 +91,8 @@ const Metrocity = () => {
             alt='Metrodecker Lightest'
             srcset=''
             className='pb-6 md:hidden '
+            data-aos='fade-left'
+            data-aos-duration='1000'
           />
           <div className='px-4 text-justify font-roboto 2xl:text-lg'>
             From the city to the suburbs, the SWITCH metrocity is the ideal
@@ -104,16 +118,11 @@ const Metrocity = () => {
         <div
           className=' hidden w-full bg-cover bg-center pb-2 md:block md:w-1/2'
           style={{ backgroundImage: `url(${metrocityEfficient})` }}
+          data-aos='fade-left'
+          data-aos-duration='1000'
         ></div>
       </section>
-      <div className='fixed -right-44 top-1/2 -rotate-90 duration-300 hover:-right-36 md:-right-36  '>
-        <button className='m-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white lg:hover:bg-[#515ef5] '>
-          Download Brochure
-        </button>
-        <button className='m-2 w-min whitespace-nowrap  bg-[#515ef5] px-4 py-2  text-white lg:hover:bg-[#20c997] '>
-          ENQUIRE NOW
-        </button>
-      </div>
+      <SideButton setShowMyModal={setShowMyModal} />
     </>
   );
 };

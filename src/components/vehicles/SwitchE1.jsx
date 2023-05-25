@@ -19,6 +19,7 @@ import odinGalleryImg7 from '../../assets/vehicle/e1/odinGalleryImg7.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import EnquirForm from '../otherComponents/EnquirForm';
+import SideButton from '../otherComponents/SideButton';
 
 // import AboutSlider from './AboutSlider';
 
@@ -95,7 +96,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
           </div>
         </div>
       </section>
-      <section className='mt-2 flex flex-col-reverse md:flex-row'>
+      <section className='mt-2 flex flex-col-reverse md:flex-row overflow-hidden'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
           <div className='mb-6 p-4  text-4xl lg:font-semibold xl:text-5xl'>
@@ -106,6 +107,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
             alt='Perfect Engine'
             srcset=''
             className='pb-4 md:hidden'
+            data-aos='fade-left'
           />
           <div className='px-4 text-justify font-roboto 2xl:text-xl'>
             Putting our customers first, SWITCH e1 is the next generation bus
@@ -133,6 +135,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
         </div>
         <div
           className=' hidden w-full bg-cover bg-center md:block md:w-1/2'
+          data-aos='fade-left'
           style={{ backgroundImage: `url(${perfectEngine})` }}
         ></div>
       </section>
@@ -192,17 +195,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
           </div>
         </div>
       </section>
-      <div className='fixed -right-44 top-1/2 -rotate-90 duration-300 hover:-right-36 md:-right-36  '>
-        <button className='m-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white lg:hover:bg-[#515ef5] '>
-          Download Brochure
-        </button>
-        <button
-          onClick={() => setShowMyModal(true)}
-          className='m-2 w-min whitespace-nowrap  bg-[#515ef5] px-4 py-2  text-white lg:hover:bg-[#20c997] '
-        >
-          ENQUIRE NOW
-        </button>
-      </div>
+      <SideButton setShowMyModal={setShowMyModal} />
     </>
   );
 };

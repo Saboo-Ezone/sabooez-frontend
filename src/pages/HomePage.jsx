@@ -25,7 +25,7 @@ const HomePage = () => {
 
   return (
     <>
-      <section className=''>
+      <section>
         <Slider />
       </section>
 
@@ -62,7 +62,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className='video-container'>
+      <section data-aos='fade-up' data-aos-delay='200'>
         <video
           width='100%'
           preload='metadata'
@@ -78,9 +78,10 @@ const HomePage = () => {
       </section>
       <section className=' w-full bg-[#edede6] bg-opacity-75'>
         <div className=' mx-4 md:mx-8 lg:mx-16  '>
-        <div
-            className='pt-8 pb-4 text-h3 tracking-wide md:pt-16  md:text-h2  lg:pb-4  lg:text-h1  '
+          <div
+            className='pb-4 pt-8 text-h3 tracking-wide md:pt-16  md:text-h2  lg:pb-4  lg:text-h1  '
             data-aos='fade-up'
+            data-aos-delay='100'
           >
             Leading the charge
           </div>
@@ -169,10 +170,12 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section class='mb-1 flex flex-col bg-emerald-500 md:flex-row '>
+      <section class='mb-1 flex flex-col overflow-hidden bg-emerald-500 md:flex-row'>
         <div
           class='h-[45vh] w-full bg-cover bg-center bg-no-repeat md:h-[65vh] md:w-1/2'
           style={{ backgroundImage: `url(${bannerTech})` }}
+          data-aos='fade-right'
+          data-aos-delay='200'
         ></div>
         <div
           style={{ backgroundImage: `url(${patternGreen})` }}
@@ -217,7 +220,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className='mb-1 flex justify-center'>
+      <section className='mb-1 flex justify-center ' >
         <img
           src={switchInfographic}
           className='hidden sm:block'
