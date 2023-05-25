@@ -11,13 +11,15 @@ const Metrocity = () => {
     <>
       <section>
         <div
-          className='hidden h-[95vh] w-full bg-cover bg-center bg-no-repeat contrast-125 saturate-200 md:block'
+          className='hidden h-[95vh] w-full bg-cover  bg-center bg-no-repeat contrast-125 saturate-200 md:block'
           style={{ backgroundImage: `url(${homeBanner})` }}
         ></div>
         <div
           className='block h-[92vh] w-full bg-cover bg-center bg-no-repeat md:hidden  md:contrast-125  '
           style={{ backgroundImage: `url(${homeMobileBanner})` }}
         ></div>
+
+        <div className='xs:bottom-2 absolute bottom-1 h-[30%] w-full bg-gradient-to-t from-[#292828] sm:bottom-2  md:-bottom-9 md:h-[20%]'></div>
         <div className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '>
           <div className='flex h-14 w-8   items-end justify-center rounded-full border-2 '>
             <div className='mb-1 h-4 w-1 animate-bounce rounded-full border-2 bg-white '></div>
@@ -67,7 +69,7 @@ const Metrocity = () => {
       <section className='mt-2 flex flex-col-reverse md:flex-row  '>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col   justify-center  md:w-1/2 md:p-14 lg:p-20 xl:py-28 xl:pl-28 2xl:h-[70vh] '>
-          <div className='mb-6 px-4 pt-4  md:p-4 text-4xl font-medium lg:text-5xl '>
+          <div className='mb-6 px-4 pt-4  text-4xl font-medium md:p-4 lg:text-5xl '>
             More miles, less impact
           </div>
           <img

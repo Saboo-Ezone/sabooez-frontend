@@ -19,6 +19,7 @@ const Metrodecker = () => {
           className='block h-[92vh] w-full bg-cover bg-center bg-no-repeat md:hidden  md:contrast-125  '
           style={{ backgroundImage: `url(${homeMobileBanner})` }}
         ></div>
+        <div className='xs:bottom-2 absolute bottom-1 h-[30%] w-full bg-gradient-to-t from-black sm:bottom-2  md:-bottom-9 md:h-[20%]'></div>
         <div className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '>
           <div className='flex h-14 w-8   items-end justify-center rounded-full border-2 '>
             <div className='mb-1 h-4 w-1 animate-bounce rounded-full border-2 bg-white '></div>
@@ -31,7 +32,7 @@ const Metrodecker = () => {
           src={logoMetrodecker}
           alt=''
           srcset=''
-          className='absolute bottom-10 left-4 h-8 sm:h-10 md:h-12 brightness-200 contrast-200 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
+          className='absolute bottom-10 left-4 h-8 brightness-200 contrast-200 sm:h-10 md:h-12 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
       <section className='mt-2 flex overflow-hidden'>
@@ -63,6 +64,7 @@ const Metrodecker = () => {
           // data-aos='fade-left'
           // data-aos-duration='2000'
         >
+          <div className='absolute bottom-0 h-[30%] w-full bg-gradient-to-t from-black  md:-bottom-9 md:h-[50%]'></div>
           <div className='absolute bottom-6 left-2 bg-slate-600 bg-opacity-25 text-4xl text-white lg:text-5xl '>
             Class-leading double-decker
           </div>

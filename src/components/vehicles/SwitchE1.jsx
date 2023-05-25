@@ -36,6 +36,7 @@ const SwitchE1 = () => {
           className='block h-[92vh] w-full bg-cover bg-center bg-no-repeat md:hidden '
           style={{ backgroundImage: `url(${homeMobileBanner})` }}
         ></div>
+                <div className='absolute bottom-0  h-[30%] w-full bg-gradient-to-t from-[#292828]   md:h-[20%]'></div>
         <div className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '>
           <div className='flex h-14 w-8   items-end justify-center rounded-full border-2 '>
             <div className='mb-1 h-4 w-1 animate-bounce rounded-full border-2 bg-white '></div>
