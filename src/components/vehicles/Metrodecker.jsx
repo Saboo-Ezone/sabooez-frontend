@@ -6,6 +6,7 @@ import homeMobileBanner from '../../assets/vehicle/metrodecker/metrodecker-banne
 import subBanner from '../../assets/vehicle/metrodecker/sub-banner1.jpg';
 import metrodeckerLightest from '../../assets/vehicle/metrodecker/metrodecker-lightest-bus.jpg';
 import largeImage from '../../assets/vehicle/metrodecker/metrodecker-3rd-fold.jpg';
+import EnquirForm from '../otherComponents/EnquirForm';
 
 const Metrodecker = () => {
   return (
@@ -35,6 +36,7 @@ const Metrodecker = () => {
           className='absolute bottom-10 left-4 h-8 brightness-200 contrast-200 sm:h-10 md:h-12 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
+      <EnquirForm/>
       <section className='mt-2 flex overflow-hidden'>
         <div className='flex  h-[60vh] lg:w-3/6  2xl:h-screen '>
           <div className='bg-gradient-to-b from-[#16b895] to-white lg:w-1/3'></div>

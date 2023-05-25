@@ -12,8 +12,14 @@ import Solo from './components/vehicles/Solo';
 import Metrocity from './components/vehicles/Metrocity';
 import Metrodecker from './components/vehicles/Metrodecker';
 import Careers from './pages/Careers';
+import ModalEnquire from './components/otherComponents/ModalEnquire';
+import { useState } from 'react';
 
 function App() {
+  const [showMyModal, setShowMyModal] = useState(false);
+
+  const handleOnClose = () => setShowMyModal(false);
+
   return (
     <>
       <div className='pb-16 md:pb-20'>
@@ -25,13 +31,17 @@ function App() {
         <Route exact path='/tech' element={<Tech />} />
         <Route exact path='/careers' element={<Careers />} />
         <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/e1' element={<SwitchE1 />} />
+        <Route exact path='/e1' element={<SwitchE1 setShowMyModal={setShowMyModal} />} />
         <Route exact path='/metrocity' element={<Metrocity />} />
         <Route exact path='/metrodecker' element={<Metrodecker />} />
         <Route exact path='/solo' element={<Solo />} />
         <Route exact path='/*' element={<div>No page found </div>} />
       </Routes>
       <Footer />
+      <div className='z-10'>
+
+      <ModalEnquire onClose={handleOnClose} visible={showMyModal} />
+      </div>
     </>
   );
 }

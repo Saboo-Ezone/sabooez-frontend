@@ -64,7 +64,7 @@ const Careers = () => {
       <section className='my-10 px-8 md:my-16 lg:px-16 '>
         <div className='text-h2 text-[#505bfe]'>Apply for Job</div>
         <form action=''>
-          <div className='my-4 grid gap-4 sm:grid-cols-2  xl:grid-cols-4'>
+          <div className='my-4 grid gap-x-2 md:gap-4 sm:grid-cols-2  xl:grid-cols-4'>
             <div className='mb-4'>
               <input
                 type='email'
@@ -112,18 +112,18 @@ const Careers = () => {
             </div>
           </div>
           <button
-            type='submit'
-            className='group relative overflow-hidden border-[2px]  border-indigo-700 px-6 py-2 text-xl font-medium text-indigo-500 shadow-inner'
-          >
-            <span className='border-t-1 ease absolute left-0 top-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-            <span className='border-b-1 ease absolute bottom-0 right-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-            <span className='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
-            <span className='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
-            <span className='absolute inset-0 h-full w-full bg-white opacity-0 delay-300 duration-300 group-hover:opacity-100'></span>
-            <span className='ease relative transition-colors delay-200 duration-300 group-hover:text-indigo-500'>
-              SUBMIT
-            </span>
-          </button>
+                type='submit'
+                className='group relative h-min overflow-hidden border-[2px]  border-indigo-700 px-6 py-2 text-xl font-medium text-indigo-500 shadow-inner'
+              >
+                <span className='border-t-1 ease absolute left-0 top-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+                <span className='border-b-1 ease absolute bottom-0 right-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+                <span className='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
+                <span className='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
+                <span className='absolute inset-0 h-full w-full bg-indigo-700  opacity-0 delay-300 duration-300 group-hover:opacity-100'></span>
+                <span className='ease relative transition-colors delay-200 duration-300 group-hover:text-white'>
+                  SUBMIT
+                </span>
+              </button>
         </form>
       </section>
     </>

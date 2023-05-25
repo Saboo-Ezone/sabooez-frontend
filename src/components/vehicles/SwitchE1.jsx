@@ -18,9 +18,11 @@ import odinGalleryImg7 from '../../assets/vehicle/e1/odinGalleryImg7.jpg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import EnquirForm from '../otherComponents/EnquirForm';
+
 // import AboutSlider from './AboutSlider';
 
-const SwitchE1 = () => {
+const SwitchE1 = ({ setShowMyModal }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -36,7 +38,7 @@ const SwitchE1 = () => {
           className='block h-[92vh] w-full bg-cover bg-center bg-no-repeat md:hidden '
           style={{ backgroundImage: `url(${homeMobileBanner})` }}
         ></div>
-                <div className='absolute bottom-0  h-[30%] w-full bg-gradient-to-t from-[#292828]   md:h-[20%]'></div>
+        <div className='absolute bottom-0  h-[30%] w-full bg-gradient-to-t from-[#292828]   md:h-[20%]'></div>
         <div className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '>
           <div className='flex h-14 w-8   items-end justify-center rounded-full border-2 '>
             <div className='mb-1 h-4 w-1 animate-bounce rounded-full border-2 bg-white '></div>
@@ -53,6 +55,7 @@ const SwitchE1 = () => {
           className='absolute bottom-10 left-4 h-12 lg:left-6 lg:h-16 xl:left-10'
         />
       </section>
+      <EnquirForm />
       <section className='mt-2 flex overflow-hidden'>
         <div className='flex h-[30vh] w-3/6  md:h-[40vh] lg:h-[60vh]  2xl:h-[80vh] '>
           <div className='w-1/3 bg-gradient-to-b from-[#16b895] to-white'></div>
@@ -193,7 +196,10 @@ const SwitchE1 = () => {
         <button className='m-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white lg:hover:bg-[#515ef5] '>
           Download Brochure
         </button>
-        <button className='m-2 w-min whitespace-nowrap  bg-[#515ef5] px-4 py-2  text-white lg:hover:bg-[#20c997] '>
+        <button
+          onClick={() => setShowMyModal(true)}
+          className='m-2 w-min whitespace-nowrap  bg-[#515ef5] px-4 py-2  text-white lg:hover:bg-[#20c997] '
+        >
           ENQUIRE NOW
         </button>
       </div>

@@ -5,6 +5,7 @@ import logoMetrocity from '../../assets/vehicle/metrocity/metrocity-logo-white.p
 import homeMobileBanner from '../../assets/vehicle/metrocity/metrocity-banner-mobile1.jpg';
 import metrocityFirstBritish from '../../assets/vehicle/metrocity/metrocity-first-british.jpg';
 import metrocityEfficient from '../../assets/vehicle/metrocity/metrocity-efficient-class.jpg';
+import EnquirForm from '../otherComponents/EnquirForm';
 
 const Metrocity = () => {
   return (
@@ -35,6 +36,7 @@ const Metrocity = () => {
           className='absolute bottom-10 left-4  h-8 brightness-200 contrast-200 sm:h-10 md:h-12 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
+      <EnquirForm/>
       <section className='mt-2 flex flex-col-reverse bg-[#16b895] text-white lg:flex-row'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div
