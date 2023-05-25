@@ -31,7 +31,7 @@ const Metrodecker = () => {
           src={logoMetrodecker}
           alt=''
           srcset=''
-          className='absolute bottom-10 left-4 h-10 md:h-12 brightness-200 contrast-200 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
+          className='absolute bottom-10 left-4 h-8 sm:h-10 md:h-12 brightness-200 contrast-200 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
       <section className='mt-2 flex overflow-hidden'>

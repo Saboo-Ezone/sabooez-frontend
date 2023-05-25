@@ -30,7 +30,7 @@ const Metrocity = () => {
           src={logoMetrocity}
           alt=''
           srcset=''
-          className='absolute bottom-10 left-4 h-10 brightness-200 contrast-200 md:h-12 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
+          className='absolute bottom-10 left-4  h-8 brightness-200 contrast-200 sm:h-10 md:h-12 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
       <section className='mt-2 flex flex-col-reverse bg-[#16b895] text-white lg:flex-row'>
@@ -49,7 +49,7 @@ const Metrocity = () => {
             srcset=''
             className='p-4 lg:hidden '
           />
-          <div className='px-4 pb-4 lg:pb-0 text-justify font-roboto 2xl:text-lg'>
+          <div className='px-4 pb-4 text-justify font-roboto lg:pb-0 2xl:text-lg'>
             The SWITCH metrocity was the first British-built, pure electric bus
             to enter service on London’s roads in 2014. Since then, it has been
             helping cities around the world move with ease and meet their net
@@ -67,14 +67,14 @@ const Metrocity = () => {
       <section className='mt-2 flex flex-col-reverse md:flex-row  '>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col   justify-center  md:w-1/2 md:p-14 lg:p-20 xl:py-28 xl:pl-28 2xl:h-[70vh] '>
-          <div className='mb-6 p-4 text-4xl font-medium lg:text-5xl '>
+          <div className='mb-6 px-4 pt-4  md:p-4 text-4xl font-medium lg:text-5xl '>
             More miles, less impact
           </div>
           <img
             src={metrocityEfficient}
             alt='Metrodecker Lightest'
             srcset=''
-            className='p-4 md:hidden '
+            className='pb-6 md:hidden '
           />
           <div className='px-4 text-justify font-roboto 2xl:text-lg'>
             From the city to the suburbs, the SWITCH metrocity is the ideal
@@ -102,6 +102,14 @@ const Metrocity = () => {
           style={{ backgroundImage: `url(${metrocityEfficient})` }}
         ></div>
       </section>
+      <div className='fixed -right-44 top-1/2 -rotate-90 duration-300 hover:-right-36 md:-right-36  '>
+        <button className='m-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white lg:hover:bg-[#515ef5] '>
+          Download Brochure
+        </button>
+        <button className='m-2 w-min whitespace-nowrap  bg-[#515ef5] px-4 py-2  text-white lg:hover:bg-[#20c997] '>
+          ENQUIRE NOW
+        </button>
+      </div>
     </>
   );
 };
