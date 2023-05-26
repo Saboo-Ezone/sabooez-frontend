@@ -28,6 +28,17 @@ const SwitchE1 = ({ setShowMyModal }) => {
     AOS.init();
   }, []);
 
+  const divElement = document.querySelector('#mouse');
+
+  // Add a click event listener to the div
+  divElement.addEventListener('click', () => {
+    // Scroll down the page
+    window.scrollTo({
+      top: window.innerHeight, // scroll to the height of the viewport
+      behavior: 'smooth', // animate the scrolling
+    });
+  });
+
   return (
     <>
       <section className='relative'>
@@ -40,7 +51,10 @@ const SwitchE1 = ({ setShowMyModal }) => {
           style={{ backgroundImage: `url(${homeMobileBanner})` }}
         ></div>
         <div className='absolute bottom-0  h-[30%] w-full bg-gradient-to-t from-[#292828]   md:h-[20%]'></div>
-        <div className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '>
+        <div
+          id='mouse'
+          className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '
+        >
           <div className='flex h-14 w-8   items-end justify-center rounded-full border-2 '>
             <div className='mb-1 h-4 w-1 animate-bounce rounded-full border-2 bg-white '></div>
           </div>
@@ -96,7 +110,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
           </div>
         </div>
       </section>
-      <section className='mt-2 flex flex-col-reverse md:flex-row overflow-hidden'>
+      <section className='mt-2 flex flex-col-reverse overflow-hidden md:flex-row'>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col justify-center  md:w-1/2 md:p-14 lg:p-20 xl:p-28 2xl:h-[70vh] '>
           <div className='mb-6 p-4  text-4xl lg:font-semibold xl:text-5xl'>
@@ -139,7 +153,6 @@ const SwitchE1 = ({ setShowMyModal }) => {
           data-aos='fade-left'
           data-aos-duration='1000'
           style={{ backgroundImage: `url(${perfectEngine})` }}
-
         ></div>
       </section>
       <section className='video-container mt-2'>

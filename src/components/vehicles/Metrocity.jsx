@@ -16,6 +16,17 @@ const Metrocity = ({ setShowMyModal }) => {
     AOS.init();
   }, []);
 
+  const divElement = document.querySelector('#mouse');
+
+  // Add a click event listener to the div
+  divElement.addEventListener('click', () => {
+    // Scroll down the page
+    window.scrollTo({
+      top: window.innerHeight, // scroll to the height of the viewport
+      behavior: 'smooth', // animate the scrolling
+    });
+  });
+
   return (
     <>
       <section>
@@ -29,7 +40,10 @@ const Metrocity = ({ setShowMyModal }) => {
         ></div>
 
         <div className='xs:bottom-2 absolute bottom-1 h-[30%] w-full bg-gradient-to-t from-[#292828] sm:bottom-2  md:-bottom-9 md:h-[20%]'></div>
-        <div className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '>
+        <div
+          id='mouse'
+          className='absolute bottom-10 left-1/2 -ml-4 hidden md:block '
+        >
           <div className='flex h-14 w-8   items-end justify-center rounded-full border-2 '>
             <div className='mb-1 h-4 w-1 animate-bounce rounded-full border-2 bg-white '></div>
           </div>
@@ -80,7 +94,7 @@ const Metrocity = ({ setShowMyModal }) => {
           </div>
         </div>
       </section>
-      <section className='mt-2 flex flex-col-reverse md:flex-row overflow-hidden '>
+      <section className='mt-2 flex flex-col-reverse overflow-hidden md:flex-row '>
         {/* <span>The bus you've been waiting for.</span> */}
         <div className='flex w-full flex-col   justify-center  md:w-1/2 md:p-14 lg:p-20 xl:py-28 xl:pl-28 2xl:h-[70vh] '>
           <div className='mb-6 px-4 pt-4  text-4xl font-medium md:p-4 lg:text-5xl '>
