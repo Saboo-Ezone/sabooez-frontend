@@ -16,17 +16,6 @@ const Metrocity = ({ setShowMyModal }) => {
     AOS.init();
   }, []);
 
-  // const divElement = document.querySelector('#mouse');
-
-  // // Add a click event listener to the div
-  // divElement.addEventListener('click', () => {
-  //   // Scroll down the page
-  //   window.scrollTo({
-  //     top: window.innerHeight, // scroll to the height of the viewport
-  //     behavior: 'smooth', // animate the scrolling
-  //   });
-  // });
-
   return (
     <>
       <section>
