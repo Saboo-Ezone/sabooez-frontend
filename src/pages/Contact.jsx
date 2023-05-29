@@ -13,40 +13,29 @@ const Contact = () => {
   }, []);
   return (
     <>
-      <section
-        className='flex bg-no-repeat py-3 md:py-6 '
-        style={{ backgroundImage: `url(${patternBoxSvg})` }}
-      >
-        <div className='container  mx-auto max-w-full sm:px-2'>
-          <div className='flex flex-wrap justify-around '>
-            <div className='offset-1 xl:mx-1/5  mb-4 mt-8 w-4/5 pr-2 md:w-2/5 md:pl-4 md:pr-4 xl:w-2/5 '>
-              <div
-                className='pb-12 pt-4 text-3xl md:pl-12 md:pt-12 lg:text-5xl'
-                data-aos='fade-up'
-              >
-                <h2 className='title' data-editor-processed='true'>
-                  We're on a journey.
-                  <br />
-                  Will you join us?
-                </h2>
-              </div>
-              <h4
-                className='  text-xl  md:pl-12 '
-                data-aos='fade-up'
-                data-aos-delay='100'
-                data-editor-processed='true'
-              >
-                Contact us and be the first to hear about our EV buses and vans.
-              </h4>
-            </div>
-
-            <div
+      <section>
+        <div
+          className='flex w-full flex-col bg-no-repeat md:flex-row'
+          style={{ backgroundImage: `url(${patternBoxSvg})` }}
+        >
+          <div className='mt-4 w-full  py-16 pl-10 text-3xl md:w-1/2 md:pl-16 lg:pl-24   xl:pl-28 '>
+            <span className='' data-editor-processed='true'>
+              We're on a journey.
+              <br />
+              Will you join us?
+            </span>
+            <br />
+            <span
+              className='  text-xl  '
               data-aos='fade-up'
-              data-aos-delay='300'
-              className='xl:mx-1/6 px-5 md:w-1/2 md:px-4 xl:w-1/3 xl:pl-0'
+              data-aos-delay='100'
+              data-editor-processed='true'
             >
-              <SubmitForm />
-            </div>
+              Contact us and be the first to hear about our EV buses and vans.
+            </span>
+          </div>
+          <div className='w-full md:w-1/2'>
+            <SubmitForm />
           </div>
         </div>
       </section>

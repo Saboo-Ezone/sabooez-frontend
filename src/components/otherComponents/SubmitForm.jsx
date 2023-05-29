@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 // import patternBoxSvg from '../../assets/other/pattern-box.svg';
 
 import bolt from '../../assets/other/bolt.gif';
@@ -48,16 +48,14 @@ const SubmitForm = () => {
         }}
       >
         {({ isSubmitting }) => (
-          <div className='px-8 pt-4 pb-6 md:py-8 lg:px-16'>
+          <div className='px-8 pb-6 pt-4 md:py-8 lg:px-16'>
             {sub ? (
               <>
-                <div className='text-h2 text-[#505bfe]'>
-                  Enquire Now
-                </div>
+                <div className='text-h2 text-[#505bfe]'>Enquire Now</div>
 
                 <Form>
                   <div className=' '>
-                    <div className='mb-2 lg:mb-4'>
+                    <div className='my-2 pb-2 lg:mb-4'>
                       <ErrorMessage
                         name='name'
                         component='div'
@@ -81,7 +79,7 @@ const SubmitForm = () => {
                       placeholder='Name'
                     /> */}
                     </div>
-                    <div className='mb-2 lg:mb-4'>
+                    <div className='my-2 pb-2 lg:mb-4'>
                       <ErrorMessage
                         name='email'
                         component='div'
@@ -95,7 +93,7 @@ const SubmitForm = () => {
                         placeholder='Email'
                       />
                     </div>
-                    <div className='mb-2 lg:mb-4'>
+                    <div className='my-2 pb-2 lg:mb-4'>
                       <ErrorMessage
                         name='phone'
                         component='div'
@@ -110,7 +108,7 @@ const SubmitForm = () => {
                         required
                       />
                     </div>
-                    <div className='mb-2 lg:mb-4'>
+                    <div className='my-2 pb-2 lg:mb-4'>
                       <ErrorMessage
                         name='model'
                         component='div'
@@ -147,31 +145,54 @@ const SubmitForm = () => {
                       </Field>
                     </div>
 
-                    <div
-                      className='justify-center lg:w-full xl:flex'
-          
+                    {/* <div className='relative mb-2 block '>
+                      <input
+                        type='checkbox'
+                        name='subscribe_newsletter'
+                        id='subscribeCheck'
+                        className='mr-2 h-6 w-6'
+                      />
+                      <label className=' text-lg' htmlFor='subscribeCheck'>
+                        Subscribe to news and updates from SWITCH
+                      </label>
+                    </div> */}
+
+                    <button
+                      type='submit'
+                      className='group relative h-min overflow-hidden border-[2px]  border-indigo-700 px-6 py-2 text-xl font-medium text-indigo-500 shadow-inner'
+                      // disabled={isSubmitting}
                     >
-                      <button
-                        type='submit'
-                        className='group relative h-min overflow-hidden border-[2px]  border-indigo-700 px-6 py-2 text-xl font-medium text-indigo-500 shadow-inner'
-                        // disabled={isSubmitting}
-                      >
-                        <span className='border-t-1 ease absolute left-0 top-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-                        <span className='border-b-1 ease absolute bottom-0 right-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-                        <span className='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
-                        <span className='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
-                        <span className='absolute inset-0 h-full w-full bg-indigo-700  opacity-0 delay-300 duration-300 group-hover:opacity-100'></span>
-                        <span className='ease relative transition-colors delay-200 duration-300 group-hover:text-white'>
-                          SUBMIT
-                        </span>
-                      </button>
+                      <span className='border-t-1 ease absolute left-0 top-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+                      <span className='border-b-1 ease absolute bottom-0 right-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+                      <span className='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
+                      <span className='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
+                      <span className='absolute inset-0 h-full w-full bg-indigo-700  opacity-0 delay-300 duration-300 group-hover:opacity-100'></span>
+                      <span className='ease relative transition-colors delay-200 duration-300 group-hover:text-white'>
+                        SUBMIT
+                      </span>
+                    </button>
+                    <div className='text-[10px] my-2 text-indigo-500'>
+                      <span className=' '>
+                        SWITCH Mobility is committed to protecting and
+                        respecting your privacy.
+                        <br />
+                        We only use your personal information to provide the
+                        information you requested from us.
+                      </span>
+                      <br />
+                      <span className='mb-4 '>
+                        For more information on how to unsubscribe, our privacy
+                        practices, and how we are committed to protecting and
+                        respecting your privacy, please review our Privacy
+                        Policy .
+                      </span>
                     </div>
                   </div>
                 </Form>
               </>
             ) : (
-              <div className='flex items-center flex-col md:flex-row '>
-                 <img src={bolt} alt='' className='h-28 mx-4' />
+              <div className='flex flex-col items-center md:flex-row '>
+                <img src={bolt} alt='' className='mx-4 h-28' />
                 <div className='text-h3 text-[#505bfe] lg:text-h2  '>
                   Thank you for your interest. Our team will contact you soon.{' '}
                   <span className='text-h6'>
@@ -181,7 +202,6 @@ const SubmitForm = () => {
                     prompt response.
                   </span>
                 </div>
-               
               </div>
             )}
           </div>

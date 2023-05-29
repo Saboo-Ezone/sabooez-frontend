@@ -276,10 +276,10 @@ const HomePage = () => {
       </section>
     
       <section>
-        <div className='flex w-full flex-col md:flex-row'>
+        <div className='flex w-full bg-no-repeat flex-col md:flex-row' style={{ backgroundImage: `url(${patternBoxSvg})` }}>
           <div
-            className='mt-4 w-full bg-no-repeat py-16 pl-10 md:pl-16 lg:pl-24 xl:pl-28 text-3xl   md:w-1/2 '
-            style={{ backgroundImage: `url(${patternBoxSvg})` }}
+            className='mt-4 w-full  py-16 pl-10 md:pl-16 lg:pl-24 xl:pl-28 text-3xl   md:w-1/2 '
+
           >
             <span className='' data-editor-processed='true'>
               We're on a journey.
@@ -298,6 +298,7 @@ const HomePage = () => {
           </div>
           <div className='w-full md:w-1/2' >
             <SubmitForm />
+            
           </div>
         </div>
       </section>
