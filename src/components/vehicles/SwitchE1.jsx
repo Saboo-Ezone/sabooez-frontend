@@ -55,7 +55,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
         <img
           src={logoE1}
           alt=''
-          srcset=''
+          srcSet=''
           className='absolute bottom-10 left-4 h-12 lg:left-6 lg:h-16 xl:left-10'
         />
       </section>
@@ -108,7 +108,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
           <img
             src={perfectEngine}
             alt='Perfect Engine'
-            srcset=''
+            srcSet=''
             className='pb-4 md:hidden'
             data-aos='fade-left'
             data-aos-duration='1000'
@@ -150,7 +150,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
           preload='metadata'
           loop
           autoPlay
-          playsinline
+          playsInline
           muted
           className='d-block'
         >

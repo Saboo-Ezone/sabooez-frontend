@@ -43,7 +43,7 @@ const SubmitForm = () => {
         onSubmit={(values, { setSubmitting }) => {
           console.log(values);
           // Firebase.putData('ModelEnquiry', values);
-          Firebase.writeData(values);
+          Firebase.writeData('EnquiryForm', values);
           setSub(false);
         }}
       >
@@ -52,100 +52,86 @@ const SubmitForm = () => {
             {sub ? (
               <>
                 <div className='text-h2 text-[#505bfe]'>Enquire Now</div>
-
                 <Form>
-                  <div className=' '>
-                    <div className='my-2 pb-2 lg:mb-4'>
-                      <ErrorMessage
-                        name='name'
-                        component='div'
-                        className=' -mt-5 text-right text-sm text-red-700'
-                      />
-                      <Field
-                        className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed placeholder:text-gray-800 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-300 '
-                        type='text'
-                        name='name'
-                        id='name'
-                        placeholder='Name'
-                        required
-                      />
-
-                      {/* <Field
-                      required
-                      className='mb-6 w-full rounded-lg  border border-gray-300 px-4 py-2 placeholder:text-black focus:outline-none'
+                  <div className='my-2 pb-2 lg:mb-4'>
+                    <ErrorMessage
+                      name='name'
+                      component='div'
+                      className=' -mt-5 text-right text-sm text-red-700'
+                    />
+                    <Field
+                      className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed placeholder:text-gray-800 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-300 '
                       type='text'
                       name='name'
                       id='name'
                       placeholder='Name'
-                    /> */}
-                    </div>
-                    <div className='my-2 pb-2 lg:mb-4'>
-                      <ErrorMessage
-                        name='email'
-                        component='div'
-                        className=' -mt-5 text-right text-sm text-red-700'
-                      />
-                      <Field
-                        type='email'
-                        className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed placeholder:text-gray-800 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-300 '
-                        name='email'
-                        id='email'
-                        placeholder='Email'
-                      />
-                    </div>
-                    <div className='my-2 pb-2 lg:mb-4'>
-                      <ErrorMessage
-                        name='phone'
-                        component='div'
-                        className=' -mt-5 text-right text-sm text-red-700'
-                      />
-                      <Field
-                        type='number'
-                        className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed placeholder:text-gray-800 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-300 '
-                        name='phone'
-                        id='phone'
-                        placeholder='Phone Number'
-                        required
-                      />
-                    </div>
-                    <div className='my-2 pb-2 lg:mb-4'>
-                      <ErrorMessage
-                        name='model'
-                        component='div'
-                        className=' -mt-5 text-right text-sm text-red-700'
-                      />
-                      <Field
-                        required
-                        as='select'
-                        className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed  focus:border-indigo-500  focus:ring-2 focus:ring-indigo-300 '
-                        name='model'
-                        id='model'
+                      required
+                    />
+                  </div>
+                  <div className='my-2 pb-2 lg:mb-4'>
+                    <ErrorMessage
+                      name='email'
+                      component='div'
+                      className=' -mt-5 text-right text-sm text-red-700'
+                    />
+                    <Field
+                      type='email'
+                      className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed placeholder:text-gray-800 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-300 '
+                      name='email'
+                      id='email'
+                      placeholder='Email'
+                    />
+                  </div>
+                  <div className='my-2 pb-2 lg:mb-4'>
+                    <ErrorMessage
+                      name='phone'
+                      component='div'
+                      className=' -mt-5 text-right text-sm text-red-700'
+                    />
+                    <Field
+                      type='number'
+                      className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed placeholder:text-gray-800 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-300 '
+                      name='phone'
+                      id='phone'
+                      placeholder='Phone Number'
+                      required
+                    />
+                  </div>
+                  <div className='my-2 pb-2 lg:mb-4'>
+                    <ErrorMessage
+                      name='model'
+                      component='div'
+                      className=' -mt-5 text-right text-sm text-red-700'
+                    />
+                    <Field
+                      required
+                      as='select'
+                      className='mb-1 block w-full border-2 border-indigo-700 px-2 py-2 text-lg leading-relaxed  focus:border-indigo-500  focus:ring-2 focus:ring-indigo-300 '
+                      name='model'
+                      id='model'
+                    >
+                      <option className='text-sm text-gray-500' value=''>
+                        Select Model
+                      </option>
+                      <option className='bg-gray-100 ' value='Switch E1'>
+                        Switch E1
+                      </option>
+                      <option
+                        className='bg-gray-100 '
+                        value='Switch Metrodecker'
                       >
-                        <option className='text-sm text-gray-500' value=''>
-                          Select Model
-                        </option>
-                        <option className='bg-gray-100 ' value='Switch E1'>
-                          Switch E1
-                        </option>
-                        <option
-                          className='bg-gray-100 '
-                          value='Switch Metrodecker'
-                        >
-                          Switch Metrodecker
-                        </option>
-                        <option
-                          className='bg-gray-100 '
-                          value='Switch Metrocity'
-                        >
-                          Switch Metrocity
-                        </option>
-                        <option className='bg-gray-100 ' value='Switch Solo'>
-                          Switch Solo
-                        </option>
-                      </Field>
-                    </div>
+                        Switch Metrodecker
+                      </option>
+                      <option className='bg-gray-100 ' value='Switch Metrocity'>
+                        Switch Metrocity
+                      </option>
+                      <option className='bg-gray-100 ' value='Switch Solo'>
+                        Switch Solo
+                      </option>
+                    </Field>
+                  </div>
 
-                    {/* <div className='relative mb-2 block '>
+                  {/* <div className='relative mb-2 block '>
                       <input
                         type='checkbox'
                         name='subscribe_newsletter'
@@ -157,36 +143,35 @@ const SubmitForm = () => {
                       </label>
                     </div> */}
 
-                    <button
-                      type='submit'
-                      className='group relative h-min overflow-hidden border-[2px]  border-indigo-700 px-6 py-2 text-xl font-medium text-indigo-500 shadow-inner'
-                      // disabled={isSubmitting}
-                    >
-                      <span className='border-t-1 ease absolute left-0 top-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-                      <span className='border-b-1 ease absolute bottom-0 right-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-                      <span className='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
-                      <span className='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
-                      <span className='absolute inset-0 h-full w-full bg-indigo-700  opacity-0 delay-300 duration-300 group-hover:opacity-100'></span>
-                      <span className='ease relative transition-colors delay-200 duration-300 group-hover:text-white'>
-                        SUBMIT
-                      </span>
-                    </button>
-                    <div className='text-[10px] my-2 text-indigo-500'>
-                      <span className=' '>
-                        SWITCH Mobility is committed to protecting and
-                        respecting your privacy.
-                        <br />
-                        We only use your personal information to provide the
-                        information you requested from us.
-                      </span>
+                  <button
+                    type='submit'
+                    className='group relative h-min overflow-hidden border-[2px]  border-indigo-700 px-6 py-2 text-xl font-medium text-indigo-500 shadow-inner'
+                    // disabled={isSubmitting}
+                  >
+                    <span className='border-t-1 ease absolute left-0 top-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+                    <span className='border-b-1 ease absolute bottom-0 right-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+                    <span className='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
+                    <span className='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
+                    <span className='absolute inset-0 h-full w-full bg-indigo-700  opacity-0 delay-300 duration-300 group-hover:opacity-100'></span>
+                    <span className='ease relative transition-colors delay-200 duration-300 group-hover:text-white'>
+                      SUBMIT
+                    </span>
+                  </button>
+                  <div className='my-2 text-[10px] text-indigo-500'>
+                    <span className=' '>
+                      SWITCH Mobility is committed to protecting and respecting
+                      your privacy.
                       <br />
-                      <span className='mb-4 '>
-                        For more information on how to unsubscribe, our privacy
-                        practices, and how we are committed to protecting and
-                        respecting your privacy, please review our Privacy
-                        Policy .
-                      </span>
-                    </div>
+                      We only use your personal information to provide the
+                      information you requested from us.
+                    </span>
+                    <br />
+                    <span className='mb-4 '>
+                      For more information on how to unsubscribe, our privacy
+                      practices, and how we are committed to protecting and
+                      respecting your privacy, please review our Privacy Policy
+                      .
+                    </span>
                   </div>
                 </Form>
               </>

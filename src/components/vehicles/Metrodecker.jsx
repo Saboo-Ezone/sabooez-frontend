@@ -10,7 +10,6 @@ import EnquirForm from '../otherComponents/EnquirForm';
 import SideButton from '../otherComponents/SideButton';
 
 const Metrodecker = ({ setShowMyModal }) => {
-
   return (
     <>
       <section>
@@ -37,7 +36,7 @@ const Metrodecker = ({ setShowMyModal }) => {
         <img
           src={logoMetrodecker}
           alt=''
-          srcset=''
+          srcSet=''
           className='absolute bottom-10 left-4 h-8 brightness-200 contrast-200 sm:h-10 md:h-12 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
@@ -87,7 +86,7 @@ const Metrodecker = ({ setShowMyModal }) => {
           <img
             src={metrodeckerLightest}
             alt='Metrodecker Lightest'
-            srcset=''
+            srcSet=''
             className='pb-4 md:hidden '
             data-aos='fade-left'
             data-aos-duration='1000'
@@ -121,7 +120,7 @@ const Metrodecker = ({ setShowMyModal }) => {
           preload='metadata'
           loop
           autoPlay
-          playsinline
+          playsInline
           muted
           className='d-block'
         >
@@ -133,9 +132,9 @@ const Metrodecker = ({ setShowMyModal }) => {
           Your browser does not support the video tag.
         </video>
       </section>
-      <section class=' bg-[#00002d] text-white  '>
-        <div class='col-lg-10 col-md-12 offset-lg-1 mx-auto pr-3 '>
-          <div class='p-3 pt-10 text-center  text-4xl  font-medium  md:pb-4 md:pt-16'>
+      <section className=' bg-[#00002d] text-white  '>
+        <div className='col-lg-10 col-md-12 offset-lg-1 mx-auto pr-3 '>
+          <div className='p-3 pt-10 text-center  text-4xl  font-medium  md:pb-4 md:pt-16'>
             Technical Specifications
           </div>
           <div className=' mb-5  px-4 py-3 text-justify sm:px-14 md:px-16 md:pb-10 lg:px-28'>
@@ -148,9 +147,12 @@ const Metrodecker = ({ setShowMyModal }) => {
             the latest driveline technologies ensure the SWITCH metrodecker
             delivers optimum operating efficiencies.
           </div>
-          <div class='col-sm-12 customTable ' style={{ position: 'relative' }}>
-            <div class=' p-3 md:pb-3  lg:px-28'>
-              <table class='m-auto table '>
+          <div
+            className='col-sm-12 customTable '
+            style={{ position: 'relative' }}
+          >
+            <div className=' p-3 md:pb-3  lg:px-28'>
+              <table className='m-auto table '>
                 <tr>
                   <td className='border-b-2   bg-indigo-500 p-1 md:py-2 md:pl-2 md:pr-60  xl:pr-96'>
                     Body Length Options
@@ -240,9 +242,9 @@ const Metrodecker = ({ setShowMyModal }) => {
               </table>
             </div>
           </div>
-          <div class='pb-8 pt-4 text-center'>
+          <div className='pb-8 pt-4 text-center'>
             <button
-              class='rounded-lg bg-green-500 px-4 py-3 text-xl hover:bg-indigo-600 hover:text-white '
+              className='rounded-lg bg-green-500 px-4 py-3 text-xl hover:bg-indigo-600 hover:text-white '
               data-toggle='modal'
               data-target='.download'
             >

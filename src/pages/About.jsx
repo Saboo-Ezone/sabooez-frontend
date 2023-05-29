@@ -42,7 +42,7 @@ const About = () => {
                 autoPlay
                 loop
                 muted
-                playsinline
+                playsInline
                 width='100%'
                 preload='metadata'
                 className='d-block'

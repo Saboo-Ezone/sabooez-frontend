@@ -68,7 +68,7 @@ const HomePage = () => {
           preload='metadata'
           loop
           autoPlay
-          playsinline
+          playsInline
           muted
           className='d-block'
         >
@@ -103,9 +103,7 @@ const HomePage = () => {
           </div>
           <div className=' grid   gap-6  sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3'>
             <div className='mb-5' data-aos='fade-in' data-aos-delay='300'>
-              <div className='mb-5 text-h5 lg:text-h3 xl:text-h2'>
-                <div>SWITCH e1</div>
-              </div>
+              <div className='mb-5 font-mono text-h4'>SWITCH e1</div>
               <div className=' overflow-hidden  '>
                 <img
                   src={switch_e1}
@@ -125,9 +123,7 @@ const HomePage = () => {
             </div>
 
             <div className='mb-5' data-aos='fade-in' data-aos-delay='400'>
-              <div className='mb-5 text-h5 lg:text-h3 xl:text-h2'>
-                <div>SWITCH Metrodecker</div>
-              </div>
+              <div className='mb-5 font-mono text-h4'>Metrodecker</div>
               <div className=' overflow-hidden '>
                 <img
                   src={metrodecker}
@@ -147,9 +143,7 @@ const HomePage = () => {
             </div>
 
             <div className='mb-5 ' data-aos='fade-in' data-aos-delay='500'>
-              <div className='mb-5 text-h5 lg:text-h3 xl:text-h2'>
-                <div>SWITCH Metrocity</div>
-              </div>
+              <div className='mb-5 font-mono text-h4'>Metrocity</div>
               <div className=' overflow-hidden  '>
                 <img
                   src={metrocity}
@@ -170,16 +164,16 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section class='mb-1 flex flex-col overflow-hidden bg-emerald-500 md:flex-row'>
+      <section className='mb-1 flex flex-col overflow-hidden bg-emerald-500 md:flex-row'>
         <div
-          class='h-[45vh] w-full bg-cover bg-center bg-no-repeat md:h-[65vh] md:w-1/2'
+          className='h-[45vh] w-full bg-cover bg-center bg-no-repeat md:h-[65vh] md:w-1/2'
           style={{ backgroundImage: `url(${bannerTech})` }}
           data-aos='fade-right'
           data-aos-delay='200'
         ></div>
         <div
           style={{ backgroundImage: `url(${patternGreen})` }}
-          class='flex h-[45vh] w-full flex-col justify-between p-6 text-white sm:p-8 md:h-[65vh] md:w-1/2 lg:p-12'
+          className='flex h-[45vh] w-full flex-col justify-between p-6 text-white sm:p-8 md:h-[65vh] md:w-1/2 lg:p-12'
         >
           <div className='flex flex-wrap items-center justify-between'>
             <div className='text-h1' data-aos='fade-up' data-aos-delay='100'>
@@ -258,29 +252,29 @@ const HomePage = () => {
 
           <Link
             to='/about'
-            class='group relative overflow-hidden border-[2px] border-gray-100 px-8 py-2 text-xl font-medium text-white shadow-inner lg:text-2xl'
+            className='group relative overflow-hidden border-[2px] border-gray-100 px-8 py-2 text-xl font-medium text-white shadow-inner lg:text-2xl'
             data-editor-processed='true'
             data-aos='fade-up'
             data-aos-delay='300'
           >
-            <span class='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-            <span class='ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-            <span class='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-100 duration-300 group-hover:h-full'></span>
-            <span class='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-100 duration-300 group-hover:h-full'></span>
-            <span class='absolute inset-0 h-full w-full bg-white opacity-0 delay-200 duration-300 group-hover:opacity-100'></span>
-            <span class='ease relative transition-colors delay-200 duration-300 group-hover:text-indigo-500'>
+            <span className='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+            <span className='ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
+            <span className='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-100 duration-300 group-hover:h-full'></span>
+            <span className='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-100 duration-300 group-hover:h-full'></span>
+            <span className='absolute inset-0 h-full w-full bg-white opacity-0 delay-200 duration-300 group-hover:opacity-100'></span>
+            <span className='ease relative transition-colors delay-200 duration-300 group-hover:text-indigo-500'>
               OUR STORY
             </span>
           </Link>
         </div>
       </section>
-    
-      <section>
-        <div className='flex w-full bg-no-repeat flex-col md:flex-row' style={{ backgroundImage: `url(${patternBoxSvg})` }}>
-          <div
-            className='mt-4 w-full  py-16 pl-10 md:pl-16 lg:pl-24 xl:pl-28 text-3xl   md:w-1/2 '
 
-          >
+      <section>
+        <div
+          className='flex w-full flex-col bg-no-repeat md:flex-row'
+          style={{ backgroundImage: `url(${patternBoxSvg})` }}
+        >
+          <div className='mt-4 w-full  py-16 pl-10 text-3xl md:w-1/2 md:pl-16 lg:pl-24   xl:pl-28 '>
             <span className='' data-editor-processed='true'>
               We're on a journey.
               <br />
@@ -296,9 +290,8 @@ const HomePage = () => {
               Contact us and be the first to hear about our EV buses and vans.
             </span>
           </div>
-          <div className='w-full md:w-1/2' >
+          <div className='w-full md:w-1/2'>
             <SubmitForm />
-            
           </div>
         </div>
       </section>

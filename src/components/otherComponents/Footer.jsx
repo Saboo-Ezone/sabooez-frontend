@@ -7,14 +7,14 @@ const Footer = () => {
   return (
     <div className='bg-[#505bfe]  bg-opacity-95  p-10 text-white'>
       <div
-        className='grid w-full gap-4  sm:grid-cols-3 justify-center text-center md:text-left md:gap-2 '
+        className='grid w-full justify-center  gap-4 text-center sm:grid-cols-3 md:gap-2 md:text-left '
         style={{ backgroundImage: `url(${patternPng})` }}
       >
         <div className='flex flex-col items-center md:items-start'>
           <img
             src={logoWhite}
             alt=''
-            srcset=''
+            srcSet=''
             className='-mt-6 h-16  md:h-20'
           />
           <div className='flex gap-1 pl-2'>
@@ -27,7 +27,7 @@ const Footer = () => {
               <svg
                 fill='currentColor'
                 height='16'
-                viewbox='0 0 16 16'
+                viewBox='0 0 16 16'
                 width='16'
                 xmlns='http://www.w3.org/2000/svg'
               >
@@ -43,7 +43,7 @@ const Footer = () => {
               <svg
                 fill='currentColor'
                 height='16'
-                viewbox='0 0 16 16'
+                viewBox='0 0 16 16'
                 width='16'
                 xmlns='http://www.w3.org/2000/svg'
               >
@@ -59,7 +59,7 @@ const Footer = () => {
               <svg
                 fill='currentColor'
                 height='18'
-                viewbox='0 0 16 16'
+                viewBox='0 0 16 16'
                 width='18'
                 xmlns='http://www.w3.org/2000/svg'
               >
@@ -79,7 +79,7 @@ const Footer = () => {
               <svg
                 fill='currentColor'
                 height='14'
-                viewbox='0 0 16 16'
+                viewBox='0 0 16 16'
                 width='14'
                 xmlns='http://www.w3.org/2000/svg'
               >
@@ -97,7 +97,7 @@ const Footer = () => {
               <svg
                 fill='currentColor'
                 height='14'
-                viewbox='0 0 16 16'
+                viewBox='0 0 16 16'
                 width='18'
                 xmlns='http://www.w3.org/2000/svg'
               >
@@ -126,7 +126,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p>
+          <div>
             <span className='font-semibold uppercase underline underline-offset-2'>
               Address
             </span>
@@ -135,9 +135,9 @@ const Footer = () => {
             6-3-905, Raj Bhavan Rd, Somajiguda,
             <br />
             Hyderabad, Telangana 500082
-          </p>
+          </div>
 
-          <p>
+          <div>
             <a
               href='mailto:info@saboomaruti.in'
               className='hover:text-yellow-300'
@@ -150,7 +150,7 @@ const Footer = () => {
               +91 98488 98488
             </a>
             <br />
-          </p>
+          </div>
         </div>
       </div>
     </div>

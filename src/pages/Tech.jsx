@@ -53,7 +53,7 @@ const Tech = () => {
               preload='metadata'
               loop
               autoPlay
-              playsinline
+              playsInline
               muted
               className='d-block'
             >
@@ -66,22 +66,22 @@ const Tech = () => {
 
       <section className=' bg-[#edede6]'>
         <div
-          className='grid grid-cols-1 py-10 font-roboto  sm:px-10 sm:py-20 md:grid-cols-6 md:px-16'
+          className='grid grid-cols-1 py-10 px-4 font-roboto  sm:px-10 sm:py-20 md:grid-cols-6 md:px-16'
           data-aos='fade-up'
         >
           <div
-            className='text-2xl text-indigo-600 md:col-span-4 lg:col-span-3'
+            className='text-2xl  text-indigo-600 md:col-span-4 lg:col-span-3'
             data-aos='fade-up'
           >
-            <p className=' mb-8'>
+            <div className=' mb-8'>
               With the world changing rapidly, our research and proprietary
               technologies are helping us stay ahead of the curve.
-            </p>
-            <p className=''>
+            </div>
+            <div className=''>
               We’ve designed everything from the ground up to be net zero and
               achieve the lowest possible TCO. Discover the tech behind our
               smart vehicles.
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -104,14 +104,14 @@ const Tech = () => {
                   </span>
                 </h3>
                 <div>
-                  <p className=' font-robototext-justify text-sm '>
+                  <div className=' font-robototext-justify text-sm '>
                     Strong, ultra-lightweight and made from a high proportion of
                     plant-based composites. The self-coloured body panels
                     eliminate the need for paint process during manufacturing,
                     and make replacements and repairs more efficient. SWITCH
                     materials do not degrade over time meaning a longer life for
                     your vehicle.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -134,13 +134,13 @@ const Tech = () => {
                   </span>
                 </h3>
                 <div>
-                  <p className=' font-roboto text-sm'>
+                  <div className=' font-roboto text-sm'>
                     Build your own range. We offer the latest innovations in
                     battery design, built to meet your exact needs. Our modular
                     batteries are integrated into the vehicle structure with a
                     wide variety of options, allowing you to choose how long you
                     want to keep going.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -163,11 +163,11 @@ const Tech = () => {
                   </span>
                 </h3>
                 <div>
-                  <p className=' font-roboto text-sm'>
+                  <div className=' font-roboto text-sm'>
                     All SWITCH designed products have a digital twin (a virtual
                     replica of a physical device). These allow us to monitor,
                     diagnose and continually optimise each and every vehicle.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,11 +197,11 @@ const Tech = () => {
                   </span>
                 </h3>
                 <div>
-                  <p className=' font-roboto text-sm'>
+                  <div className=' font-roboto text-sm'>
                     To get a complete picture of our vehicles, data is vital. We
                     collect and analyse over 2TB of data daily, giving us the
                     insights we need to continuously improve our offering.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -224,12 +224,12 @@ const Tech = () => {
                   </span>
                 </h3>
                 <div>
-                  <p className=' font-roboto text-sm'>
+                  <div className=' font-roboto text-sm'>
                     Our i-Alert platform allows our customers to access vehicle
                     tracking and performance remotely. Diagnostics, prognostics
                     and battery management tools for world-class fleet
                     efficiency.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -252,11 +252,11 @@ const Tech = () => {
                   </span>
                 </h3>
                 <div>
-                  <p className=' font-roboto text-sm'>
+                  <div className=' font-roboto text-sm'>
                     From speed restrictions to automatic emergency braking, our
                     vehicles communicate with the world around them to ensure
                     the highest levels of safety.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -286,11 +286,11 @@ const Tech = () => {
                   </span>
                 </h3>
                 <div>
-                  <p className=' font-roboto text-sm'>
+                  <div className=' font-roboto text-sm'>
                     We provide over-the-air updates for our software meaning our
                     clients always have the latest optimisations instantly,
                     without the need to visit a service centre.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -313,12 +313,12 @@ const Tech = () => {
                   </span>
                 </h3>
                 <div>
-                  <p className=' font-roboto text-sm'>
+                  <div className=' font-roboto text-sm'>
                     (Or eMaaS for short.) SWITCH provides a pay as you go
                     option. We take care of the vehicles and their maintenance,
                     so that you can focus on the most important things to you –
                     transporting passengers or goods safely and efficiently.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -74,13 +74,6 @@ const Header = () => {
                       }}
                     >
                       {link.name}
-                      {/* <span className='text-xl md:hidden inline'>
-                        {heading === link.name && <BiChevronDown />}
-                      </span>
-                      <span className='text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2'> */}
-                      {/* <ion-icon name='chevron-down'></ion-icon> */}
-                      {/* <BiChevronDown /> */}
-                      {/* </span> */}
                     </h1>
                     {link.submenu && (
                       <div>
@@ -280,8 +273,8 @@ const Header = () => {
                   >
                     {/* sublinks */}
                     {link.sublinks.map((slinks) => (
-                      <div>
                         <div>
+                          <div>
                           <div>
                             {slinks.sublink.map((slink) => (
                               <li className='py-3 pl-14'>

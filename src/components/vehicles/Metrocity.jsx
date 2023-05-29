@@ -43,7 +43,7 @@ const Metrocity = ({ setShowMyModal }) => {
         <img
           src={logoMetrocity}
           alt=''
-          srcset=''
+          srcSet=''
           className='absolute bottom-10 left-4  h-8 brightness-200 contrast-200 sm:h-10 md:h-12 lg:left-6 lg:h-14 xl:left-10 xl:h-16 '
         />
       </section>
@@ -63,7 +63,7 @@ const Metrocity = ({ setShowMyModal }) => {
           <img
             src={metrocityFirstBritish}
             alt='Metrodecker Lightest'
-            srcset=''
+            srcSet=''
             className='p-4 lg:hidden '
             data-aos='fade-right'
             data-aos-duration='1000'
@@ -92,7 +92,7 @@ const Metrocity = ({ setShowMyModal }) => {
           <img
             src={metrocityEfficient}
             alt='Metrodecker Lightest'
-            srcset=''
+            srcSet=''
             className='pb-6 md:hidden '
             data-aos='fade-left'
             data-aos-duration='1000'

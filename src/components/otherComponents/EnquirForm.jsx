@@ -50,7 +50,7 @@ const EnquirForm = () => {
         onSubmit={(values, { setSubmitting }) => {
           console.log(values);
           // Firebase.putData('ModelEnquiry', values);
-          Firebase.writeData(values);
+          Firebase.writeData('EnquiryForm', values);
           setSub(false);
         }}
       >

@@ -54,20 +54,20 @@ const Contact = () => {
             </div>
             <div className='type-of-block'>
               <div className=' pl-8 md:pl-16 lg:pl-20'>
-                <p
+                <div
                   className='pb-8 text-xl text-[#505bfe]'
                   data-aos='fade-up'
                   data-aos-delay='400'
                 >
                   If you've got a question, drop us a line or give us a call.
-                </p>
+                </div>
 
                 <div
                   data-aos='fade-up'
                   data-aos-delay='500'
                   className='text-lg'
                 >
-                  <p>
+                  <div>
                     <div className=' pb-2  text-lg lg:text-xl '>
                       Saboo RKS Motor - Maruti Suzuki Arena
                     </div>
@@ -78,11 +78,11 @@ const Contact = () => {
                     Somajiguda, Hyderabad,
                     <br />
                     Telangana 500082
-                  </p>
-                  <p className=''>
+                  </div>
+                  <div className=''>
                     Tel: <a href='tel:+919848898488'>+91-9848898488</a>
                     <br />
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>

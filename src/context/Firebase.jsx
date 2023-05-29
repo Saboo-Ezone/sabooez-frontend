@@ -59,8 +59,8 @@ export const FirebaseProvider = (props) => {
   //Realtimedatabase
   const putData = (key, data) => set(ref(database, key), data);
 
-  const writeData = async (data) => {
-    const result = await addDoc(collection(FirebaseStore, 'EnquiryForm'), data );
+  const writeData = async (path,data) => {
+    const result = await addDoc(collection(FirebaseStore, path), data );
     console.log(result);
   };
 
