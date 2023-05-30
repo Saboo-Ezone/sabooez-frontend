@@ -11,6 +11,7 @@ import metrocity from '../../assets/vehicle/metrocity/metrocity-mirror.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ModalSolo from '../otherComponents/ModalSolo';
+import EnquirForm from '../otherComponents/EnquirForm';
 
 const Solo = () => {
   const [showMyModal, setShowMyModal] = useState(false);
@@ -61,6 +62,10 @@ const Solo = () => {
           </div>
         </div>
       </section>
+      <div className='mb-2 '>
+
+      <EnquirForm />
+      </div>
       <section className='w-full bg-[#edede6] bg-opacity-75'>
         <div
           className='p-8  text-xl text-[#505bfe] md:w-[60%] md:px-12 md:text-2xl xl:text-3xl'
@@ -124,9 +129,9 @@ const Solo = () => {
         </div>
       </section>
       <section className=' w-full  '>
-        <div className=' mx-4 md:mx-8 lg:mx-16  '>
+        <div >
           <div
-            className='pb-4 pt-8 text-h3 md:pt-16  md:text-h2  lg:pb-2   lg:text-h1  '
+            className='pb-4 px-8 md:px-12 pt-8 text-h3 md:pt-16  md:text-h2  lg:pb-2   lg:text-h1  '
             data-aos='fade-up'
             data-aos-delay='100'
           >
@@ -139,15 +144,15 @@ const Solo = () => {
             data-aos-delay='200'
             data-editor-processed='true'
           >
-            <div className=' pb-6 font-roboto '>
+            <div className='px-8 md:px-12 pb-6 font-roboto '>
               100% electric with zero tailpipe emissions. Meet the fleets on the
               road today.
             </div>
-            <div className=' font-mono text-xl text-[#00c389]   '>
+            <div className='px-8 md:px-12 font-mono text-xl text-[#00c389]   '>
               Vehicles from SWITCH Mobility Ltd:
             </div>
           </div>
-          <div className=' grid   gap-6  sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-4'>
+          <div className=' grid px-8 md:px-12  gap-6  sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-4'>
             <div className='mb-5' data-aos='fade-in' data-aos-delay='300'>
               <div className='mb-5 font-mono text-h5'>SWITCH e1</div>
               <div className=' overflow-hidden  '>

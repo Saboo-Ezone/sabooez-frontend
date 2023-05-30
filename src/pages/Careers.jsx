@@ -101,7 +101,7 @@ const Careers = () => {
             <>
               <div className='text-h2 text-[#505bfe]'>Apply for Job</div>
               <Form>
-                <div className='my-4 grid gap-x-2 sm:grid-cols-2 md:gap-4  xl:grid-cols-4'>
+                <div className='my-4 grid gap-x-2 sm:grid-cols-2 md:gap-y-2 md:gap-x-4  xl:grid-cols-4'>
                   <div className='my-2 pb-2 lg:mb-4'>
                     <ErrorMessage
                       name='name'
@@ -156,9 +156,8 @@ const Careers = () => {
                       id='resume' // Provide a valid ID for the file input
                       placeholder='Resume'
                       required
-                    />
-                    By giving the file input a proper name and ID, you should be
-                    able to resolve the error and successfully submit the form.
+                    ></Field>
+            
                   </div>
                 </div>
                 <button
