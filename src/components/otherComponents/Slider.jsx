@@ -42,7 +42,7 @@ function Slider() {
         <SwiperSlide>
           <div className='relative'>
             <img src={e1} className='w-full  object-cover' alt='SWITCH e1' />
-            <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/2 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
+            <span className='text-xl absolute bottom-6 left-1/4 -translate-x-1/2 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/e1'>
                 <div className='m-3 flex items-center justify-center '>
                   <div className='mx-4'>SWITCH e1</div>

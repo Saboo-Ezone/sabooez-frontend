@@ -147,10 +147,7 @@ const Metrodecker = ({ setShowMyModal }) => {
             the latest driveline technologies ensure the SWITCH metrodecker
             delivers optimum operating efficiencies.
           </div>
-          <div
-            className='col-sm-12 customTable '
-            style={{ position: 'relative' }}
-          >
+          <div className='col-sm-12  ' style={{ position: 'relative' }}>
             <div className=' p-3 md:pb-3  lg:px-28'>
               <table className='m-auto table '>
                 <tr>
