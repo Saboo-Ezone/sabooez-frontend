@@ -17,7 +17,7 @@ const ModalEnquire = ({ visible, onClose }) => {
       className='fixed  inset-0 flex items-center justify-center z-20  backdrop-blur-[3px] '
      
     >
-      <div className='border border-gray-400 rounded-lg bg-[#edede6] px-16 py-4 text-center '  style={{ backgroundImage: `url(${patternWhite})` }}>
+      <div className='border border-gray-400  bg-[#edede6] px-16 py-4 text-center '  style={{ backgroundImage: `url(${patternWhite})` }}>
         <div
           onClick={onClose}
           className=' -pr-10 my-1 flex cursor-pointer items-center justify-end text-3xl text-gray-500 hover:text-black'
