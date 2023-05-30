@@ -55,7 +55,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
           </div>
 
           <div className='mt-1 flex animate-bounce justify-center '>
-            <div className='h-4 w-4  rotate-45  border-r-2'></div>
+          <div className='h-4 w-4  rotate-45 border-b-2 border-r-2'></div>
           </div>
         </div>
         <img

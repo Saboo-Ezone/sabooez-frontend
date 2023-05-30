@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import homeBanner from '../../assets/vehicle/metrocity/metrocity-home-banner.jpg';
 import logoMetrocity from '../../assets/vehicle/metrocity/metrocity-logo-white.png';
 // import video from "../../assets/video/FIRST_YORK _B-ROLL.mp4"
@@ -7,11 +7,15 @@ import metrocityFirstBritish from '../../assets/vehicle/metrocity/metrocity-firs
 import metrocityEfficient from '../../assets/vehicle/metrocity/metrocity-efficient-class.jpg';
 import EnquirForm from '../otherComponents/EnquirForm';
 import SideButton from '../otherComponents/SideButton';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { AiOutlineArrowLeft } from 'react-icons/ai';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Metrocity = ({ setShowMyModal }) => {
+  const [ind1, setInd1] = useState(0);
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -124,6 +128,278 @@ const Metrocity = ({ setShowMyModal }) => {
           data-aos='fade-left'
           data-aos-duration='1000'
         ></div>
+      </section>
+      <section className=' relative bg-[#00002d] p-4  text-white duration-500'>
+        {ind1 ? (
+          <div className='container mx-auto my-10 font-roboto md:flex md:flex-col md:justify-center '>
+            <div className='mb-4 text-center  text-4xl md:mb-6'>
+              Dimensions and weights
+            </div>
+
+            <div className='flex flex-col items-center justify-center md:flex-row'>
+              <div>
+                <span className='font-mono text-2xl'>Overall Dimensions</span>
+                <br />
+                <br />
+                <div
+                  className='col-sm-12  overflow-hidden '
+                  style={{ position: 'relative' }}
+                >
+                  <table className=' mx-12 mb-6 table   '>
+                    <tr className='relative bg-[#4d6bb3] '>
+                      <td className=' p-2 '>Wheelbase</td>
+                      <td className=' p-2'>6000 mm</td>
+                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                        C
+                      </div>
+                    </tr>
+                    <tr className='relative'>
+                      <td className=' p-2'>Overall length</td>
+                      <td className=' p-2'> 120000 mm</td>
+                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                        D
+                      </div>
+                    </tr>
+
+                    <tr className='relative bg-[#4d6bb3]'>
+                      <td className=' p-2'> Front overhang</td>
+                      <td className=' p-2'> 2777 mm</td>
+                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                        E
+                      </div>
+                    </tr>
+                    <tr className='relative'>
+                      <td className=' p-2'> Rear overhang</td>
+                      <td className=' p-2'> 3223 mm</td>
+                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                        F
+                      </div>
+                    </tr>
+                    <tr className='bg-[#4d6bb3]'>
+                      <td className=' p-2'>Track front</td>
+                      <td className=' p-2'>2234 mm</td>
+                    </tr>
+                    <tr>
+                      <td className=' p-2'>Track rear</td>
+                      <td className=' p-2'>6000 mm </td>
+                    </tr>
+                    <tr className='relative bg-[#4d6bb3]'>
+                      <td className=' p-2'>Angle of approach</td>
+                      <td className=' p-2'>7.2 </td>
+                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                        G
+                      </div>
+                    </tr>
+                    <tr className='relative'>
+                      <td className=' p-2'>Angle of departure</td>
+                      <td className=' p-2'> 7.3 </td>
+                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                        H
+                      </div>
+                    </tr>
+                    <tr className='bg-[#4d6bb3]'>
+                      <td className=' p-2'>% of rear overhang to wheelbase</td>
+                      <td className=' p-2'>53%</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <span className='font-mono text-2xl'>Chassis weights</span>
+                <br />
+                <br />
+                <div className='col-sm-12  ' style={{ position: 'relative' }}>
+                  <table className=' mb-6   table'>
+                    <tr className='bg-[#4d6bb3]'>
+                      <td className=' p-2'> Front axle (unladen)</td>
+                      <td className=' p-2'> 4062 kg</td>
+                    </tr>
+                    <tr>
+                      <td className=' p-2'> Rear axle (unladen)</td>
+                      <td className=' p-2'> 7492 kg</td>
+                    </tr>
+                    <tr className='bg-[#4d6bb3]'>
+                      <td className=' p-2'>
+                        Kerb weight (standard capacity battery)
+                      </td>
+                      <td className=' p-2'>10775 kg</td>
+                    </tr>
+                    <tr className='border-b'>
+                      <td className=' p-2'>GVW</td>
+                      <td className=' p-2'>18000 kg</td>
+                    </tr>
+
+                    <br />
+                    <span className='font-mono text-2xl'>Turning diameter</span>
+                    <br />
+                    <br />
+
+                    <tr className='bg-[#4d6bb3]'>
+                      <td className=' p-2'>Kerb to kerb</td>
+                      <td className=' p-2'>18.84 m</td>
+                    </tr>
+                    <tr className='border-b'>
+                      <td className=' p-2'>Wall to wall</td>
+                      <td className=' p-2'>22.2 m</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div className='flex justify-center'>
+              <button className=' my-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white hover:bg-[#515ef5] '>
+                Download Brochure
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className='container mx-auto my-10 flex flex-col lg:flex-row lg:p-10'>
+            <div className='font-roboto   '>
+              <div className='mx-auto mb-4 text-4xl md:mb-6 lg:mx-0'>
+                Technical Specifications
+              </div>
+
+              <span>
+                This battery electric low weight and short wheelbase single deck
+                bus, renowned for its manoeuvrability and efficiency, has a
+                seating capacity of up to 44 passengers. The SWITCH metrocity is
+                an excellent vehicle for all environments.
+              </span>
+              <br />
+
+              <br />
+              <div
+                className='col-sm-12 overflow-x-scroll md:overflow-x-auto'
+                style={{ position: 'relative' }}
+              >
+                <table className='  mb-6  table  w-[90%] overflow-x-scroll lg:overflow-x-auto'>
+                  <tr>
+                    <td className='border-b-2   bg-[#4d6bb3] p-1 md:py-2 md:pl-2 '>
+                      Body Length Options
+                    </td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>8.7 m</td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>9.4 m</td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>10.1 m</td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>10.8 m</td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>11.5 m</td>
+                  </tr>
+
+                  <tr className='border-b'>
+                    <td className='p-2'>Overall length (mm)</td>
+                    <td className='p-2'>8,740</td>
+                    <td className='p-2'>9,440</td>
+                    <td className='p-2'>10,130</td>
+                    <td className='p-2'>10,820</td>
+                    <td className='p-2'>11,520</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>Overall width (mm)</td>
+                    <td className='p-2'>2,470</td>
+                    <td className='p-2'>2,470</td>
+                    <td className='p-2'>2,470</td>
+                    <td className='p-2'>2,470</td>
+                    <td className='p-2'>2,470</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>Overall height (mm)</td>
+                    <td className='p-2'>2,850</td>
+                    <td className='p-2'>2,850</td>
+                    <td className='p-2'>2,850</td>
+                    <td className='p-2'>2,850</td>
+                    <td className='p-2'>2,850</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>Wheelbase (mm)</td>
+                    <td className='p-2'>3,740</td>
+                    <td className='p-2'>4,440</td>
+                    <td className='p-2'>5,130</td>
+                    <td className='p-2'>5,820</td>
+                    <td className='p-2'>6,520</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>Front overhang (mm)</td>
+                    <td className='p-2'>2,430</td>
+                    <td className='p-2'>2,430</td>
+                    <td className='p-2'>2,430</td>
+                    <td className='p-2'>2,430</td>
+                    <td className='p-2'>2,430</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>Rear overhang (mm)</td>
+                    <td className='p-2'>2,570</td>
+                    <td className='p-2'>2,570</td>
+                    <td className='p-2'>2,570</td>
+                    <td className='p-2'>2,570</td>
+                    <td className='p-2'>2,570</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>
+                      Gross vehicle weight design/plated (kg)
+                    </td>
+                    <td className='p-2'>
+                      13,000/ <br /> 12,960**
+                    </td>
+                    <td className='p-2'>
+                      13,000/ <br /> 12,960**
+                    </td>
+                    <td className='p-2'>
+                      13,000/ <br /> 12,960**
+                    </td>
+                    <td className='p-2'>
+                      13,000/ <br /> 12,960**
+                    </td>
+                    <td className='p-2'>
+                      13,000/ <br /> 12,960**
+                    </td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>
+                      Front axle weight design/plated (kg)
+                    </td>
+                    <td className='p-2'>4,500/4,480</td>
+                    <td className='p-2'>4,500/4,480</td>
+                    <td className='p-2'>4,500/4,480</td>
+                    <td className='p-2'>4,500/4,480</td>
+                    <td className='p-2'>4,500/4,480</td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td class='text-xs text-white '>
+                      All Lengths Rear axle weight design/plated (kg):
+                      8,000/8,480
+                    </td>
+                  </tr>
+                </table>
+
+                <button className=' my-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white hover:bg-[#515ef5] '>
+                  Download Brochure
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+        <div className='flex cursor-pointer justify-center gap-4'>
+          <div
+            onClick={() => setInd1(0)}
+            className={`h-3 w-3 ${ind1 ? 'bg-white' : 'bg-[#20c997]'}`}
+          ></div>
+          <div
+            onClick={() => setInd1(1)}
+            className={`h-3 w-3 ${ind1 ? 'bg-[#20c997]' : 'bg-white'}`}
+          ></div>
+        </div>
+        <AiOutlineArrowRight
+          onClick={() => {
+            ind1 ? setInd1(0) : setInd1(1);
+          }}
+          className='absolute inset-y-1/2 right-14 hidden text-4xl lg:block'
+        />
+        <AiOutlineArrowLeft
+          onClick={() => {
+            ind1 ? setInd1(0) : setInd1(1);
+          }}
+          className='absolute inset-y-1/2 left-14 hidden text-4xl lg:block'
+        />
       </section>
       <SideButton setShowMyModal={setShowMyModal} />
     </>

@@ -240,13 +240,9 @@ const Metrodecker = ({ setShowMyModal }) => {
             </div>
           </div>
           <div className='pb-8 pt-4 text-center'>
-            <button
-              className='rounded-lg bg-green-500 px-4 py-3 text-xl hover:bg-indigo-600 hover:text-white '
-              data-toggle='modal'
-              data-target='.download'
-            >
-              Download Brochure
-            </button>
+          <button className=' my-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-3  text-white hover:bg-[#515ef5] '>
+                Download Brochure
+              </button>
           </div>
         </div>
       </section>
