@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <div className='bg-[#505bfe]  bg-opacity-95  p-10 text-white'>
       <div
-        className='grid w-full justify-center  gap-4 text-center sm:grid-cols-3 md:gap-2 md:text-left '
+        className='grid w-full justify-center  gap-4 text-center sm:grid-cols-2 md:grid-cols-4 md:gap-2 md:text-left '
         style={{ backgroundImage: `url(${patternPng})` }}
       >
-        <div className='flex flex-col items-center md:items-start'>
+        <div className='flex flex-col  items-center md:items-start'>
           <img
             src={logoWhite}
             alt=''
@@ -108,7 +108,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div>
+        <div className='mx-auto'>
           <div className='font-semibold uppercase underline underline-offset-2'>
             Helpful Links
           </div>
@@ -125,7 +125,35 @@ const Footer = () => {
             <Link to='solo'>Solo</Link>
           </div>
         </div>
-        <div>
+        <div className='mx-auto'>
+          <div className='font-semibold uppercase underline underline-offset-2'>
+            Others websites
+          </div>
+          <div className='pt-1 hover:text-yellow-300'>
+            <a href='https://saboomaruti.in/' target='_blank' rel='noreferrer'>
+              SABOO ARENA
+            </a>
+          </div>
+          <div className='pt-1 hover:text-yellow-300'>
+            <a
+              href='https://www.saboonexa.in/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              SABOO NEXA
+            </a>
+          </div>
+          <div className='pt-1 hover:text-yellow-300'>
+            <a
+              href='https://www.sabootruevalue.in/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              SABOO TRUE VALUE
+            </a>
+          </div>
+        </div>
+        <div className='mx-auto'>
           <div>
             <span className='font-semibold uppercase underline underline-offset-2'>
               Address
