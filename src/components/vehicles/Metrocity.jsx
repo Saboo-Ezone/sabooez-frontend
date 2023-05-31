@@ -129,7 +129,7 @@ const Metrocity = ({ setShowMyModal }) => {
           data-aos-duration='1000'
         ></div>
       </section>
-      <section className=' relative bg-[#00002d] p-4  text-white duration-500'>
+      {/* <section className=' relative bg-[#00002d] p-4  text-white duration-500'>
         {ind1 ? (
           <div className='container mx-auto my-10 font-roboto md:flex md:flex-col md:justify-center '>
             <div className='mb-4 text-center  text-4xl md:mb-6'>
@@ -378,6 +378,216 @@ const Metrocity = ({ setShowMyModal }) => {
             </div>
           </div>
         )}
+        <div className='flex cursor-pointer justify-center gap-4'>
+          <div
+            onClick={() => setInd1(0)}
+            className={`h-3 w-3 ${ind1 ? 'bg-white' : 'bg-[#20c997]'}`}
+          ></div>
+          <div
+            onClick={() => setInd1(1)}
+            className={`h-3 w-3 ${ind1 ? 'bg-[#20c997]' : 'bg-white'}`}
+          ></div>
+        </div>
+        <AiOutlineArrowRight
+          onClick={() => {
+            ind1 ? setInd1(0) : setInd1(1);
+          }}
+          className='absolute inset-y-1/2 right-14 hidden text-4xl lg:block'
+        />
+        <AiOutlineArrowLeft
+          onClick={() => {
+            ind1 ? setInd1(0) : setInd1(1);
+          }}
+          className='absolute inset-y-1/2 left-14 hidden text-4xl lg:block'
+        />
+      </section> */}
+      <section className=' relative bg-[#00002d] p-4  text-white duration-500'>
+        <div className='container mx-auto my-10 flex flex-col lg:flex-row lg:p-10'>
+          <div className='font-roboto   '>
+            <div className='mx-auto mb-4 text-4xl md:mb-6 lg:mx-0'>
+              Technical Specifications
+            </div>
+
+            <span>
+              This battery electric low weight and short wheelbase single deck
+              bus, renowned for its manoeuvrability and efficiency, has a
+              seating capacity of up to 44 passengers. The SWITCH metrocity is
+              an excellent vehicle for all environments.
+            </span>
+            <br />
+
+            <br />
+            <div
+              className='col-sm-12 overflow-x-scroll md:overflow-x-auto'
+              style={{ position: 'relative' }}
+            >
+              {ind1 ? (
+                <table className='  mb-6  table  w-[90%] overflow-x-scroll lg:overflow-x-auto'>
+                  <tr>
+                    <td className='border-b-2   bg-[#4d6bb3] p-1 md:py-2 md:pl-2 '>
+                      Overall Length (mm)
+                    </td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>
+                      8.7 m <br />1 Door
+                    </td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>
+                      9.4 m <br />2 Door
+                    </td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>
+                      10.1 m <br />1 Door
+                    </td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>
+                      10.1 m <br />1 Door
+                    </td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>
+                      10.8 m <br />1 Door
+                    </td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>
+                      10.8 m <br />2 Door
+                    </td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>
+                      11.5 m <br />1 Door
+                    </td>
+                  </tr>
+
+                  
+                  <tr className='border-b'>
+                    <td className='p-2'>Seats (maximum)</td>
+                    <td className='p-2'>24</td>
+                    <td className='p-2'>23*</td>
+                    <td className='p-2'>36</td>
+                    <td className='p-2'>25*</td>
+                    <td className='p-2'>40</td>
+                    <td className='p-2'>29*</td>
+                    <td className='p-2'>44</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>Total (maximum)</td>
+                    <td className='p-2'>43</td>
+                    <td className='p-2'>53*</td>
+                    <td className='p-2'>60</td>
+                    <td className='p-2'>60</td>
+                    <td className='p-2'>60</td>
+                    <td className='p-2'>60</td>
+                    <td className='p-2'>60</td>
+                  </tr>
+
+                  <br />
+                  <tr>
+                    <td class='text-xs text-white '>
+                    * Capacity limited to Transport for London (Tfl) specification
+                    </td>
+                  </tr>
+                </table>
+              ) : (
+                <table className='  mb-6  table  w-[90%] overflow-x-scroll lg:overflow-x-auto'>
+                  <tr>
+                    <td className='border-b-2   bg-[#4d6bb3] p-1 md:py-2 md:pl-2 '>
+                      Body Length Options
+                    </td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>8.7 m</td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>9.4 m</td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>10.1 m</td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>10.8 m</td>
+                    <td className='border-b-2 bg-[#4d6bb3] py-1  '>11.5 m</td>
+                  </tr>
+
+                  <tr className='border-b'>
+                    <td className='p-2'>Overall length (mm)</td>
+                    <td className='p-2'>8,740</td>
+                    <td className='p-2'>9,440</td>
+                    <td className='p-2'>10,130</td>
+                    <td className='p-2'>10,820</td>
+                    <td className='p-2'>11,520</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>Overall width (mm)</td>
+                    <td className='p-2'>2,470</td>
+                    <td className='p-2'>2,470</td>
+                    <td className='p-2'>2,470</td>
+                    <td className='p-2'>2,470</td>
+                    <td className='p-2'>2,470</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>Overall height (mm)</td>
+                    <td className='p-2'>2,850</td>
+                    <td className='p-2'>2,850</td>
+                    <td className='p-2'>2,850</td>
+                    <td className='p-2'>2,850</td>
+                    <td className='p-2'>2,850</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>Wheelbase (mm)</td>
+                    <td className='p-2'>3,740</td>
+                    <td className='p-2'>4,440</td>
+                    <td className='p-2'>5,130</td>
+                    <td className='p-2'>5,820</td>
+                    <td className='p-2'>6,520</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>Front overhang (mm)</td>
+                    <td className='p-2'>2,430</td>
+                    <td className='p-2'>2,430</td>
+                    <td className='p-2'>2,430</td>
+                    <td className='p-2'>2,430</td>
+                    <td className='p-2'>2,430</td>
+                  </tr>
+
+                  <tr className='border-b'>
+                    <td className='p-2'>Rear overhang (mm)</td>
+                    <td className='p-2'>2,570</td>
+                    <td className='p-2'>2,570</td>
+                    <td className='p-2'>2,570</td>
+                    <td className='p-2'>2,570</td>
+                    <td className='p-2'>2,570</td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>
+                      Gross vehicle weight design/plated (kg)
+                    </td>
+                    <td className='p-2'>
+                      13,000/ <br /> 12,960**
+                    </td>
+                    <td className='p-2'>
+                      13,000/ <br /> 12,960**
+                    </td>
+                    <td className='p-2'>
+                      13,000/ <br /> 12,960**
+                    </td>
+                    <td className='p-2'>
+                      13,000/ <br /> 12,960**
+                    </td>
+                    <td className='p-2'>
+                      13,000/ <br /> 12,960**
+                    </td>
+                  </tr>
+                  <tr className='border-b'>
+                    <td className='p-2'>
+                      Front axle weight design/plated (kg)
+                    </td>
+                    <td className='p-2'>4,500/4,480</td>
+                    <td className='p-2'>4,500/4,480</td>
+                    <td className='p-2'>4,500/4,480</td>
+                    <td className='p-2'>4,500/4,480</td>
+                    <td className='p-2'>4,500/4,480</td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td class='text-xs text-white '>
+                      All Lengths Rear axle weight design/plated (kg):
+                      8,000/8,480
+                    </td>
+                  </tr>
+                </table>
+              )}
+
+              <button className=' my-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white hover:bg-[#515ef5] '>
+                Download Brochure
+              </button>
+            </div>
+          </div>
+        </div>
+
         <div className='flex cursor-pointer justify-center gap-4'>
           <div
             onClick={() => setInd1(0)}
