@@ -152,6 +152,9 @@ const Footer = () => {
               SABOO TRUE VALUE
             </a>
           </div>
+          <div className='pt-1 hover:text-yellow-300 uppercase'>
+            <Link to='admin'>Dashboard</Link>
+          </div>
         </div>
         <div className='mx-auto'>
           <div>
