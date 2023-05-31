@@ -55,7 +55,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
           </div>
 
           <div className='mt-1 flex animate-bounce justify-center '>
-          <div className='h-4 w-4  rotate-45 border-b-2 border-r-2'></div>
+            <div className='h-4 w-4  rotate-45 border-b-2 border-r-2'></div>
           </div>
         </div>
         <img
@@ -139,9 +139,11 @@ const SwitchE1 = ({ setShowMyModal }) => {
             <br />
             <br />
           </div>
-          <button className='m-4 w-min whitespace-nowrap bg-[#515ef5] px-4 py-2 text-left text-white hover:bg-[#20c997] '>
-            ENQUIRE NOW
-          </button>
+          <a href='#enquire'>
+            <button className='m-4 w-min whitespace-nowrap bg-[#515ef5] px-4 py-2 text-left text-white hover:bg-[#20c997] '>
+              ENQUIRE NOW
+            </button>
+          </a>
         </div>
         <div
           className=' hidden w-full bg-cover bg-center md:block md:w-1/2'

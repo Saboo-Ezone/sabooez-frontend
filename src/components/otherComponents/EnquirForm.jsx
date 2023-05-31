@@ -36,9 +36,10 @@ const EnquirForm = () => {
 
   return (
     <section
-      className=' mt-2  bg-[#edede6] '
+      className=' mt-2  bg-[#edede6] pt-20 md:pt-24 '
       // style={{ backgroundImage: `url(${patternBoxSvg})` }}
       style={{ backgroundImage: `url(${patternWhite})` }}
+      id='enquire'
     >
       <Formik
         initialValues={{
@@ -55,7 +56,7 @@ const EnquirForm = () => {
         }}
       >
         {({ isSubmitting }) => (
-          <div className='px-8 py-8 lg:px-16'>
+          <div className='px-8 pb-8  lg:px-16'>
             {sub ? (
               <>
                 <div data-aos='zoom-in' className='text-h2 px-1 text-[#505bfe]'>
