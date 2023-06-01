@@ -45,7 +45,6 @@ const Login = () => {
         console.log('Sign-out successful.');
         localStorage.removeItem('firebaseToken');
         history(`/`);
-
       })
       .catch((error) => {
         // An error happened.
@@ -108,7 +107,7 @@ const Login = () => {
                   .then((idToken) => {
                     // Store the ID token in local storage
                     localStorage.setItem('firebaseToken', idToken);
-                    history(`/`);
+                    history(`/admin`);
 
                     // Continue with other actions or redirect the user
                   })
