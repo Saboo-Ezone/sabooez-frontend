@@ -96,7 +96,7 @@ function Slider() {
             <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/2 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/solo'>
                 <div className='m-3 flex items-center justify-center '>
-                  <div className='mx-4'>SWITCH Solo</div>
+                  <div className='mx-4 text-xl md:text-2xl lg:text-3xl xl:text-4xl'>SWITCH Solo</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
                   </div>
@@ -112,10 +112,10 @@ function Slider() {
               className='w-full'
               alt='Sustainable vehicles of today'
             />
-            <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/2 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
+            <span className='text-2xl absolute bottom-6 xl:left-1/4 inset-x-1/3  text-white md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/e1'>
                 <div className='m-3 flex items-center justify-center '>
-                  <div className='mx-4'>Sustainable vehicles of today</div>
+                  <div className='mx-4 whitespace-nowrap'>Sustainable vehicles of today</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
                   </div>

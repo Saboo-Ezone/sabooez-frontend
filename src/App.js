@@ -40,10 +40,10 @@ function App() {
 
   // const currentPath = window.location.pathname;
   // Check if the current path is '/admin'
-  const isAdminRoute = location.pathname  === '/admin';
+  const isAdminRoute = (location.pathname  === '/login' || location.pathname  === '/admin' );
   // const isAdminRoute = currentPath === '/admin';
 
-  console.log(isAdminRoute);
+  // console.log(isAdminRoute);
   return (
     <div>
       {/* Render the header if the route is not '/admin' */}
@@ -75,8 +75,8 @@ function App() {
           element={<Metrodecker setShowMyModal={setShowMyModal} />}
         />
         <Route exact path='/solo' element={<Solo />} />
-        <Route exact path='/test' element={<Test />} />
-        <Route exact path='/admin' element={<Login />} />
+        <Route exact path='/admin' element={<Test />} />
+        <Route exact path='/login' element={<Login />} />
         <Route exact path='/*' element={<div>No page found </div>} />
       </Routes>
 

@@ -17,15 +17,15 @@ const ModalSolo = ({ visible, onClose }) => {
       className='fixed  inset-0 z-20 flex items-center justify-center  backdrop-blur-[3px] '
     >
       <div
-        className=' relative mx-10  border border-gray-400 bg-[#edede6] px-8 py-4 lg:py-10 md:px-16 '
+        className=' relative mx-10  border border-gray-400 bg-[#edede6] px-8 py-4 md:px-16 lg:py-10 '
         style={{ backgroundImage: `url(${patternWhite})` }}
       >
-         <div
+        <div
           onClick={onClose}
-          className=' top-4 right-4 absolute cursor-pointer   text-3xl text-gray-500 hover:text-black'
+          className=' absolute right-4 top-4 cursor-pointer   text-3xl text-gray-500 hover:text-black'
         >
           <AiOutlineClose />
-        </div> 
+        </div>
         <div className='grid items-end text-start font-mono md:grid-cols-2'>
           <div className='col-span-1 text-h3 lg:text-h1 '>Solo</div>
           <div className='col-span-1 text-h6'>The low floor midi-bus</div>
@@ -79,7 +79,7 @@ const ModalSolo = ({ visible, onClose }) => {
             front door allows for easy access to a fully flat lower saloon area.
           </div>
           <div className='lg:col-span-3 lg:px-6 xl:px-10 '>
-            <img src={solo} alt='Solo' srcset='' />
+            <img src={solo} alt='Solo' srcSet='' />
           </div>
         </div>
       </div>

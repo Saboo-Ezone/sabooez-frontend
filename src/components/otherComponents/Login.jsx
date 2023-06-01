@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+// import { useFirebase } from '../../context/Firebase';
+import { FirebaseAuth } from '../../context/Firebase';
+import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
 
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import axios from 'axios';
-// import { EmailContext } from '../context/Email';
 
-// import { FiUserPlus } from 'react-icons/fi';
-
-// import { FcGoogle } from 'react-icons/fc';
-// import { BsFacebook } from 'react-icons/bs';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-// import { AiOutlineHome } from 'react-icons/ai';
+
 import logo from '../../assets/logo/logo.png';
 import patternGreen from '../../assets/other/pattern-green.png';
 
@@ -24,6 +21,9 @@ const LoginSchema = Yup.object().shape({
 
 const Login = () => {
   let history = useNavigate();
+
+  // const Firebase = useFirebase();
+
   const [loading, setLoading] = useState(false);
   const [shake, setShake] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -39,10 +39,27 @@ const Login = () => {
     };
   }, [shake]);
 
+  const handleLogout = () => {
+    signOut(FirebaseAuth)
+      .then(() => {
+        console.log('Sign-out successful.');
+        localStorage.removeItem('firebaseToken');
+        history(`/`);
+
+      })
+      .catch((error) => {
+        // An error happened.
+        setShake(true);
+        console.log('error');
+      });
+  };
+
   return (
     <>
-  
-      <section className='bg-gray-50' style={{ backgroundImage: `url(${patternGreen})` }}>
+      <section
+        className='bg-gray-50'
+        style={{ backgroundImage: `url(${patternGreen})` }}
+      >
         <div
           className='  flex h-screen w-full items-center justify-center  bg-cover   bg-center '
           // style={{ backgroundImage: `url(${LoginPage})` }}
@@ -61,34 +78,48 @@ const Login = () => {
               validationSchema={LoginSchema}
               onSubmit={async (values, { setSubmitting }) => {
                 setLoading(true);
-                await axios
-                  .post(
-                    'https://procuren-backend.onrender.com/login',
-                    // `http://localhost:3001/login`,
-
-                    values
-                  )
-                  .then((response) => {
+                // Firebase.signupUserWithEmailAndPassword(
+                //   values.email,
+                //   values.password
+                // )
+                //   .then((response) => {
+                //     setLoading(false);
+                //     history(`/${response.data.data.selectRole}`);
+                //     setSubmitting(false);
+                //   })
+                //   .catch((error) => {
+                //     setLoading(false);
+                //     setShake(true);
+                //     setSubmitting(false);
+                //   });
+                signInWithEmailAndPassword(
+                  FirebaseAuth,
+                  values.email,
+                  values.password
+                )
+                  .then((userCredential) => {
                     setLoading(false);
-                    localStorage.removeItem('token');
-                    localStorage.removeItem('customerID');
-                    localStorage.removeItem('role');
-                    if (response.data.message === 'Login Successful') {
-                      localStorage.setItem('token', response.data.data.token);
-                      localStorage.setItem(
-                        'customerID',
-                        response.data.data.customerID
-                      );
-                      localStorage.setItem(
-                        'role',
-                        response.data.data.selectRole
-                      );
+                    // Access the user object
+                    const user = userCredential.user;
 
-                      history(`/${response.data.data.selectRole}`);
-                    }
-                    setSubmitting(false);
+                    // Get the ID token
+                    return user.getIdToken();
                   })
+                  .then((idToken) => {
+                    // Store the ID token in local storage
+                    localStorage.setItem('firebaseToken', idToken);
+                    history(`/`);
+
+                    // Continue with other actions or redirect the user
+                  })
+                  // .then((userCredential) => {
+                  //   const user = userCredential.user;
+                  //   console.log(user);
+                  //   history(`/`);
+                  // })
                   .catch((error) => {
+                    // const errorCode = error.code;
+                    // const errorMessage = error.message;
                     setLoading(false);
                     setShake(true);
                     setSubmitting(false);
@@ -153,14 +184,11 @@ const Login = () => {
                       </div>
                     </div>
 
-                    {/* <div className='mt-2'>
-                    <Link
-                      to='/otplogin'
-                      className=' text-md group relative mb-4 flex  items-center rounded-md 	p-1 pr-2  '
-                    >
-                      Having trouble in sign in?
-                    </Link>
-                  </div> */}
+                    <div onClick={handleLogout} className='mt-2 cursor-pointer'>
+                      <div className=' text-md group relative mb-4 flex  items-center rounded-md 	p-1 pr-2  '>
+                        logOut
+                      </div>
+                    </div>
                   </div>
                   <button
                     className=' mb-6 mt-6 w-full rounded-md bg-[#02c6b7]  px-6 py-2 font-sans text-lg font-semibold tracking-wide text-white '
@@ -169,30 +197,6 @@ const Login = () => {
                   >
                     {loading ? 'Signing in' : 'Sign in'}
                   </button>
-                  {/* <span>or Sign in with</span>
-                <div className='mb-6 mt-3 flex justify-around'>
-                  <Link
-                    to='/'
-                    className='flex  w-2/5 items-center justify-center gap-3 rounded-lg border py-[5px]'
-                  >
-                    <FcGoogle className='text-2xl' />
-                    <span>Google</span>
-                  </Link>
-                  <Link
-                    to='/'
-                    className='flex w-2/5 items-center justify-center gap-3 rounded-lg border py-[5px]'
-                  >
-                    <BsFacebook className='text-2xl text-blue-500' />
-                    <span>Facebook</span>
-                  </Link>
-                </div> */}
-                  {/* <Link to='/signup'>
-                  Don't have an account? -{' '}
-                  <span to='/signup' className='font-medium text-[#5c67f5]'>
-                    Sign up
-                  </span>
-                </Link> */}
-
                   <div className='-mb-3 mt-4 text-[12px] '>
                     © 2023 Saboo eZone. All rights reserved
                   </div>

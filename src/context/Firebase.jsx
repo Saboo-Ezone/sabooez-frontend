@@ -55,6 +55,7 @@ export const FirebaseProvider = (props) => {
   const signupUserWithEmailAndPassword = (email, password) => {
     return createUserWithEmailAndPassword(FirebaseAuth, email, password);
   };
+  
 
   //Realtimedatabase
   const putData = (key, data) => set(ref(database, key), data);

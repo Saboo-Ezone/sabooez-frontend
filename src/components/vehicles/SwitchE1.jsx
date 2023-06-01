@@ -179,7 +179,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
             <img
               src={insideBusimage2}
               alt=''
-              srcset=''
+              srcSet=''
               className='mx-auto mb-6 '
             />
             <div className='flex flex-col items-center justify-center md:flex-row'>
@@ -192,61 +192,65 @@ const SwitchE1 = ({ setShowMyModal }) => {
                   style={{ position: 'relative' }}
                 >
                   <table className=' mx-12 mb-6 table   '>
-                    <tr className='relative bg-[#4d6bb3] '>
-                      <td className=' p-2 '>Wheelbase</td>
-                      <td className=' p-2'>6000 mm</td>
-                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
-                        C
-                      </div>
-                    </tr>
-                    <tr className='relative'>
-                      <td className=' p-2'>Overall length</td>
-                      <td className=' p-2'> 120000 mm</td>
-                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
-                        D
-                      </div>
-                    </tr>
+                    <tbody>
+                      <tr className='relative bg-[#4d6bb3] '>
+                        <td className=' p-2 '>Wheelbase</td>
+                        <td className=' p-2'>6000 mm</td>
+                        <span className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                          C
+                        </span>
+                      </tr>
+                      <tr className='relative'>
+                        <td className=' p-2'>Overall length</td>
+                        <td className=' p-2'> 120000 mm</td>
+                        <span className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                          D
+                        </span>
+                      </tr>
 
-                    <tr className='relative bg-[#4d6bb3]'>
-                      <td className=' p-2'> Front overhang</td>
-                      <td className=' p-2'> 2777 mm</td>
-                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
-                        E
-                      </div>
-                    </tr>
-                    <tr className='relative'>
-                      <td className=' p-2'> Rear overhang</td>
-                      <td className=' p-2'> 3223 mm</td>
-                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
-                        F
-                      </div>
-                    </tr>
-                    <tr className='bg-[#4d6bb3]'>
-                      <td className=' p-2'>Track front</td>
-                      <td className=' p-2'>2234 mm</td>
-                    </tr>
-                    <tr>
-                      <td className=' p-2'>Track rear</td>
-                      <td className=' p-2'>6000 mm </td>
-                    </tr>
-                    <tr className='relative bg-[#4d6bb3]'>
-                      <td className=' p-2'>Angle of approach</td>
-                      <td className=' p-2'>7.2 </td>
-                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
-                        G
-                      </div>
-                    </tr>
-                    <tr className='relative'>
-                      <td className=' p-2'>Angle of departure</td>
-                      <td className=' p-2'> 7.3 </td>
-                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
-                        H
-                      </div>
-                    </tr>
-                    <tr className='bg-[#4d6bb3]'>
-                      <td className=' p-2'>% of rear overhang to wheelbase</td>
-                      <td className=' p-2'>53%</td>
-                    </tr>
+                      <tr className='relative bg-[#4d6bb3]'>
+                        <td className=' p-2'> Front overhang</td>
+                        <td className=' p-2'> 2777 mm</td>
+                        <span className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                          E
+                        </span>
+                      </tr>
+                      <tr className='relative'>
+                        <td className=' p-2'> Rear overhang</td>
+                        <td className=' p-2'> 3223 mm</td>
+                        <span className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                          F
+                        </span>
+                      </tr>
+                      <tr className='bg-[#4d6bb3]'>
+                        <td className=' p-2'>Track front</td>
+                        <td className=' p-2'>2234 mm</td>
+                      </tr>
+                      <tr>
+                        <td className=' p-2'>Track rear</td>
+                        <td className=' p-2'>6000 mm </td>
+                      </tr>
+                      <tr className='relative bg-[#4d6bb3]'>
+                        <td className=' p-2'>Angle of approach</td>
+                        <td className=' p-2'>7.2 </td>
+                        <span className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                          G
+                        </span>
+                      </tr>
+                      <tr className='relative'>
+                        <td className=' p-2'>Angle of departure</td>
+                        <td className=' p-2'> 7.3 </td>
+                        <span className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                          H
+                        </span>
+                      </tr>
+                      <tr className='bg-[#4d6bb3]'>
+                        <td className=' p-2'>
+                          % of rear overhang to wheelbase
+                        </td>
+                        <td className=' p-2'>53%</td>
+                      </tr>
+                    </tbody>
                   </table>
                 </div>
               </div>
@@ -256,38 +260,42 @@ const SwitchE1 = ({ setShowMyModal }) => {
                 <br />
                 <div className='col-sm-12  ' style={{ position: 'relative' }}>
                   <table className=' mb-6   table'>
-                    <tr className='bg-[#4d6bb3]'>
-                      <td className=' p-2'> Front axle (unladen)</td>
-                      <td className=' p-2'> 4062 kg</td>
-                    </tr>
-                    <tr>
-                      <td className=' p-2'> Rear axle (unladen)</td>
-                      <td className=' p-2'> 7492 kg</td>
-                    </tr>
-                    <tr className='bg-[#4d6bb3]'>
-                      <td className=' p-2'>
-                        Kerb weight (standard capacity battery)
-                      </td>
-                      <td className=' p-2'>10775 kg</td>
-                    </tr>
-                    <tr className='border-b'>
-                      <td className=' p-2'>GVW</td>
-                      <td className=' p-2'>18000 kg</td>
-                    </tr>
+                    <tbody>
+                      <tr className='bg-[#4d6bb3]'>
+                        <td className=' p-2'> Front axle (unladen)</td>
+                        <td className=' p-2'> 4062 kg</td>
+                      </tr>
+                      <tr>
+                        <td className=' p-2'> Rear axle (unladen)</td>
+                        <td className=' p-2'> 7492 kg</td>
+                      </tr>
+                      <tr className='bg-[#4d6bb3]'>
+                        <td className=' p-2'>
+                          Kerb weight (standard capacity battery)
+                        </td>
+                        <td className=' p-2'>10775 kg</td>
+                      </tr>
+                      <tr className='border-b'>
+                        <td className=' p-2'>GVW</td>
+                        <td className=' p-2'>18000 kg</td>
+                      </tr>
 
-                    <br />
-                    <span className='font-mono text-2xl'>Turning diameter</span>
-                    <br />
-                    <br />
+                      <br />
+                      <span className='font-mono text-2xl'>
+                        Turning diameter
+                      </span>
+                      <br />
+                      <br />
 
-                    <tr className='bg-[#4d6bb3]'>
-                      <td className=' p-2'>Kerb to kerb</td>
-                      <td className=' p-2'>18.84 m</td>
-                    </tr>
-                    <tr className='border-b'>
-                      <td className=' p-2'>Wall to wall</td>
-                      <td className=' p-2'>22.2 m</td>
-                    </tr>
+                      <tr className='bg-[#4d6bb3]'>
+                        <td className=' p-2'>Kerb to kerb</td>
+                        <td className=' p-2'>18.84 m</td>
+                      </tr>
+                      <tr className='border-b'>
+                        <td className=' p-2'>Wall to wall</td>
+                        <td className=' p-2'>22.2 m</td>
+                      </tr>
+                    </tbody>
                   </table>
                 </div>
               </div>
@@ -307,7 +315,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
               <img
                 src={insideBusimage1}
                 alt=''
-                srcset=''
+                srcSet=''
                 className='mx-auto lg:hidden'
               />
               <span>
@@ -329,49 +337,51 @@ const SwitchE1 = ({ setShowMyModal }) => {
               <div className='col-sm-12  ' style={{ position: 'relative' }}>
                 <div>
                   <table className=' mx-12 mb-6   table'>
-                    <tr className='relative bg-[#4d6bb3] '>
-                      <td className=' p-2 '>Overall width (mm)</td>
-                      <td className=' p-2'>2,500</td>
-                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
-                        A
-                      </div>
-                    </tr>
-                    <tr className='relative'>
-                      <td className=' p-2'>
-                        Overall height (unladen bus, max)
-                      </td>
-                      <td className=' p-2'> 3100 mm</td>
-                      <div className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
-                        B
-                      </div>
-                    </tr>
+                    <tbody>
+                      <tr className='relative bg-[#4d6bb3] '>
+                        <td className=' p-2 '>Overall width (mm)</td>
+                        <td className=' p-2'>2,500</td>
+                        <span className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                          A
+                        </span>
+                      </tr>
+                      <tr className='relative'>
+                        <td className=' p-2'>
+                          Overall height (unladen bus, max)
+                        </td>
+                        <td className=' p-2'> 3100 mm</td>
+                        <span className='absolute -left-10 top-1 h-8 w-8 rounded-full bg-white text-center text-xl text-indigo-400'>
+                          B
+                        </span>
+                      </tr>
 
-                    <tr className='bg-[#4d6bb3]'>
-                      <td className=' p-2'> Interior Width</td>
-                      <td className=' p-2'> 2360 mm</td>
-                    </tr>
-                    <tr>
-                      <td className=' p-2'> Interior height</td>
-                      <td className=' p-2'> 1810-2240 mm</td>
-                    </tr>
-                    <tr className='bg-[#4d6bb3]'>
-                      <td className=' p-2'>
-                        Front entrance step height (unladen)
-                      </td>
-                      <td className=' p-2'>320 mm</td>
-                    </tr>
-                    <tr>
-                      <td className=' p-2'>
-                        Center entrance step height (unladen)
-                      </td>
-                      <td className=' p-2'>320 mm</td>
-                    </tr>
-                    <tr className='bg-[#4d6bb3]'>
-                      <td className=' p-2'>
-                        Rear entrance step height (unladen)
-                      </td>
-                      <td className=' p-2'>343 mm</td>
-                    </tr>
+                      <tr className='bg-[#4d6bb3]'>
+                        <td className=' p-2'> Interior Width</td>
+                        <td className=' p-2'> 2360 mm</td>
+                      </tr>
+                      <tr>
+                        <td className=' p-2'> Interior height</td>
+                        <td className=' p-2'> 1810-2240 mm</td>
+                      </tr>
+                      <tr className='bg-[#4d6bb3]'>
+                        <td className=' p-2'>
+                          Front entrance step height (unladen)
+                        </td>
+                        <td className=' p-2'>320 mm</td>
+                      </tr>
+                      <tr>
+                        <td className=' p-2'>
+                          Center entrance step height (unladen)
+                        </td>
+                        <td className=' p-2'>320 mm</td>
+                      </tr>
+                      <tr className='bg-[#4d6bb3]'>
+                        <td className=' p-2'>
+                          Rear entrance step height (unladen)
+                        </td>
+                        <td className=' p-2'>343 mm</td>
+                      </tr>
+                    </tbody>
                   </table>
                   <button className='mx-12 my-2 w-min whitespace-nowrap  bg-[#20c997] px-4 py-2  text-white hover:bg-[#515ef5] '>
                     Download Brochure
@@ -383,7 +393,7 @@ const SwitchE1 = ({ setShowMyModal }) => {
               <img
                 src={insideBusimage1}
                 alt=''
-                srcset=''
+                srcSet=''
                 className='mx-auto hidden lg:block'
               />
             </div>

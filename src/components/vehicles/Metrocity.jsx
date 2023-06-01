@@ -131,7 +131,7 @@ const Metrocity = ({ setShowMyModal }) => {
           data-aos-duration='1000'
         ></div>
       </section>
-   
+
       <section className=' relative bg-[#00002d] p-4  text-white duration-500'>
         <div className='container mx-auto my-10 flex flex-col lg:flex-row lg:p-10'>
           <div className='font-roboto   '>
@@ -181,7 +181,6 @@ const Metrocity = ({ setShowMyModal }) => {
                     </td>
                   </tr>
 
-                  
                   <tr className='border-b'>
                     <td className='p-2'>Seats (maximum)</td>
                     <td className='p-2'>24</td>
@@ -206,7 +205,8 @@ const Metrocity = ({ setShowMyModal }) => {
                   <br />
                   <tr>
                     <td class='text-xs text-white '>
-                    * Capacity limited to Transport for London (Tfl) specification
+                      * Capacity limited to Transport for London (Tfl)
+                      specification
                     </td>
                   </tr>
                 </table>
