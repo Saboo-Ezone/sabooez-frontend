@@ -14,8 +14,9 @@ import Metrocity from './components/vehicles/Metrocity';
 import Metrodecker from './components/vehicles/Metrodecker';
 import Careers from './pages/Careers';
 import ModalEnquire from './components/otherComponents/ModalEnquire';
-import Test from './components/otherComponents/Test';
+
 import Login from './components/otherComponents/Login';
+import Dashboard from './components/otherComponents/Dashboard';
 
 function App() {
   const [showMyModal, setShowMyModal] = useState(false);
@@ -75,7 +76,7 @@ function App() {
           element={<Metrodecker setShowMyModal={setShowMyModal} />}
         />
         <Route exact path='/solo' element={<Solo />} />
-        <Route exact path='/admin' element={<Test />} />
+        <Route exact path='/admin' element={<Dashboard />} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/*' element={<div>No page found </div>} />
       </Routes>

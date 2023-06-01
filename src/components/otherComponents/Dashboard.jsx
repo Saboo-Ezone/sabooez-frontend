@@ -10,8 +10,10 @@ import {
   AiOutlineLogout,
 } from 'react-icons/ai';
 import { BsPeople } from 'react-icons/bs';
+import EnquireDashboard from './EnquireDashboard';
+import JobDashboard from './JobDashboard';
 
-const Test = () => {
+const Dashboard = () => {
   const [screenSize, setScreenSize] = useState(undefined);
   const [open, setOpen] = useState(false);
   // const [select, setSelect] = useState(0);
@@ -47,7 +49,7 @@ const Test = () => {
   return (
     <div className='flex h-screen bg-gray-100'>
       <div
-        className={`absolute bg-white  h-screen duration-500 md:hidden   ${
+        className={`absolute h-screen  bg-white duration-500 md:hidden   ${
           open ? 'left-0  ' : '-left-[100%]'
         }  flex flex-col justify-between rounded-r-xl  transition `}
       >
@@ -91,7 +93,7 @@ const Test = () => {
       <div
         className={`hidden   md:block ${
           open ? 'min-w-max' : 'w-20'
-        }   justify-between rounded-r-xl bg-white transition  mr-2  `}
+        }   mr-2 justify-between rounded-r-xl bg-white  transition  `}
       >
         <div className='flex h-full flex-col justify-between'>
           <div>
@@ -143,7 +145,7 @@ const Test = () => {
       </div>
 
       <div className='mr-2 flex-auto font-roboto'>
-        <div className='m-2 bg-white flex h-20  items-center justify-end rounded-xl border-b-2 p-4 md:justify-between'>
+        <div className='m-2 flex h-20 items-center  justify-end rounded-xl border-b-2 bg-white p-4 md:justify-between'>
           <AiOutlineMenu
             className={`absolute ${
               open ? 'left-52 sm:left-60 ' : 'left-5'
@@ -156,13 +158,15 @@ const Test = () => {
           />
           <div className='font-mono text-2xl'>Admin</div>
         </div>
-        <div className='m-2 bg-white'>Selected item</div>
+        <div className='m-2 bg-white'>
+          {selectedItem === 'Enquiry' ? <EnquireDashboard /> : <JobDashboard />}
+        </div>
       </div>
     </div>
   );
 };
 
-export default Test;
+export default Dashboard;
 
 // useEffect(() => {
 //   const timeout = setTimeout(() => {
