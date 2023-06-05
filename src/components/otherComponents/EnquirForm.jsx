@@ -4,12 +4,13 @@ import patternWhite from '../../assets/other/pattern-grid-white.png';
 import bolt from '../../assets/other/bolt.gif';
 
 import { useFirebase } from '../../context/Firebase';
-// import { Formik, Form, Field,  } from 'formik';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { Timestamp } from 'firebase/firestore';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 const emailReg = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 const phoneRegex = /^(\+91-|\+91|0)?\d{10}$/;
 
@@ -21,11 +22,10 @@ const EnquirySchema = Yup.object().shape({
   email: Yup.string()
     .email('Invalid email address')
     .matches(emailReg, 'mail is not valid'),
-  // .required('Information is required*'),
   model: Yup.string().required('Information is required*'),
 });
 
-const EnquirForm = () => {
+const EnquiryForm = () => {
   const Firebase = useFirebase();
 
   const [sub, setSub] = useState(true);
@@ -48,18 +48,22 @@ const EnquirForm = () => {
           phone: '',
         }}
         validationSchema={EnquirySchema}
-        onSubmit={(values, { setSubmitting }) => {
-          console.log(values);
-          // Firebase.putData('ModelEnquiry', values);
-          Firebase.writeData('EnquiryForm', values);
-          setSub(false);
+        onSubmit={async (values, { setSubmitting }) => {
+          try {
+            setSub(false);
+            const createTime = Timestamp.now();
+            const dataWithTime = { ...values, createTime };
+            await Firebase.writeData('EnquiryForm', dataWithTime);
+          } catch (error) {
+            console.error('Error submitting form:', error);
+          }
         }}
       >
         {({ isSubmitting }) => (
           <div className='px-8 pb-8  lg:px-16'>
             {sub ? (
               <>
-                <div data-aos='zoom-in' className='text-h2 px-1 text-[#505bfe]'>
+                <div data-aos='zoom-in' className='px-1 text-h2 text-[#505bfe]'>
                   Enquire Now
                 </div>
 
@@ -178,8 +182,8 @@ const EnquirForm = () => {
                 </Form>
               </>
             ) : (
-              <div className='flex items-center flex-col md:flex-row '>
-                 <img src={bolt} alt='' className='h-28 mx-4' />
+              <div className='flex flex-col items-center md:flex-row '>
+                <img src={bolt} alt='' className='mx-4 h-28' />
                 <div className='text-h3 text-[#505bfe] lg:text-h2  '>
                   Thank you for your interest. Our team will contact you soon.{' '}
                   <span className='text-h6'>
@@ -189,7 +193,6 @@ const EnquirForm = () => {
                     prompt response.
                   </span>
                 </div>
-               
               </div>
             )}
           </div>
@@ -199,4 +202,4 @@ const EnquirForm = () => {
   );
 };
 
-export default EnquirForm;
+export default EnquiryForm;
