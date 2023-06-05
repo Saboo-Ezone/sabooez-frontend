@@ -55,13 +55,12 @@ export const FirebaseProvider = (props) => {
   const signupUserWithEmailAndPassword = (email, password) => {
     return createUserWithEmailAndPassword(FirebaseAuth, email, password);
   };
-  
 
   //Realtimedatabase
   const putData = (key, data) => set(ref(database, key), data);
 
-  const writeData = async (path,data) => {
-    const result = await addDoc(collection(FirebaseStore, path), data );
+  const writeData = async (path, data) => {
+    const result = await addDoc(collection(FirebaseStore, path), data);
     console.log(result);
   };
 
@@ -89,10 +88,25 @@ export const FirebaseProvider = (props) => {
   };
 
   const getDocument = async () => {
-    const docRef = doc(FirebaseStore, 'Cities', 'JIEllPgLLzEZC76mpUH7');
+    const docRef = doc(FirebaseStore, 'EnquiryForm', 'Ar4opqvHRp1Lqx48FN4A');
     const docSnap = await getDoc(docRef);
-    console.log(docSnap);
-    console.log(docSnap.data());
+    // console.log(docSnap);
+    // console.log(docSnap.data());
+    return docSnap.data()
+  };
+
+  const getDocuments = async () => {
+    const querySnapshot = await getDocs(
+      collection(FirebaseStore, 'EnquiryForm')
+    );
+    // console.log(querySnapshot)
+    // querySnapshot.forEach((doc) => {
+    //     console.log( doc.data().email);
+    //   });
+    return querySnapshot;
+    // querySnapshot.forEach((doc) => {
+    //   console.log(doc.id, ' => ', doc.data());
+    // });
   };
 
   const getDocByQuery = async () => {
@@ -121,6 +135,7 @@ export const FirebaseProvider = (props) => {
         update,
         getRealtime,
         realtimeTrack,
+        getDocuments,
       }}
     >
       {props.children}

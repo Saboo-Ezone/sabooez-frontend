@@ -16,7 +16,7 @@ import Careers from './pages/Careers';
 import ModalEnquire from './components/otherComponents/ModalEnquire';
 
 import Login from './components/otherComponents/Login';
-import Dashboard from './components/otherComponents/Dashboard';
+import Dashboard from './components/dashboard/Dashboard';
 
 function App() {
   const [showMyModal, setShowMyModal] = useState(false);

@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 // import { useFirebase } from '../../context/Firebase';
 import { FirebaseAuth } from '../../context/Firebase';
-import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
@@ -22,6 +25,17 @@ const LoginSchema = Yup.object().shape({
 const Login = () => {
   let history = useNavigate();
 
+  const notify = () =>
+    toast.error('Wrong Credential', {
+      position: 'top-right',
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
   // const Firebase = useFirebase();
 
   const [loading, setLoading] = useState(false);
@@ -38,20 +52,6 @@ const Login = () => {
       clearTimeout(timer);
     };
   }, [shake]);
-
-  const handleLogout = () => {
-    signOut(FirebaseAuth)
-      .then(() => {
-        console.log('Sign-out successful.');
-        localStorage.removeItem('firebaseToken');
-        history(`/`);
-      })
-      .catch((error) => {
-        // An error happened.
-        setShake(true);
-        console.log('error');
-      });
-  };
 
   return (
     <>
@@ -119,6 +119,7 @@ const Login = () => {
                   .catch((error) => {
                     // const errorCode = error.code;
                     // const errorMessage = error.message;
+                    notify();
                     setLoading(false);
                     setShake(true);
                     setSubmitting(false);
@@ -183,14 +184,14 @@ const Login = () => {
                       </div>
                     </div>
 
-                    <div onClick={handleLogout} className='mt-2 cursor-pointer'>
+                    {/* <div onClick={handleLogout} className='mt-2 cursor-pointer'>
                       <div className=' text-md group relative mb-4 flex  items-center rounded-md 	p-1 pr-2  '>
                         logOut
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <button
-                    className=' mb-6 mt-6 w-full rounded-md bg-[#02c6b7]  px-6 py-2 font-sans text-lg font-semibold tracking-wide text-white '
+                    className=' mb-6 mt-8 w-full rounded-md bg-[#02c6b7]  px-6 py-2 font-sans text-lg font-semibold tracking-wide text-white '
                     type='submit'
                     disabled={isSubmitting}
                   >
@@ -203,6 +204,7 @@ const Login = () => {
               )}
             </Formik>
           </div>
+          <ToastContainer />
         </div>
       </section>
     </>

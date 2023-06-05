@@ -10,8 +10,8 @@ import {
   AiOutlineLogout,
 } from 'react-icons/ai';
 import { BsPeople } from 'react-icons/bs';
-import EnquireDashboard from './EnquireDashboard';
-import JobDashboard from './JobDashboard';
+import EnquireDashboard from '../otherComponents/EnquireDashboard';
+import JobDashboard from '../otherComponents/JobDashboard';
 
 const Dashboard = () => {
   const [screenSize, setScreenSize] = useState(undefined);
@@ -54,9 +54,9 @@ const Dashboard = () => {
   return (
     <div className='flex h-screen bg-gray-100'>
       <div
-        className={`absolute h-screen  bg-white duration-500 md:hidden border-r   ${
+        className={`absolute h-screen  bg-white duration-500 md:hidden   ${
           open ? 'left-0  ' : '-left-[100%]'
-        }  flex flex-col justify-between rounded-r-xl  transition duration-1000 `}
+        }  flex flex-col justify-between rounded-r-xl  `}
       >
         <div>
           <div className='mb-6 mt-2 border-b'>
@@ -120,9 +120,8 @@ const Dashboard = () => {
                 }`}
                 onClick={() => setSelectedItem('Enquiry')}
               >
-                <AiOutlineFileSearch className='text-3xl' />{' '}
+                <AiOutlineFileSearch className='text-3xl' />
                 <span className={`${open ? 'visible' : 'hidden'}`}>
-                  {' '}
                   Enquiry
                 </span>
               </div>
@@ -149,8 +148,8 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className='flex-auto font-roboto lg:mr-2'>
-        <div className='m-2 flex h-20 items-center   justify-end rounded-xl border-b-2 bg-white p-4 md:justify-between'>
+      <div className='mr-2 flex-auto font-roboto'>
+        <div className='m-2 flex h-20 items-center justify-end  rounded-xl border-b-2 bg-white p-4 duration-500 md:justify-between'>
           <AiOutlineMenu
             className={`absolute ${
               open ? 'left-52 sm:left-60 ' : 'left-5'
@@ -161,7 +160,7 @@ const Dashboard = () => {
             className='hidden cursor-pointer text-3xl text-[#02c6b7] md:block'
             onClick={() => setOpen(!open)}
           />
-          <div className='font-mono text-xl md:text-2xl'>Admin</div>
+          <div className='font-mono text-2xl'></div>
         </div>
         <div className='m-2 bg-white'>
           {selectedItem === 'Enquiry' ? <EnquireDashboard /> : <JobDashboard />}
