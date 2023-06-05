@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext, useContext} from 'react';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
 // TODO: Add SDKs for Firebase products that you want to use
@@ -52,6 +52,7 @@ const database = getDatabase(FirebaseApp);
 
 //creating Provider
 export const FirebaseProvider = (props) => {
+
   const signupUserWithEmailAndPassword = (email, password) => {
     return createUserWithEmailAndPassword(FirebaseAuth, email, password);
   };
@@ -92,21 +93,17 @@ export const FirebaseProvider = (props) => {
     const docSnap = await getDoc(docRef);
     // console.log(docSnap);
     // console.log(docSnap.data());
-    return docSnap.data()
+    return docSnap.data();
   };
 
   const getDocuments = async () => {
+ 
     const querySnapshot = await getDocs(
       collection(FirebaseStore, 'EnquiryForm')
     );
-    // console.log(querySnapshot)
-    // querySnapshot.forEach((doc) => {
-    //     console.log( doc.data().email);
-    //   });
+    // console.log(querySnapshot)+
+
     return querySnapshot;
-    // querySnapshot.forEach((doc) => {
-    //   console.log(doc.id, ' => ', doc.data());
-    // });
   };
 
   const getDocByQuery = async () => {

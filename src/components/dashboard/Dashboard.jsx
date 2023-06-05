@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
-import EnquireDashboard from '../otherComponents/EnquireDashboard';
-import JobDashboard from '../otherComponents/JobDashboard';
 import SidePanel from './SidePanel';
+import EnquireDashboard from './EnquireDashboard';
+import JobDashboard from './JobDashboard';
 
 const Dashboard = () => {
   const [open, setOpen] = useState(false);
@@ -18,8 +18,8 @@ const Dashboard = () => {
         setOpen={setOpen}
       />
 
-      <div className='mr-2 flex-auto font-roboto'>
-        <div className='m-2 flex h-20 items-center justify-end  rounded-xl border-b-2 bg-white p-4 duration-1000 md:justify-between'>
+      <div className=' flex-auto font-roboto overflow-x-scroll md:overflow-x-hidden h-screen'>
+        <div className='mx-1 md:mx-2 my-1 flex h-20 items-center justify-end rounded-md  border-b-2 bg-white p-4 duration-1000 md:justify-between'>
           <AiOutlineMenu
             className={`absolute ${
               open ? 'left-52 sm:left-60 ' : 'left-5'
@@ -30,9 +30,9 @@ const Dashboard = () => {
             className='hidden cursor-pointer text-3xl text-[#02c6b7] md:block'
             onClick={() => setOpen(!open)}
           />
-          <div className='font-mono text-2xl'></div>
+          <div className='font-mono text-2xl'>Admin</div>
         </div>
-        <div className='m-2 bg-white'>
+        <div className='mx-1 md:mx-2   overflow-x-scroll overflow-y-visible md:overflow-x-hidden  h-[85vh]  '>
           {selectedItem === 'Enquiry' ? <EnquireDashboard /> : <JobDashboard />}
         </div>
       </div>
