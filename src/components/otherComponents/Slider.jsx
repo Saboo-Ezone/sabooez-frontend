@@ -41,10 +41,10 @@ function Slider() {
       >
         <SwiperSlide>
           <div className='relative'>
-            <img src={e1} className='w-full  object-cover' alt='SWITCH e1' />
-            <span className='text-xl absolute bottom-6 left-1/4 -translate-x-1/2 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
+            <img src={e1} className='object-cover w-full h-screen' alt='SWITCH e1' />
+            <span className='absolute text-xl text-white -translate-x-1/2 bottom-6 left-1/4 md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/e1'>
-                <div className='m-3 flex items-center justify-center '>
+                <div className='flex items-center justify-center m-3 '>
                   <div className='mx-4'>SWITCH e1</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
@@ -56,11 +56,11 @@ function Slider() {
         </SwiperSlide>
         <SwiperSlide>
           <div className='relative'>
-            <img src={metrocity} className='w-full' alt='SWITCH Metrocity' />
+            <img src={metrocity} className='w-full h-screen' alt='SWITCH Metrocity' />
 
-            <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/2  text-white md:bottom-20 md:text-3xl lg:text-5xl '>
+            <span className='absolute text-white -translate-x-1/2 text-md bottom-6 left-1/4 md:bottom-20 md:text-3xl lg:text-5xl '>
               <Link to='/metrocity'>
-                <div className='m-3 flex items-center justify-center '>
+                <div className='flex items-center justify-center m-3 '>
                   <div className='mx-4'>SWITCH Metrocity</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
@@ -74,12 +74,12 @@ function Slider() {
           <div className='relative'>
             <img
               src={metrodecker}
-              className='w-full'
+              className='w-full h-screen'
               alt='The All New SWITCH Metrodecker'
             />
-            <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/4 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
+            <span className='absolute text-white text-md bottom-6 left-1/4 -translate-x-1/4 md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/metrodecker'>
-                <div className='m-3 flex items-center justify-center '>
+                <div className='flex items-center justify-center m-3 '>
                   <div className='mx-4'>The All New SWITCH Metrodecker</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
@@ -89,13 +89,12 @@ function Slider() {
             </span>
           </div>
         </SwiperSlide>
-
         <SwiperSlide>
           <div className='relative'>
-            <img src={solo} className='w-full' alt='SWITCH Solo' />
-            <span className='text-md absolute bottom-6 left-1/4 -translate-x-1/2 text-white md:bottom-20 md:text-3xl lg:text-5xl'>
+            <img src={solo} className='w-full h-screen' alt='SWITCH Solo' />
+            <span className='absolute text-white -translate-x-1/2 text-md bottom-6 left-1/4 md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/solo'>
-                <div className='m-3 flex items-center justify-center '>
+                <div className='flex items-center justify-center m-3 '>
                   <div className='mx-4 text-xl md:text-2xl lg:text-3xl xl:text-4xl'>SWITCH Solo</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
@@ -109,12 +108,12 @@ function Slider() {
           <div className='relative'>
             <img
               src={allvehicle}
-              className='w-full'
+              className='w-full h-screen'
               alt='Sustainable vehicles of today'
             />
-            <span className='text-2xl absolute bottom-6 xl:left-1/4 inset-x-1/3  text-white md:bottom-20 md:text-3xl lg:text-5xl'>
+            <span className='absolute text-2xl text-white bottom-6 xl:left-1/4 inset-x-1/3 md:bottom-20 md:text-3xl lg:text-5xl'>
               <Link to='/e1'>
-                <div className='m-3 flex items-center justify-center '>
+                <div className='flex items-center justify-center m-3 '>
                   <div className='mx-4 whitespace-nowrap'>Sustainable vehicles of today</div>
                   <div className='mt-2 md:mt-4 '>
                     <BsArrowRightCircle />
