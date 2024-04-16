@@ -60,15 +60,15 @@ const Login = () => {
         style={{ backgroundImage: `url(${patternGreen})` }}
       >
         <div
-          className='  flex h-screen w-full items-center justify-center  bg-cover   bg-center '
+          className='flex items-center justify-center w-full h-screen bg-center bg-cover '
           // style={{ backgroundImage: `url(${LoginPage})` }}
         >
           <div
-            className={`z-20 m-2  w-[400px] ${
+            className={`z-20 m-2  w-[400px] lg:w-[450px] ${
               shake && 'animate-shake'
             }  rounded-xl  shadow-xl shadow-gray-700  `}
           >
-            {/* <div className=' z-20   m-2 w-full shadow-2xl sm:w-4/5 md:w-1/2 lg:w-1/2 xl:w-1/3 2xl:w-1/4  '> */}
+            {/* <div className='z-20 w-full m-2 shadow-2xl sm:w-4/5 md:w-1/2 lg:w-1/2 xl:w-1/3 2xl:w-1/4'> */}
             <Formik
               initialValues={{
                 email: '',
@@ -127,19 +127,19 @@ const Login = () => {
               }}
             >
               {({ isSubmitting }) => (
-                <Form className='   rounded-xl    bg-white p-6  text-center '>
+                <Form className='p-6 text-center bg-white rounded-xl'>
                   <div className='flex justify-center'>
                     <Link to='/'>
                       <img
                         src={logo}
                         alt='logo'
-                        className='mx-auto mb-6   h-20'
+                        className='h-20 mx-auto mb-6'
                       />
                     </Link>
                   </div>
 
                   <div>
-                    <div className='mx-2 flex items-center justify-end'>
+                    <div className='flex items-center justify-end mx-2'>
                       <ErrorMessage
                         name='email'
                         component='div'
@@ -148,7 +148,7 @@ const Login = () => {
                     </div>
                     <Field
                       required
-                      className='mb-6 w-full rounded-lg  border border-gray-300 px-4 py-2 placeholder:text-black focus:outline-none'
+                      className='w-full px-4 py-2 mb-6 border border-gray-300 rounded-lg placeholder:text-black focus:outline-none'
                       type='text'
                       name='email'
                       id='email'
@@ -156,7 +156,7 @@ const Login = () => {
                     />
                   </div>
                   <div>
-                    <div className='mx-2 flex items-center justify-end'>
+                    <div className='flex items-center justify-end mx-2'>
                       <ErrorMessage
                         name='password'
                         component='div'
@@ -166,7 +166,7 @@ const Login = () => {
                     <div className='flex items-center'>
                       <Field
                         required
-                        className='w-full rounded-lg  border border-gray-300  px-4 py-2 placeholder:text-black focus:outline-none'
+                        className='w-full px-4 py-2 border border-gray-300 rounded-lg placeholder:text-black focus:outline-none'
                         type={showPassword ? 'text' : 'password'}
                         name='password'
                         id='password'
@@ -174,18 +174,18 @@ const Login = () => {
                       />
                       <div
                         onClick={() => setShowPassword(!showPassword)}
-                        className=' relative mb-4 cursor-pointer text-xl'
+                        className='relative mb-4 text-xl cursor-pointer '
                       >
                         {showPassword ? (
-                          <FaEye className='absolute -left-10 text-gray-600' />
+                          <FaEye className='absolute text-gray-600 -left-10' />
                         ) : (
-                          <FaEyeSlash className='absolute -left-10 text-gray-600' />
+                          <FaEyeSlash className='absolute text-gray-600 -left-10' />
                         )}
                       </div>
                     </div>
 
                     {/* <div onClick={handleLogout} className='mt-2 cursor-pointer'>
-                      <div className=' text-md group relative mb-4 flex  items-center rounded-md 	p-1 pr-2  '>
+                      <div className='relative flex items-center p-1 pr-2 mb-4 rounded-md text-md group'>
                         logOut
                       </div>
                     </div> */}

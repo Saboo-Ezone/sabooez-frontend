@@ -20,8 +20,8 @@ const EnquireDashboard = () => {
       try {
         const querySnapshot = await getDocs(
           query(
-            collection(FirebaseStore, 'EnquiryForm'),
-            orderBy('createTime', 'desc')
+            collection(FirebaseStore, 'EnquiryForm')
+            // orderBy('createTime', 'desc')
           )
         );
         // if (!querySnapshot.empty) {
@@ -29,14 +29,15 @@ const EnquireDashboard = () => {
 
         //   setAllDocs(documents);
         // }
-        if (!querySnapshot.empty) {
-          const documents = querySnapshot.docs.map((doc) => {
-            const data = doc.data();
-            const createTime = data.createTime.toDate().toLocaleString();
-            return { ...data, createTime };
-          });
-          setAllDocs(documents);
-        }
+        console.log(querySnapshot.docs);
+        // if (!querySnapshot.empty) {
+        //   const documents = querySnapshot.docs.map((doc) => {
+        //     const data = doc.data();
+        //     const createTime = data.createTime.toDate().toLocaleString();
+        //     return { ...data, createTime };
+        //   });
+        //   setAllDocs(documents);
+        // }
 
         setIsLoading(false);
       } catch (error) {
@@ -49,7 +50,7 @@ const EnquireDashboard = () => {
   }, []);
 
   return (
-    <div className='w-full  bg-white'>
+    <div className='w-full bg-white'>
       {isLoading ? (
         <p>Loading...</p>
       ) : allDocs.length === 0 ? (
@@ -58,7 +59,7 @@ const EnquireDashboard = () => {
         <table className=''>
           <thead>
             <tr className='w-full bg-[#02c6b7]  text-white '>
-              <th className='whitespace-nowrap  border-r p-2'>Sr. No</th>
+              <th className='p-2 border-r whitespace-nowrap'>Sr. No</th>
               <th className='w-1/5 border-r'>Name</th>
               <th className='w-1/5 border-r'>Model</th>
               <th className='w-1/5 border-r'>Phone</th>
@@ -72,12 +73,12 @@ const EnquireDashboard = () => {
                 key={index}
                 className='text-center hover:bg-[#02c6b7] hover:bg-opacity-20'
               >
-                <td className=' border p-1'>{index + 1}</td>
-                <td className='border p-1'>{item.name}</td>
-                <td className='border p-1'>{item.model}</td>
-                <td className='border p-1'>{item.phone}</td>
-                <td className='border p-1'>{item.email}</td>
-                <td className='border p-1'>{item.createTime}</td>
+                <td className='p-1 border '>{index + 1}</td>
+                <td className='p-1 border'>{item.name}</td>
+                <td className='p-1 border'>{item.model}</td>
+                <td className='p-1 border'>{item.phone}</td>
+                <td className='p-1 border'>{item.email}</td>
+                <td className='p-1 border'>{item.createTime}</td>
               </tr>
             ))}
           </tbody>

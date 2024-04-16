@@ -24,13 +24,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyBIlQAgLksAaF7Qn97FrPC-jn-jxVUQUzA',
-  authDomain: 'saboo-ezone-17e7e.firebaseapp.com',
-  databaseURL: 'https://saboo-ezone-17e7e-default-rtdb.firebaseio.com',
-  projectId: 'saboo-ezone-17e7e',
-  storageBucket: 'saboo-ezone-17e7e.appspot.com',
-  messagingSenderId: '175616155492',
-  appId: '1:175616155492:web:11dd6120ad0fd486582471',
+  apiKey: "AIzaSyDKbJGKb9paftWElW6Bxl020d7lYAbTUKA",
+  authDomain: "sabooezone1.firebaseapp.com",
+  projectId: "sabooezone1",
+  storageBucket: "sabooezone1.appspot.com",
+  messagingSenderId: "94379106740",
+  appId: "1:94379106740:web:ba1df6a294f7fcb04192e1",
 };
 
 // Initialize Firebase
