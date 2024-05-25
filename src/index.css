@@ -7,6 +7,15 @@
   scrollbar-color: var(--secondary) var(--primary);
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 10px;

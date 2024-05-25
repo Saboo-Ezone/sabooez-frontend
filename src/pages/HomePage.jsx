@@ -30,9 +30,9 @@ const HomePage = () => {
       </section>
 
       <section className=' w-full bg-[#edede6] bg-opacity-75'>
-        <div className='mx-4 md:mx-8 lg:mx-16  '>
+        <div className='mx-4 md:mx-8 lg:mx-16 '>
           <div
-            className='pt-8 text-h3 tracking-wide md:pt-16  md:text-h2  lg:pb-4  lg:text-h1  '
+            className='pt-8 tracking-wide text-h3 md:pt-16 md:text-h2 lg:pb-4 lg:text-h1 '
             data-aos='fade-up'
           >
             Cleaner, smarter journeys
@@ -46,7 +46,7 @@ const HomePage = () => {
           ></div>
 
           <div
-            className=' grid pb-8 md:pb-16 lg:grid-cols-2 '
+            className='grid pb-8 md:pb-16 lg:grid-cols-2'
             data-aos='fade-up'
             data-aos-delay='200'
             data-editor-processed='true'
@@ -62,7 +62,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section data-aos='fade-up' data-aos-delay='200'>
+      <section data-aos='fade-in' data-aos-delay='200'>
         <video
           width='100%'
           preload='metadata'
@@ -77,9 +77,9 @@ const HomePage = () => {
         </video>
       </section>
       <section className=' w-full bg-[#edede6] bg-opacity-75'>
-        <div className=' mx-4 md:mx-8 lg:mx-16  '>
+        <div className='mx-4 md:mx-8 lg:mx-16'>
           <div
-            className='pb-4 pt-8 text-h3 tracking-wide md:pt-16  md:text-h2  lg:pb-4  lg:text-h1  '
+            className='pt-8 pb-4 tracking-wide text-h3 md:pt-16 md:text-h2 lg:pb-4 lg:text-h1 '
             data-aos='fade-up'
             data-aos-delay='100'
           >
@@ -87,7 +87,7 @@ const HomePage = () => {
           </div>
 
           <div
-            className=' grid pb-4 lg:grid-cols-2 lg:pb-8  '
+            className='grid pb-4 lg:grid-cols-2 lg:pb-8'
             data-aos='fade-up'
             data-aos-delay='200'
             data-editor-processed='true'
@@ -101,19 +101,19 @@ const HomePage = () => {
               Explore our current range
             </div>
           </div>
-          <div className=' grid   gap-6  sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3'>
+          <div className='grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3'>
             <div className='mb-5' data-aos='fade-in' data-aos-delay='300'>
               <div className='mb-5 font-mono text-h4'>SWITCH e1</div>
-              <div className=' overflow-hidden  '>
+              <div className='overflow-hidden h-80'>
                 <img
                   src={switch_e1}
                   alt='SWITCH e1'
-                  className='h-60 w-full object-cover duration-300 ease-in hover:scale-105 lg:h-full'
+                  className='object-cover w-full duration-300 ease-in hover:scale-105 lg:h-full'
                 />
               </div>
               <div className='bg-[#505bfe] '>
                 <Link
-                  className='flex items-center justify-between px-2  py-2 text-white'
+                  className='flex items-center justify-between px-2 py-2 text-white'
                   to='/e1'
                 >
                   <span>MORE INFORMATION</span>
@@ -124,16 +124,16 @@ const HomePage = () => {
 
             <div className='mb-5' data-aos='fade-in' data-aos-delay='400'>
               <div className='mb-5 font-mono text-h4'>Metrodecker</div>
-              <div className=' overflow-hidden '>
+              <div className='overflow-hidden h-80'>
                 <img
                   src={metrodecker}
                   alt='SWITCH Metrodecker'
-                  className='h-60 w-full object-cover duration-300 ease-in hover:scale-105 lg:h-full'
+                  className='object-cover w-full duration-300 ease-in hover:scale-105 lg:h-full'
                 />
               </div>
               <div className='bg-[#505bfe] '>
                 <Link
-                  className='flex items-center justify-between px-2  py-2 text-white'
+                  className='flex items-center justify-between px-2 py-2 text-white'
                   to='/metrodecker'
                 >
                   <span>MORE INFORMATION</span>
@@ -144,16 +144,16 @@ const HomePage = () => {
 
             <div className='mb-5 ' data-aos='fade-in' data-aos-delay='500'>
               <div className='mb-5 font-mono text-h4'>Metrocity</div>
-              <div className=' overflow-hidden  '>
+              <div className='overflow-hidden h-80'>
                 <img
                   src={metrocity}
                   alt='SWITCH EiV 22'
-                  className='h-60 w-full object-cover duration-300 ease-in hover:scale-105 lg:h-full'
+                  className='object-cover w-full duration-300 ease-in hover:scale-105 lg:h-full'
                 />
               </div>
               <div className='bg-[#505bfe] '>
                 <Link
-                  className='flex items-center justify-between px-2  py-2 text-white '
+                  className='flex items-center justify-between px-2 py-2 text-white '
                   to='/metrocity'
                 >
                   <span>MORE INFORMATION</span>
@@ -164,7 +164,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className='mb-1 flex flex-col overflow-hidden bg-emerald-500 md:flex-row'>
+      <section className='flex flex-col mb-1 overflow-hidden bg-emerald-500 md:flex-row'>
         <div
           className='h-[45vh] w-full bg-cover bg-center bg-no-repeat md:h-[65vh] md:w-1/2'
           style={{ backgroundImage: `url(${bannerTech})` }}
@@ -193,7 +193,7 @@ const HomePage = () => {
               electromobility.
             </div>
             <div
-              className=' mt-6 whitespace-nowrap pb-10'
+              className='pb-10 mt-6 whitespace-nowrap'
               data-aos='fade-up'
               data-aos-delay='200'
             >
@@ -201,12 +201,12 @@ const HomePage = () => {
                 to='/tech'
                 className='group relative overflow-hidden border-[2px]  border-gray-100 px-6 py-2 text-xl font-medium text-white shadow-inner'
               >
-                <span className='border-t-1 ease absolute left-0 top-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-                <span className='border-b-1 ease absolute bottom-0 right-0 h-0 w-0 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-                <span className='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
-                <span className='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-200 duration-300 group-hover:h-full'></span>
-                <span className='absolute inset-0 h-full w-full bg-white opacity-0 delay-300 duration-300 group-hover:opacity-100'></span>
-                <span className='ease relative transition-colors delay-200 duration-300 group-hover:text-indigo-500'>
+                <span className='absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-indigo-400 border-t-1 ease group-hover:w-full'></span>
+                <span className='absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-indigo-400 border-b-1 ease group-hover:w-full'></span>
+                <span className='absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-indigo-400 ease group-hover:h-full'></span>
+                <span className='absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-indigo-400 ease group-hover:h-full'></span>
+                <span className='absolute inset-0 w-full h-full duration-300 delay-300 bg-white opacity-0 group-hover:opacity-100'></span>
+                <span className='relative transition-colors duration-300 delay-200 ease group-hover:text-indigo-500'>
                   DISCOVER
                 </span>
               </Link>
@@ -214,7 +214,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className='mb-1 flex justify-center '>
+      <section className='flex justify-center mb-1 '>
         <img
           src={switchInfographic}
           className='hidden sm:block'
@@ -234,13 +234,13 @@ const HomePage = () => {
         <div className='container mx-auto'>
           <div className='section-heading' data-aos='fade-up'>
             <h2
-              className='pb-6 text-3xl    lg:text-5xl'
+              className='pb-6 text-3xl lg:text-5xl'
               data-editor-processed='true'
             >
               SWITCH Up
             </h2>
             <p
-              className='pb-10 font-mono text-xl font-medium lg:text-2xl  '
+              className='pb-10 font-mono text-xl font-medium lg:text-2xl '
               data-aos='fade-up'
               data-aos-delay='100'
               data-editor-processed='true'
@@ -257,12 +257,12 @@ const HomePage = () => {
             data-aos='fade-up'
             data-aos-delay='300'
           >
-            <span className='ease absolute left-0 top-0 h-0 w-0 border-t-2 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-            <span className='ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-indigo-400 transition-all duration-200 group-hover:w-full'></span>
-            <span className='ease absolute left-0 top-0 h-0 w-full bg-indigo-400 transition-all delay-100 duration-300 group-hover:h-full'></span>
-            <span className='ease absolute bottom-0 left-0 h-0 w-full bg-indigo-400 transition-all delay-100 duration-300 group-hover:h-full'></span>
-            <span className='absolute inset-0 h-full w-full bg-white opacity-0 delay-200 duration-300 group-hover:opacity-100'></span>
-            <span className='ease relative transition-colors delay-200 duration-300 group-hover:text-indigo-500'>
+            <span className='absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-indigo-400 ease group-hover:w-full'></span>
+            <span className='absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-indigo-400 ease group-hover:w-full'></span>
+            <span className='absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-100 bg-indigo-400 ease group-hover:h-full'></span>
+            <span className='absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-100 bg-indigo-400 ease group-hover:h-full'></span>
+            <span className='absolute inset-0 w-full h-full duration-300 delay-200 bg-white opacity-0 group-hover:opacity-100'></span>
+            <span className='relative transition-colors duration-300 delay-200 ease group-hover:text-indigo-500'>
               OUR STORY
             </span>
           </Link>
@@ -271,10 +271,10 @@ const HomePage = () => {
 
       <section>
         <div
-          className='flex w-full flex-col bg-no-repeat md:flex-row'
+          className='flex flex-col w-full bg-no-repeat md:flex-row'
           style={{ backgroundImage: `url(${patternBoxSvg})` }}
         >
-          <div className='mt-4 w-full  py-16 pl-10 text-3xl md:w-1/2 md:pl-16 lg:pl-24   xl:pl-28 '>
+          <div className='w-full py-16 pl-10 mt-4 text-3xl md:w-1/2 md:pl-16 lg:pl-24 xl:pl-28 '>
             <span className='' data-editor-processed='true'>
               We're on a journey.
               <br />
@@ -282,7 +282,7 @@ const HomePage = () => {
             </span>
             <br />
             <span
-              className='  text-xl  '
+              className='text-xl '
               data-aos='fade-up'
               data-aos-delay='100'
               data-editor-processed='true'

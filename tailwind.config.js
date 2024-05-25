@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
+        diatype: ['Diatype', 'sans-serif'],
       },
       fontSize: {
         h1: '2.5rem',

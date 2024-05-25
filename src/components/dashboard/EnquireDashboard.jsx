@@ -5,7 +5,7 @@ import {
   getDocs,
   collection,
   query,
-  orderBy,
+  // orderBy,
 } from 'firebase/firestore';
 
 export const FirebaseStore = getFirestore(FirebaseApp);
@@ -30,6 +30,7 @@ const EnquireDashboard = () => {
         //   setAllDocs(documents);
         // }
         console.log(querySnapshot.docs);
+        setAllDocs([]);
         // if (!querySnapshot.empty) {
         //   const documents = querySnapshot.docs.map((doc) => {
         //     const data = doc.data();

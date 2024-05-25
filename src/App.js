@@ -17,6 +17,7 @@ import ModalEnquire from './components/otherComponents/ModalEnquire';
 
 import Login from './components/otherComponents/Login';
 import Dashboard from './components/dashboard/Dashboard';
+import Iev from './components/vehicles/Iev';
 
 function App() {
   const [showMyModal, setShowMyModal] = useState(false);
@@ -49,41 +50,42 @@ function App() {
     <div>
       {/* Render the header if the route is not '/admin' */}
       {!isAdminRoute && (
-        <div className='pb-16 md:pb-20'>
+        <div className="pb-16 md:pb-20">
           <Header />
         </div>
       )}
 
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route exact path='/about' element={<About />} />
-        <Route exact path='/tech' element={<Tech />} />
-        <Route exact path='/careers' element={<Careers />} />
-        <Route exact path='/contact' element={<Contact />} />
+        <Route path="/" element={<HomePage />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/tech" element={<Tech />} />
+        <Route exact path="/careers" element={<Careers />} />
+        <Route exact path="/contact" element={<Contact />} />
         <Route
           exact
-          path='/e1'
+          path="/e1"
           element={<SwitchE1 setShowMyModal={setShowMyModal} />}
         />
         <Route
           exact
-          path='/metrocity'
+          path="/metrocity"
           element={<Metrocity setShowMyModal={setShowMyModal} />}
         />
         <Route
           exact
-          path='/metrodecker'
+          path="/metrodecker"
           element={<Metrodecker setShowMyModal={setShowMyModal} />}
         />
-        <Route exact path='/solo' element={<Solo />} />
-        <Route exact path='/admin' element={<Dashboard />} />
-        <Route exact path='/login' element={<Login />} />
-        <Route exact path='/*' element={<div>No page found </div>} />
+        <Route exact path="/solo" element={<Solo />} />
+        <Route exact path="/admin" element={<Dashboard />} />
+        <Route exact path="/iev-series" element={<Iev />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/*" element={<div>No page found </div>} />
       </Routes>
 
       {/* Render the footer if the route is not '/admin' */}
       {!isAdminRoute && <Footer />}
-      <div className='z-10'>
+      <div className="z-10">
         <ModalEnquire onClose={handleOnClose} visible={showMyModal} />
       </div>
     </div>
